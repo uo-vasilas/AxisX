@@ -677,6 +677,10 @@
 #define IDC_LANGUAGE                    2230
 #define IDC_MAKESERVERPROFILE           2231
 #define IDC_THEME                       2232
+#define IDC_DASH_UPDATEINFO             2233
+#define IDC_DASH_UPDATE                 2234
+#define IDC_CHECKUPDATES                2235
+#define IDC_CHECKUPDATES_NOW            2236
 
 // Next default values for new objects
 // 

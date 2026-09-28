@@ -394,3 +394,12 @@
 -Fixed: Page switching no longer flickers; clipped labels on pages and in dialogs.
 -Changed: Single statically linked 64-bit AxisX.exe (needs 64-bit Windows), no runtime installation needed; one installer instead of separate 32/64-bit ones.
 -Changed: New Axis X program and installer icons (neutral, for SphereX) instead of the old Axis2 icons.
+
+
+
+***Axis X 1.1***
+
++September 2026+
+-Added: Update check - Axis X looks for a new release on GitHub at startup (at most once a day, Settings > General > "Check for updates at startup") and shows "Update now" on the overview; downloads the installer, verifies its SHA-256 checksum and starts it. Settings and server profiles are kept.
+-Added: "Check for updates now" in Settings > General.
+-Changed: The installer reuses the folder and install mode of the previous installation.

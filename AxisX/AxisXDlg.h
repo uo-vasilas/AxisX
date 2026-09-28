@@ -124,6 +124,8 @@ protected:
 	afx_msg LRESULT OnCheckLabels(WPARAM wParam, LPARAM lParam);
 	afx_msg LRESULT OnCheckPopupLabels(WPARAM wParam, LPARAM lParam);
 	afx_msg LRESULT OnPressPageButton(WPARAM wParam, LPARAM lParam);
+	afx_msg LRESULT OnUpdateChecked(WPARAM wParam, LPARAM lParam);
+	afx_msg LRESULT OnUpdateDownload(WPARAM wParam, LPARAM lParam);
 	afx_msg void OnNavCustomDraw(NMHDR* pNMHDR, LRESULT* pResult);
 	afx_msg void OnMouseMove(UINT nFlags, CPoint point);
 	afx_msg void OnMouseLeave();

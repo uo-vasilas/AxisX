@@ -50,6 +50,7 @@ public:
 	BOOL	m_bSysClose;
 	BOOL	m_bLoadDefault;
 	BOOL	m_bDisableToolbar;
+	BOOL	m_bCheckUpdates;
 	CComboBox	m_ccbStartTab;
 	CComboBox	m_ccbLanguage;
 	CComboBox	m_ccbTheme;
@@ -91,6 +92,8 @@ protected:
 	afx_msg void OnKillfocusCustomIcon();
 	afx_msg void OnBrowseCustomLogo();
 	afx_msg void OnBrowseCustomIcon();
+	afx_msg void OnCheckUpdates();
+	afx_msg void OnCheckUpdatesNow();
 	//}}AFX_MSG
 	DECLARE_MESSAGE_MAP()
 

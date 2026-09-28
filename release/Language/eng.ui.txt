@@ -537,3 +537,17 @@ Schnellpalette: Linksklick wählt, Rechtsklick belegt das Feld neu	Quick palette:
 Server-Profil geladen aus: %s	Server profile loaded from: %s
 Die Datei lässt sich nicht schreiben:\n%s\n\nPer "Profil exportieren" lässt sie sich woanders speichern.	The file cannot be written:\n%s\n\nUse "Export profile" to save it elsewhere.
 Server-Profil erzeugt:\n%s\n\nAxis lädt es automatisch, wenn kein Skriptordner eingestellt ist. Zum Weitergeben die Datei mitliefern: den Installer mit makensis /DWITH_PROFILE bauen oder die Datei in den Ordner "Profile" neben AxisX.exe legen.	Server profile created:\n%s\n\nAxis loads it automatically when no script folder is set. To pass it on, ship the file: build the installer with makensis /DWITH_PROFILE or put the file into the "Profile" folder next to AxisX.exe.
+Axis X %s ist verfügbar - "Jetzt aktualisieren" auf der Übersicht.	Axis X %s is available - "Update now" on the overview.
+Axis X ist aktuell (Version %s).	Axis X is up to date (version %s).
+Update-Suche fehlgeschlagen: %s	Update check failed: %s
+Update wird geladen ... %d %%	Downloading update ... %d %%
+Der Installer wurde nicht gestartet.	The installer was not started.
+Das Update konnte nicht geladen werden: 	The update could not be downloaded: 
+Die Download-Seite im Browser öffnen?	Open the download page in the browser?
+Neue Version %s verfügbar (installiert: %s)	New version %s available (installed: %s)
+Jetzt aktualisieren	Update now
+Axis X %s herunterladen und installieren?\n\nAxis wird dazu beendet. Einstellungen und Profile bleiben erhalten.	Download and install Axis X %s?\n\nAxis will close for this. Settings and profiles are kept.
+Wird geladen ...	Downloading ...
+Suche nach Updates ...	Checking for updates ...
+Beim Start nach Updates suchen	Check for updates at startup
+Jetzt nach Updates suchen	Check for updates now

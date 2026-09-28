@@ -27,6 +27,7 @@
 #include "stdafx.h"
 #include "AxisX.h"
 #include "Settings_General.h"
+#include "Updater.h"
 
 #ifdef _DEBUG
 #define new DEBUG_NEW
@@ -47,6 +48,7 @@ CSettingsGeneral::CSettingsGeneral() : CPropertyPage(CSettingsGeneral::IDD)
 	m_bSysClose = FALSE;
 	m_bLoadDefault = FALSE;
 	m_bDisableToolbar = FALSE;
+	m_bCheckUpdates = TRUE;
 	//}}AFX_DATA_INIT
 }
 
@@ -65,6 +67,7 @@ void CSettingsGeneral::DoDataExchange(CDataExchange* pDX)
 	DDX_Check(pDX, IDC_LOADDEFAULT, m_bLoadDefault);
 	DDX_Check(pDX, IDC_ALLOWMULTIPLE, m_bAllowMultiple);
 	DDX_Check(pDX, IDC_DISABLE_TOOLBAR, m_bDisableToolbar);
+	DDX_Check(pDX, IDC_CHECKUPDATES, m_bCheckUpdates);
 	DDX_Control(pDX, IDC_STARTTAB, m_ccbStartTab);
 	DDX_Control(pDX, IDC_LANGUAGE, m_ccbLanguage);
 	DDX_Control(pDX, IDC_THEME, m_ccbTheme);
@@ -95,6 +98,8 @@ BEGIN_MESSAGE_MAP(CSettingsGeneral, CPropertyPage)
 	ON_EN_KILLFOCUS(IDC_CUSTOMICON, OnKillfocusCustomIcon)
 	ON_BN_CLICKED(IDC_CUSTOMLOGO_BROWSE, OnBrowseCustomLogo)
 	ON_BN_CLICKED(IDC_CUSTOMICON_BROWSE, OnBrowseCustomIcon)
+	ON_BN_CLICKED(IDC_CHECKUPDATES, OnCheckUpdates)
+	ON_BN_CLICKED(IDC_CHECKUPDATES_NOW, OnCheckUpdatesNow)
 	//}}AFX_MSG_MAP
 END_MESSAGE_MAP()
 
@@ -124,10 +129,26 @@ BOOL CSettingsGeneral::OnInitDialog()
 	m_ceUOTitle.SetWindowText(Main->m_csUOTitle);
 	m_ceCustomLogo.SetWindowText(Main->m_csCustomLogo);
 	m_ceCustomIcon.SetWindowText(Main->m_csCustomIcon);
+	m_bCheckUpdates = Main->GetRegistryDword("CheckUpdates", 1) ? TRUE : FALSE;
 
 	UpdateData(false);
 
 	return TRUE;
+}
+
+void CSettingsGeneral::OnCheckUpdates()
+{
+	UpdateData();
+	Main->PutRegistryDword("CheckUpdates", m_bCheckUpdates);
+}
+
+// The result shows up in the status line and, if there is an update, on the overview.
+void CSettingsGeneral::OnCheckUpdatesNow()
+{
+	if (Main->m_pMainWnd == NULL)
+		return;
+	AxisSetStatus(AXT("Suche nach Updates ..."), 0);
+	AxisStartUpdateCheck(Main->m_pMainWnd->GetSafeHwnd(), true);
 }
 
 // Stores a branding value (file path or URL) and applies it immediately.
@@ -268,6 +289,8 @@ void CSettingsGeneral::OnResetTab()
 	Main->LoadIni(0,"UOTitle");
 	m_ceUOTitle.SetWindowText(Main->m_csUOTitle);
 	Main->PutRegistryString("UOTitle", Main->m_csUOTitle);
+	m_bCheckUpdates = TRUE;
+	Main->PutRegistryDword("CheckUpdates", 1);
 
 	UpdateData(false);
 }
@@ -297,6 +320,8 @@ void CSettingsGeneral::OnResetSettings()
 	Main->PutRegistryString("CommandPrefix", Main->m_csCommandPrefix);
 	m_ceUOTitle.SetWindowText(Main->m_csUOTitle);
 	Main->PutRegistryString("UOTitle", Main->m_csUOTitle);
+	m_bCheckUpdates = TRUE;
+	Main->PutRegistryDword("CheckUpdates", 1);
 
 	//Item Tab
 	Main->m_pcppSetItem->m_bRoomView = (BOOL) Main->m_dwRoomView;

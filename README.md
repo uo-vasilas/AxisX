@@ -57,6 +57,10 @@ the tool stays free and GPL.
   offline.
 - **Custom branding**: your own logo and window icon, from a file or a URL.
 - **Remote console** (Sphere remote admin), reachable from the dashboard and the GM Commands page.
+- **Update check.** At startup (at most once a day) Axis X asks GitHub for the latest release. If there
+  is a newer one, the dashboard shows **Update now**: Axis downloads the installer, checks its SHA-256
+  checksum against the one GitHub publishes, starts it and closes. The installer keeps the folder,
+  settings and server profiles. Switch it off or check by hand under *Settings -> General*.
 - **A single statically linked 64-bit `AxisX.exe`.** No runtime installation is needed.
 
 ### Guide to all areas
@@ -148,8 +152,10 @@ click the character or item in the game.
 
 ### Installation
 
-Run `AxisX_Setup_<version>.exe`. The first installer page asks for the language;
-the same language is then used by Axis X. You can change it later under *Settings -> General*.
+Download `AxisX_Setup_<version>.exe` from the [releases](https://github.com/uo-vasilas/AxisX/releases)
+and run it. The first installer page asks for the language; the same language is then used by Axis X.
+You can change it later under *Settings -> General*. Later versions arrive through the update check
+(or run a newer installer over the old one; it reuses the folder and install mode).
 
 ### Building
 
@@ -214,6 +220,8 @@ equipment preview needs the full scripts. See `LIESMICH.txt` in the profile fold
 | `Window Width`, `Window Height`, `Window Maximized` | window size from the last session |
 | `DashQuickActions`, `RecentAdds` | dashboard quick actions and recently added items |
 | `Staff Prefix` | account prefix stripped from the dashboard greeting (default `+staff_`) |
+| `CheckUpdates` | 0 = no update check at startup (default 1) |
+| `LastUpdateCheck` | date of the last update check (`YYYYMMDD`) |
 
 **Custom branding (logo and icon)**
 - *Settings -> General -> "Logo (file or URL)"*: an image (PNG/BMP/JPG/GIF/ICO) shown in the sidebar
@@ -242,6 +250,7 @@ equipment preview needs the full scripts. See `LIESMICH.txt` in the profile fold
 | Script | Purpose |
 |---|---|
 | `Build-Axis.ps1 [-Install -CloseRunning -Start]` | build with MSBuild, copy to `Release\`, start |
+| `Release-Axis.ps1 -Version 1.1 [-Makensis <path>] [-Publish]` | set the version, build exe and installer; with `-Publish` commit, tag and create the GitHub release (notes from `release\changelog.txt`) |
 | `Capture-AxisWindow.ps1` | screenshot of the Axis window or a popup, optionally after a click |
 | `Check-AxisLabels.ps1 [-Width -Height / -Maximize]` | reports labels on all pages whose text does not fit |
 | `Check-AxisPopups.ps1` | opens the popup dialogs one by one, checks them and closes them again |
@@ -321,6 +330,11 @@ und GPL.
   offline arbeitet Axis X mit dem Cache weiter.
 - **Eigenes Logo und Icon**, aus einer Datei oder von einer URL.
 - **Remote-Konsole** (Sphere Remote Admin), erreichbar von der Übersicht und den GM-Befehlen aus.
+- **Update-Prüfung.** Beim Start (höchstens einmal am Tag) fragt Axis X bei GitHub nach dem neuesten
+  Release. Gibt es ein neueres, zeigt die Übersicht **Jetzt aktualisieren**: Axis lädt den Installer,
+  vergleicht seine SHA-256-Prüfsumme mit der von GitHub veröffentlichten, startet ihn und beendet sich.
+  Der Installer behält Ordner, Einstellungen und Server-Profile. Abschalten oder von Hand prüfen unter
+  *Einstellungen -> Allgemein*.
 - **Eine einzige statisch gelinkte 64-Bit-`AxisX.exe`.** Keine Laufzeit-Installation nötig.
 
 ### Anleitung zu allen Bereichen
@@ -414,9 +428,10 @@ ein Ziel: den Charakter oder das Item im Spiel anklicken.
 
 ### Installation
 
-`AxisX_Setup_<version>.exe` ausführen. Die erste Seite fragt nach der Sprache;
-dieselbe Sprache verwendet danach auch Axis X. Später lässt sie sich unter *Einstellungen ->
-Allgemein* ändern.
+`AxisX_Setup_<version>.exe` von den [Releases](https://github.com/uo-vasilas/AxisX/releases) laden und
+ausführen. Die erste Seite fragt nach der Sprache; dieselbe Sprache verwendet danach auch Axis X. Später
+lässt sie sich unter *Einstellungen -> Allgemein* ändern. Neue Versionen kommen über die Update-Prüfung
+(oder einen neueren Installer über den alten laufen lassen; er übernimmt Ordner und Installationsart).
 
 ### Bauen
 
@@ -481,6 +496,8 @@ Ausrüstungsvorschau der NPCs braucht die vollen Skripte. Siehe `LIESMICH.txt` i
 | `Window Width`, `Window Height`, `Window Maximized` | Fenstergröße der letzten Sitzung |
 | `DashQuickActions`, `RecentAdds` | Schnellaktionen und zuletzt erzeugte Items der Übersicht |
 | `Staff Prefix` | Konto-Präfix, das in der Begrüßung weggelassen wird (Standard `+staff_`) |
+| `CheckUpdates` | 0 = keine Update-Prüfung beim Start (Standard 1) |
+| `LastUpdateCheck` | Datum der letzten Update-Prüfung (`JJJJMMTT`) |
 
 **Eigenes Logo und Icon**
 - *Einstellungen -> Allgemein -> "Logo (Datei oder URL)"*: ein Bild (PNG/BMP/JPG/GIF/ICO) für den Kopf
@@ -512,6 +529,7 @@ Ausrüstungsvorschau der NPCs braucht die vollen Skripte. Siehe `LIESMICH.txt` i
 | Skript | Zweck |
 |---|---|
 | `Build-Axis.ps1 [-Install -CloseRunning -Start]` | mit MSBuild bauen, nach `Release\` kopieren, starten |
+| `Release-Axis.ps1 -Version 1.1 [-Makensis <Pfad>] [-Publish]` | Version setzen, Exe und Installer bauen; mit `-Publish` committen, taggen und das GitHub-Release anlegen (Text aus `release\changelog.txt`) |
 | `Capture-AxisWindow.ps1` | Bildschirmfoto des Axis-Fensters oder eines Popups, optional nach einem Klick |
 | `Check-AxisLabels.ps1 [-Width -Height / -Maximize]` | meldet Beschriftungen auf allen Seiten, deren Text nicht passt |
 | `Check-AxisPopups.ps1` | öffnet die Popup-Dialoge nacheinander, prüft sie und schließt sie wieder |

@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|x64">
@@ -136,6 +136,7 @@
     <ClCompile Include="Common.cpp" />
     <ClCompile Include="DockingPage.cpp" />
     <ClCompile Include="DashboardTab.cpp" />
+    <ClCompile Include="Updater.cpp" />
     <ClCompile Include="DoorWizard.cpp" />
     <ClCompile Include="GeneralTab.cpp" />
     <ClCompile Include="Ini.cpp" />
@@ -195,6 +196,7 @@
     <ClInclude Include="Common.h" />
     <ClInclude Include="DockingPage.h" />
     <ClInclude Include="DashboardTab.h" />
+    <ClInclude Include="Updater.h" />
     <ClInclude Include="DoorWizard.h" />
     <ClInclude Include="GeneralTab.h" />
     <ClInclude Include="Ini.h" />

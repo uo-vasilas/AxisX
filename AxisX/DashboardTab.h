@@ -38,6 +38,7 @@ public:
 	// 0=info, 1=warning, 2=notice, shown as a colored tag after the line.
 	void AddLogLine(CString csLine, COLORREF color, int iFormat);
 	void RefreshStats();
+	void ShowUpdate();	// shows the update notice for g_axisUpdate
 
 // Dialog Data
 	enum { IDD = IDD_DASHBOARD_TAB };
@@ -72,6 +73,7 @@ protected:
 	afx_msg void OnQuickAdd();
 	afx_msg void OnQuickDel();
 	afx_msg void OnDonate();
+	afx_msg void OnUpdate();
 	afx_msg void OnTimer(UINT_PTR nIDEvent);
 	void LoadQuickActions();
 	void SaveQuickActions();

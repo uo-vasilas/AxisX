@@ -17,6 +17,7 @@
 #include "DashboardTab.h"
 #include "AxisXDlg.h"
 #include "RemoteConsole.h"
+#include "Updater.h"
 
 IMPLEMENT_DYNCREATE(CDashboardTab, CDockingPage)
 
@@ -290,6 +291,7 @@ BEGIN_MESSAGE_MAP(CDashboardTab, CDockingPage)
 	ON_BN_CLICKED(IDC_DASH_QAADD, OnQuickAdd)
 	ON_BN_CLICKED(IDC_DASH_QADEL, OnQuickDel)
 	ON_BN_CLICKED(IDC_DASH_DONATE, OnDonate)
+	ON_BN_CLICKED(IDC_DASH_UPDATE, OnUpdate)
 	ON_WM_TIMER()
 	ON_WM_CTLCOLOR()
 END_MESSAGE_MAP()
@@ -302,12 +304,12 @@ HBRUSH CDashboardTab::OnCtlColor(CDC* pDC, CWnd* pWnd, UINT nCtlColor)
 	{
 		int nID = pWnd->GetDlgCtrlID();
 		static CBrush s_cardBrush(DashCardBkColor());
-		if (nID != IDC_DASH_GREETING && nID != IDC_DASH_SUBTITLE && nID != IDC_DASH_CONNSTATUS)
+		if (nID != IDC_DASH_GREETING && nID != IDC_DASH_SUBTITLE && nID != IDC_DASH_CONNSTATUS && nID != IDC_DASH_UPDATEINFO)
 		{
 			pDC->SetBkColor(DashCardBkColor());
 			hbr = (HBRUSH) s_cardBrush.GetSafeHandle();
 		}
-		if (nID == IDC_DASH_ITEMCOUNT || nID == IDC_DASH_NPCCOUNT || nID == IDC_DASH_CONNPORT || nID == IDC_DASH_PROFILE)
+		if (nID == IDC_DASH_ITEMCOUNT || nID == IDC_DASH_NPCCOUNT || nID == IDC_DASH_CONNPORT || nID == IDC_DASH_PROFILE || nID == IDC_DASH_UPDATEINFO)
 			pDC->SetTextColor(AxisAccentTextColor());
 		else if (nID == IDC_DASH_CLIENT)
 			pDC->SetTextColor(m_bClientFound ? AxisClr(AXC_OK) : AxisClr(AXC_MUTED2));
@@ -382,6 +384,8 @@ BOOL CDashboardTab::OnInitDialog()
 	SetTimer(1, 3000, NULL);	// Poll client status
 
 	RefreshStats();
+	if (g_axisUpdate.bAvailable)
+		ShowUpdate();	// the check finished before this page was created
 
 	// Park initial focus on the list so no button shows a focus outline.
 	m_ctlQuick.SetFocus();
@@ -773,4 +777,34 @@ void CDashboardTab::OnTimer(UINT_PTR nIDEvent)
 void CDashboardTab::OnDonate()
 {
 	AxisOpenDonatePage();
+}
+
+void CDashboardTab::ShowUpdate()
+{
+	if (!m_hWnd || g_axisUpdate.csVersion.IsEmpty())
+		return;
+	CString csInfo;
+	csInfo.Format(AXT("Neue Version %s verf\xFCgbar (installiert: %s)"), (LPCTSTR) g_axisUpdate.csVersion, (LPCTSTR) AxisCurrentVersion());
+	SetDlgItemText(IDC_DASH_UPDATEINFO, csInfo);
+	SetDlgItemText(IDC_DASH_UPDATE, AXT("Jetzt aktualisieren"));
+	GetDlgItem(IDC_DASH_UPDATEINFO)->ShowWindow(SW_SHOW);
+	GetDlgItem(IDC_DASH_UPDATE)->ShowWindow(SW_SHOW);
+	GetDlgItem(IDC_DASH_UPDATE)->EnableWindow(TRUE);
+}
+
+// Downloads and starts the installer; settings and profiles are kept.
+void CDashboardTab::OnUpdate()
+{
+	if (g_axisUpdate.csSetupUrl.IsEmpty())
+	{
+		ShellExecute(NULL, _T("open"), g_axisUpdate.csPageUrl.IsEmpty() ? AXIS_RELEASES_PAGE : (LPCTSTR) g_axisUpdate.csPageUrl, NULL, NULL, SW_SHOWNORMAL);
+		return;
+	}
+	CString csAsk;
+	csAsk.Format(AXT("Axis X %s herunterladen und installieren?\n\nAxis wird dazu beendet. Einstellungen und Profile bleiben erhalten."), (LPCTSTR) g_axisUpdate.csVersion);
+	if (AfxMessageBox(csAsk, MB_YESNO | MB_ICONQUESTION) != IDYES)
+		return;
+	GetDlgItem(IDC_DASH_UPDATE)->EnableWindow(FALSE);
+	SetDlgItemText(IDC_DASH_UPDATE, AXT("Wird geladen ..."));
+	AxisStartUpdateDownload(AfxGetMainWnd()->GetSafeHwnd());
 }

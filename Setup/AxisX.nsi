@@ -3,7 +3,12 @@ SetCompressor /SOLID /FINAL lzma
 
   ;Version is read from AxisX.exe
   !getdllversion "${AXIS_PATH}\AxisX.exe" AXV_
-  !define Version "${AXV_1}.${AXV_2}"
+  ;tools\Release-Axis.ps1 passes the full version (e.g. 1.1.1) as AXIS_VERSION
+  !ifdef AXIS_VERSION
+    !define Version "${AXIS_VERSION}"
+  !else
+    !define Version "${AXV_1}.${AXV_2}"
+  !endif
   !define XVersionX "${AXV_1}.${AXV_2}.${AXV_3}.${AXV_4}"
   !include "MUI2.nsh"
   !include "x64.nsh"
@@ -45,9 +50,11 @@ SetCompressor /SOLID /FINAL lzma
   ;Default installation folder
   !define MULTIUSER_INSTALLMODE_INSTDIR "AxisX"
   
-  ;Get installation folder from registry if available
-  ;!define MULTIUSER_INSTALLMODE_INSTDIR_REGISTRY_KEY "SOFTWARE\Sphere\GM Tools"
-  ;!define MULTIUSER_INSTALLMODE_INSTDIR_REGISTRY_VALUENAME "RootPath"
+  ;Updates: reuse the folder and install mode of the previous installation
+  !define MULTIUSER_INSTALLMODE_INSTDIR_REGISTRY_KEY "SOFTWARE\Sphere\GM Tools"
+  !define MULTIUSER_INSTALLMODE_INSTDIR_REGISTRY_VALUENAME "RootPath"
+  !define MULTIUSER_INSTALLMODE_DEFAULT_REGISTRY_KEY "SOFTWARE\Sphere\GM Tools"
+  !define MULTIUSER_INSTALLMODE_DEFAULT_REGISTRY_VALUENAME "RootPath"
 
   ;Install Mode Page Settings
   !define MULTIUSER_INSTALLMODE_DEFAULT_CURRENTUSER

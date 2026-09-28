@@ -30,6 +30,8 @@
 #include "stdio.h"
 #include "AboutDlg.h"
 #include "SettingsDlg.h"
+#include "DashboardTab.h"
+#include "Updater.h"
 #include <uxtheme.h>
 #pragma comment(lib, "UxTheme.lib")
 
@@ -389,6 +391,8 @@ BEGIN_MESSAGE_MAP(CAxisXDlg, CPropertySheet)
 	ON_MESSAGE(WM_APP + 97, OnCheckLabels)
 	ON_MESSAGE(WM_APP + 98, OnCheckPopupLabels)
 	ON_MESSAGE(WM_APP + 99, OnPressPageButton)
+	ON_MESSAGE(WM_AXIS_UPDATE_CHECKED, OnUpdateChecked)
+	ON_MESSAGE(WM_AXIS_UPDATE_DOWNLOAD, OnUpdateDownload)
 	ON_NOTIFY(NM_CUSTOMDRAW, IDC_AXIS_SIDEBAR, OnNavCustomDraw)
 	ON_COMMAND(ID_SETTINGS_GENERAL, OnSettingsGeneral)
 	ON_COMMAND(ID_SETTINGS_FILEPATHS, OnSettingsPaths)
@@ -463,6 +467,10 @@ BOOL CAxisXDlg::OnInitDialog()
 	// cannot tell settings pages from main-window pages yet and leaves them light.
 	if (m_bFirstRunSettings)
 		PostMessage(WM_COMMAND, ID_SETTINGS_GENERAL);
+
+	// At most once a day; the result arrives as WM_AXIS_UPDATE_CHECKED.
+	if (AxisUpdateCheckDue())
+		AxisStartUpdateCheck(m_hWnd, false);
 
 	m_bInit = true;
 	return bResult;
@@ -1442,9 +1450,63 @@ void CAxisXDlg::OnAboutDlg()
 	dlg.DoModal();
 }
 
-void CAxisXDlg::OnClose() 
+void CAxisXDlg::OnClose()
 {
 	PressButton(PSBTN_OK);
+}
+
+// Result of an update check: shows the update on the overview. Checks started
+// by the user also report "up to date" and errors.
+LRESULT CAxisXDlg::OnUpdateChecked(WPARAM wParam, LPARAM lParam)
+{
+	CString csText;
+	if (wParam == 1)
+	{
+		if (Main->m_pcppDashboardTab != NULL)
+			Main->m_pcppDashboardTab->ShowUpdate();
+		csText.Format(AXT("Axis X %s ist verf\xFCgbar - \"Jetzt aktualisieren\" auf der \xDC" "bersicht."), (LPCTSTR) g_axisUpdate.csVersion);
+		AxisSetStatus(csText, 2);
+		Main->m_log.Add(2, "%s", (LPCTSTR) csText);
+	}
+	else if (lParam != 0)
+	{
+		if (wParam == 0)
+		{
+			csText.Format(AXT("Axis X ist aktuell (Version %s)."), (LPCTSTR) AxisCurrentVersion());
+			AxisSetStatus(csText, 1);
+		}
+		else
+		{
+			csText.Format(AXT("Update-Suche fehlgeschlagen: %s"), (LPCTSTR) g_axisUpdate.csError);
+			AxisSetStatus(csText, 3);
+		}
+	}
+	return 0;
+}
+
+// Download progress; once the installer is verified it is started and Axis closes.
+LRESULT CAxisXDlg::OnUpdateDownload(WPARAM wParam, LPARAM /*lParam*/)
+{
+	CString csText;
+	if (wParam <= 100)
+	{
+		csText.Format(AXT("Update wird geladen ... %d %%"), (int) wParam);
+		AxisSetStatus(csText, 0);
+		return 0;
+	}
+	if (Main->m_pcppDashboardTab != NULL)
+		Main->m_pcppDashboardTab->ShowUpdate();
+	if (wParam == 101 && AxisRunUpdateInstaller())
+	{
+		PressButton(PSBTN_OK);
+		return 0;
+	}
+	csText = (wParam == 101) ? CString(AXT("Der Installer wurde nicht gestartet."))
+		: AXT("Das Update konnte nicht geladen werden: ") + g_axisUpdate.csError;
+	AxisSetStatus(csText, 3);
+	if (AfxMessageBox(csText + _T("\n\n") + AXT("Die Download-Seite im Browser \xF6" "ffnen?"), MB_YESNO | MB_ICONWARNING) == IDYES)
+		ShellExecute(NULL, _T("open"), g_axisUpdate.csPageUrl.IsEmpty() ? AXIS_RELEASES_PAGE : (LPCTSTR) g_axisUpdate.csPageUrl, NULL, NULL, SW_SHOWNORMAL);
+	return 0;
 }
 
 // Label check: returns true and a report line if a label's text does not fit its control.
