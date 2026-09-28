@@ -1,0 +1,30 @@
+# Build output
+AxisX/Release/
+AxisX/Debug/
+AxisX/*.aps
+*.vcxproj.user
+.vs/
+
+# IDE
+.idea/
+
+# Runtime artifacts
+axis.log
+axis.log.old
+Release/axis.log
+Release/axis.log.old
+
+# NSIS build output
+Setup/Version.txt
+Setup/AxisX*_Setup_*.exe
+
+# Interne Session-/Patchnotes - nicht im Repo
+PATCHNOTES*.md
+PATCHNOTES*.txt
+
+# Server-Profil (Knopf "Server-Profil erzeugen") - Inhalt des jeweiligen Shards, nicht ins Repo
+Release/Profile/*.scp
+release/Profile/*.scp
+
+# Debug-Symbole - passen nur zum jeweiligen Build, gehoeren nicht ins Repo
+*.pdb

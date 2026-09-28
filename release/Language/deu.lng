@@ -1,0 +1,259 @@
+[LANGUAGE]
+
+IDS_ABOUTBOX=Über Axis X
+IDS_ACCOUNT=Konto
+IDS_ADDDESTINATION=Eigener Ort
+IDS_ADMIN=Admin
+IDS_ALLMOVE=Alles bewegen
+IDS_AXIS_PROFILE=<Axis-Profil>
+IDS_AXIS_VERSION=Axis X Version %1
+IDS_AXISTITLE=%1 - F1 für Hilfe
+
+IDS_BAN=Bannen
+IDS_BRIGHT=Hell
+IDS_BUY=Kaufen
+
+IDS_CANCEL=Abbrechen
+IDS_CATEGORY=Kategorie
+IDS_CLIENT=Clients
+IDS_CLIENT_NOMEMORY =Client-Info: Nicht genug Speicher (%1!d! Bytes) für das Client-Abbild (Handle: %2!X!)
+IDS_CLIENT_NOREF=Client-Info: Keine Referenz auf "%1", Rückgabe war %2!d!
+IDS_CLIENT_NOTOPEN=Client-Info: Datei %1 lässt sich nicht öffnen. Pfad prüfen und ob die Datei in Benutzung ist
+IDS_CLIENT_NOVALID=Client-Info: Der Client ist keine gültige PE-Datei
+IDS_CLIENTINST=Suche Client-Installation
+IDS_CLIENTPATH=Client-Pfad: %1
+IDS_CLIENTVER=Client-Version: %1
+IDS_COLORINDEX=Farbnummer
+IDS_COLORSELECTION=Farbe wählen
+IDS_COMMANDS=Eigene Befehle
+IDS_DASHBOARD=Übersicht
+IDS_CREATE_TABS=Erstelle Seiten
+
+IDS_DARK=Dunkel
+IDS_DEBUG=Debug
+IDS_DEFAULT_PROFILE_FOLDER=Ordner für das Standardprofil wählen
+IDS_DEFAULT_PROFILE_PATH=Standardprofil-Pfad: %1
+IDS_DELETE=Löschen
+IDS_DESCRIPTION=Beschreibung
+IDS_DETAIL=Details
+IDS_DISCIPLINE=Disziplin
+IDS_DISCONNECT=Trennen
+IDS_DOCK=Seite andocken
+IDS_DOWN=Süden
+IDS_DOWNRIGHT=Südosten
+IDS_DRY=Trocken
+IDS_DUPE=Duplizieren
+
+IDS_EDIT=Bearbeiten
+IDS_ERRNOCLIENT=FEHLER: Kein Client-Pfad angegeben. In den Einstellungen von Hand setzen
+IDS_ERRNOMUL=FEHLER: Kein MUL-Pfad angegeben. In den Einstellungen von Hand setzen
+
+IDS_FILE_EXMOVE=Beim Verschieben von Dateien trat ein Fehler auf.\n\n%1
+IDS_FILE_RENAME=\n\nAxis kann die vorhandene Datei umbenennen und die neue einsetzen.\nSoll das versucht werden?
+IDS_FILE_RENAMESUCCESS=Umbenennen erfolgreich. Die Sicherung liegt jetzt unter\n%1
+IDS_FILE_RENAMEFAILED=Umbenennen fehlgeschlagen.
+IDS_FINDAREA=Ort suchen
+IDS_FINDITEM=Item suchen
+IDS_FINDNPC=NPC suchen
+IDS_FIX=Fix (Höhe)
+IDS_FLIP=Drehen
+IDS_FORGIVE=Vergeben
+
+IDS_GENERAL=GM-Befehle
+IDS_GM=GM-Modus
+IDS_GMPAGE=GM-Rufe
+IDS_GO_ORIGIN=Zum Rufort
+IDS_GO_PLAYER=Zum Spieler
+IDS_GPLVL=Rang (PLEVEL)
+IDS_GPRIV=Rechte (Priv-Flags)
+IDS_GRESDISP=Client-Stufe (Resdisp)
+
+IDS_HEARALL=Alles hören
+IDS_HIDE_CONSOLE=Konsole ausblenden
+IDS_HTMLERROR_100=OK, Anfrage wird fortgesetzt.
+IDS_HTMLERROR_101=Server hat das Protokoll gewechselt.
+IDS_HTMLERROR_200=Anfrage abgeschlossen.
+IDS_HTMLERROR_201=Objekt angelegt.
+IDS_HTMLERROR_202=Asynchron angenommen.
+IDS_HTMLERROR_203=Teilweise abgeschlossen.
+IDS_HTMLERROR_204=Keine Daten zurückgegeben.
+IDS_HTMLERROR_205=Abgeschlossen, Formular leeren.
+IDS_HTMLERROR_206=Teilweiser Abruf erfüllt.
+IDS_HTMLERROR_300=Mehrere Möglichkeiten.
+IDS_HTMLERROR_301=Dauerhaft verschoben.
+IDS_HTMLERROR_302=Vorübergehend verschoben.
+IDS_HTMLERROR_303=Umleitung.
+IDS_HTMLERROR_304=Nicht geändert seit dem letzten Abruf.
+IDS_HTMLERROR_305=Umleitung über Proxy.
+IDS_HTMLERROR_307=Vorübergehende Umleitung.
+IDS_HTMLERROR_400=Ungültige Anfrage.
+IDS_HTMLERROR_401=Zugriff verweigert.
+IDS_HTMLERROR_402=Zahlung erforderlich.
+IDS_HTMLERROR_403=Verboten.
+IDS_HTMLERROR_404=Nicht gefunden.
+IDS_HTMLERROR_405=Methode nicht erlaubt.
+IDS_HTMLERROR_406=Keine passende Antwort.
+IDS_HTMLERROR_407=Proxy-Anmeldung erforderlich.
+IDS_HTMLERROR_408=Zeitüberschreitung beim Server.
+IDS_HTMLERROR_409=Konflikt, bitte erneut senden.
+IDS_HTMLERROR_410=Nicht mehr verfügbar.
+IDS_HTMLERROR_411=Länge erforderlich.
+IDS_HTMLERROR_412=Vorbedingung nicht erfüllt.
+IDS_HTMLERROR_413=Anfrage zu groß.
+IDS_HTMLERROR_414=Adresse zu lang.
+IDS_HTMLERROR_415=Medientyp nicht unterstützt.
+IDS_HTMLERROR_449=Erneut versuchen.
+IDS_HTMLERROR_500=Interner Serverfehler.
+IDS_HTMLERROR_501=Nicht unterstützt.
+IDS_HTMLERROR_502=Fehlerhafte Antwort vom Gateway.
+IDS_HTMLERROR_503=Vorübergehend überlastet.
+IDS_HTMLERROR_504=Zeitüberschreitung am Gateway.
+IDS_HTMLERROR_505=HTTP-Version nicht unterstützt.
+IDS_HUE_NOTLOADED=Die Farben wurden beim Start nicht geladen, die Palette ist nicht verfügbar
+IDS_HUE_OUTOFRANGE=Farbgruppe außerhalb des Bereichs! Angefordert %1!ld!, Obergrenze %2!ld!
+
+IDS_INDEX=Index
+IDS_INFORMATION=Information
+IDS_INFO=Info
+IDS_INTERNALNAME=Interner Name
+IDS_INVALCOORD=Ungültiger Wert für die %1-Koordinate
+IDS_INVALMAP=Ungültige Karte
+IDS_INVENTORY=Inventar
+IDS_INVIS=Unsichtbar
+IDS_INVUL=Unverwundbar
+IDS_ITEMS=Items
+IDS_ITEM_TWEAK=Item bearbeiten
+
+IDS_JAIL=Einsperren
+
+IDS_KILL=Töten
+
+IDS_LAUNCHER=Launcher
+IDS_LEFT=Westen
+IDS_LEFTDOWN=Südwesten
+IDS_LIGHT_LVL=Lichtstärke
+IDS_LINK=Verknüpfen
+IDS_LIST=Liste
+IDS_LOADDEFAULT=Lade Standardeinstellungen
+IDS_LOAD_DEFAULT_PROFILE=Standardprofil laden (%1)
+IDS_LOAD_LAST_PROFILE=Letztes Profil laden (%1)
+IDS_LOADREGISTRY=Lade Einstellungen aus der Registry
+IDS_LOADFINISH=Axis ist fertig geladen
+IDS_LOGS=Protokoll
+
+IDS_MAP=Karte
+IDS_MAP_REGION=Karte %1!d!: Regionen
+IDS_MISC=Zauber & Klänge
+IDS_MULPATH=MUL-Pfad: %1
+IDS_MULTIPLE_INSTANCES=Prüfe auf weitere Instanzen
+
+IDS_NIGHTSIGHT=Nachtsicht
+IDS_NOCATSEL=Keine Kategorie gewählt!
+IDS_NODESC=Die Beschreibung darf nicht leer sein
+IDS_NONE=<Keins>
+IDS_NOSUBSEL=Kein Unterbereich gewählt!
+IDS_NUDGEDOWN=Tiefer
+IDS_NUDGEUP=Höher
+IDS_NUKE=Nuke
+
+IDS_OFF=Aus
+IDS_OK=OK
+IDS_ON=An
+
+IDS_PALETTE=Farbpalette
+IDS_PLAYER_TWEAK=Charakter bearbeiten
+IDS_PLVL0=Gast
+IDS_PLVL1=Spieler/NPC
+IDS_PLVL2=Counselor
+IDS_PLVL3=Seer
+IDS_PLVL4=GM
+IDS_PLVL5=Entwickler
+IDS_PLVL6=Administrator
+IDS_PLVL7=Owner
+IDS_PRIV00002=Als GM handeln
+IDS_PRIV00008=GM-Rufe empfangen
+IDS_PRIV00010=Alles hören
+IDS_PRIV00020=Alles bewegen
+IDS_PRIV00040=Kampfdetails zeigen
+IDS_PRIV00080=Debug-Modus
+IDS_PRIV00200=GM-Rechte anzeigen
+IDS_PRIV00400=Telnet-Kurzform
+IDS_PRIV00800=Eingesperrt
+IDS_PRIV02000=Gesperrt/Gebannt
+IDS_PRIV04000=Alles zeigen
+IDS_PURCHASES=Einkäufe
+
+IDS_QUEUE=Warteschlange
+
+IDS_RAIN=Regen
+IDS_REMINDER=Erinnerungen
+IDS_REMOTE_CONSOLE=Remote-Konsole
+IDS_REMOVE=Entfernen
+IDS_RESDISP0=Vor T2A
+IDS_RESDISP1=The 2nd Age
+IDS_RESDISP2=Lord Blackthorn's Revenge
+IDS_RESDISP3=Age of Shadows
+IDS_RESDISP4=Samurai Empire
+IDS_RESDISP5=Mondain's Legacy
+IDS_RESDISP6=Kingdom Reborn
+IDS_RESDISP7=Stygian Abyss
+IDS_RESETBUTTON=Zurücksetzen
+IDS_RESTOCK=Auffüllen
+IDS_RESTOCK_ALL=Alle Händler auffüllen
+IDS_RESURRECT=Wiederbeleben
+IDS_RESYNC=Resync
+IDS_RIGHT=Osten
+IDS_RIGHTUP=Nordosten
+
+IDS_SAMPLES=Muster
+IDS_SAVE=Welt speichern
+IDS_SAVE_STATICS=Statics speichern
+IDS_SELF=Ich selbst
+IDS_SELL=Verkaufen
+IDS_SERV_INFO=Server-Info
+IDS_SETBUTTON=Setzen
+IDS_SETTINGS=Einstellungen
+IDS_SHOW_CONSOLE=Konsole zeigen
+IDS_SHRINK=Schrumpfen
+IDS_SHUTDOWN=Axis wird beendet.
+IDS_SNOW=Schnee
+IDS_SPAWN=Spawns
+IDS_START=Starte %1, erstellt %2
+IDS_SUBSECTION=Unterbereich
+
+IDS_TAB=Seite
+IDS_TELE=Teleport
+IDS_TRAVEL=Reisen
+IDS_TYPE=Typ
+
+IDS_UNDOCK=Seite abdocken
+IDS_UNKNOWN=Unbekannt
+IDS_UNLOAD_PROFILE=Profil entladen (%1)
+IDS_UP=Norden
+IDS_UPLEFT=Nordwesten
+
+IDS_VENDORS=Händler
+IDS_VERSION=Version
+
+IDS_WARNING_BAN=Den Spieler, der diesen Ruf geschickt hat, wirklich BANNEN?
+IDS_WARNING_DELETE_REG_KEY=Fehler beim Löschen des Registry-Schlüssels %1. Letzter Fehler: %2
+IDS_WARNING_DELETE_REG_VAL=Fehler beim Löschen des Registry-Werts %1. Letzter Fehler: %2
+IDS_WARNING_DISCONNECT=Den Spieler, der diesen Ruf geschickt hat, wirklich trennen?
+IDS_WARNING_EXCEPTION_FILE=FEHLER: Ausnahme beim Lesen der Datei %1. Ursache = %2!ld!
+IDS_WARNING_JAIL=Den Spieler, der diesen Ruf geschickt hat, wirklich einsperren?
+IDS_WARNING_NOOPEN=FEHLER: %1 lässt sich nicht öffnen
+IDS_WARNING_OPEN_REG=Registry-Schlüssel %1 lässt sich nicht öffnen. Letzter Fehler: %2
+IDS_WARNING_READ_REG_VAL=Fehler beim Lesen von %1 aus der Registry. Letzter Fehler: %2
+IDS_WARNING_REG_TYPE=Registry-Wert %1 hat den falschen Typ. Typ %2!ld!, erwartet %3!ld!
+IDS_WARNING_UNKNOWN_SECTION=FEHLER: Unbekannter Abschnitt %1 in Datei %2
+IDS_WARNING_WRITE_REG_VAL=Fehler beim Schreiben von %1 in die Registry. Letzter Fehler: %2
+IDS_WEATHER=Wetter & Licht
+IDS_WORLDMAP=Weltkarte
+
+IDS_X=X
+
+IDS_Y=Y
+
+IDS_Z=Z
+IDS_ZOOMIN=Vergrößern
+IDS_ZOOMOUT=Verkleinern

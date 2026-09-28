@@ -1,0 +1,25 @@
+Server-Profil fuer Axis X
+=========================
+
+Dieser Ordner ist fuer Spieler und GMs gedacht, die KEINEN Skriptordner des Servers auf ihrem
+Rechner haben. Axis X liest die Items, NPCs und Orte dann aus einer einzigen Profil-Datei (*.scp).
+
+Wo sucht Axis X?
+- zuerst im Benutzerordner %LOCALAPPDATA%\AxisX\Profile
+- danach im Ordner "Profile" neben AxisX.exe
+Solange kein gueltiger eigener Skriptordner eingestellt ist, laedt Axis X die gefundene Datei beim
+Start automatisch. Wer spaeter echte Skripte hat, stellt im Profil-Dialog einfach seinen Ordner ein.
+
+Fuer Serverbetreiber:
+1. Axis X mit den echten Server-Skripten starten (Profil mit Skriptordner).
+2. Profil-Dialog (Tausch-Symbol unten links) > "Server-Profil erzeugen". Axis schreibt
+   AxisProfile.scp in den Benutzerordner %LOCALAPPDATA%\AxisX\Profile.
+3. Weitergeben:
+   - Installer mit  makensis /DWITH_PROFILE Setup\AxisX.nsi  bauen - das packt die Profil-Dateien
+     aus dem Benutzerordner des bauenden Rechners ein und installiert sie beim Spieler in dessen
+     Benutzerordner. Ohne den Schalter ist kein Profil im Installer.
+   - oder die Datei von Hand in einen Ordner "Profile" neben AxisX.exe legen.
+   ("Profil exportieren" macht dasselbe mit frei waehlbarem Namen und Ort.)
+
+Hinweis: Die Profil-Datei enthaelt nur, was Axis zum Anzeigen braucht (Name, Defname, Grafik,
+Farbe, Kategorie). Die Ausruestungs-Vorschau der NPCs braucht die vollen Skripte.

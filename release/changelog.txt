@@ -369,3 +369,28 @@
  -Removed: Incomplete language selection option from the settings
  -Added: Disable toolbar mode option on the general settings tab to disable the toolbar mode when minimized.
  -Added: Custom Client Title option in general settings to allow for custom client titles to be recognised by Axis.
+
+
+
+***Axis X 1.0*** (successor of Axis2 2.0.4j, for Sphere/SphereX)
+
++September 2026+
+-Changed: Renamed to Axis X; new sidebar navigation grouped into Overview, World, Players, Tools and System.
+-Added: Dashboard with cards (client, profile, loaded items/NPCs, remote console), recent events, recently added items and custom quick actions.
+-Added: Dark or light design (Settings > General > Theme) for all pages, dialogs, lists, tabs and popups, incl. list selections and (dark) Windows confirmation prompts.
+-Added: Interface in English or German (Settings > General > Language, also chosen in the installer). Default English.
+-Added: Window can be resized and maximized; pages scale proportionally; size is remembered.
+-Added: Mini bar when minimized (sidebar icons, click returns to that page); replaces the old toolbar mode.
+-Added: "Create server profile" in the profile dialog - writes %LOCALAPPDATA%\AxisX\Profile\AxisProfile.scp for users without a script folder; Axis loads it automatically (user folder first, then "Profile" next to AxisX.exe).
+-Added: Web profiles with local cache (HTTP(S)/FTP, offline fallback), custom logo and icon from file or URL.
+-Changed: All pages redesigned with grouped controls, tooltips and plain-language hints; destructive GM commands in a "Careful" area with confirmation.
+-Added: Live search with categories on Items, Spawns and Travel; character value editor; spawn preview with equipment.
+-Added: Launcher starts ClassicUO with server, account and password; a missing uo.cfg no longer blocks the start.
+-Added: Log page with level and text filter, copy and clear.
+-Changed: Spawns "Freeze" is now "Petrify" (.set stone) - toggles only that state instead of overwriting all flags.
+-Fixed: Commands sometimes arrived garbled in the client (command line is now cleared, Unicode input).
+-Fixed: World map shows statics at every zoom level; coastlines render correctly.
+-Fixed: Crash when opening the remote console.
+-Fixed: Page switching no longer flickers; clipped labels on pages and in dialogs.
+-Changed: Single statically linked 64-bit AxisX.exe (needs 64-bit Windows), no runtime installation needed; one installer instead of separate 32/64-bit ones.
+-Changed: New Axis X program and installer icons (neutral, for SphereX) instead of the old Axis2 icons.

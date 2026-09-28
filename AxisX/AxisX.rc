@@ -1,0 +1,1749 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#include ""res\\AxisX.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""     // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\AxisX.ico"
+IDI_ARROWUP             ICON                    "res\\uparrow.ico"
+IDI_ARROWDOWN           ICON                    "res\\downarro.ico"
+IDI_FIND                ICON                    "res\\find.ico"
+IDI_DOC                 ICON                    "res\\doc1.ico"
+IDI_PALETTE             ICON                    "res\\palette.ico"
+IDI_FOLDER              ICON                    "res\\folder.ico"
+IDI_SARROWDOWNR         ICON                    "res\\sarrowdo.ico"
+IDI_SARROWDOWN          ICON                    "res\\ico00002.ico"
+IDI_SARROWLEFTD         ICON                    "res\\sarrowle.ico"
+IDI_SARROWLEFT          ICON                    "res\\icon1.ico"
+IDI_SARROWRIGHTU        ICON                    "res\\sarrowri.ico"
+IDI_SARROWRIGHT         ICON                    "res\\arrowlef.ico"
+IDI_SARROWUPL           ICON                    "res\\sarrowup.ico"
+IDI_SARROWUP            ICON                    "res\\ico00001.ico"
+IDI_ZOOMOUT             ICON                    "res\\zoomout.ico"
+IDI_ZOOMIN              ICON                    "res\\zoomin.ico"
+IDI_COMMANDS            ICON                    "res\\commands.ico"
+IDI_LAUNCHER            ICON                    "res\\Key.ico"
+IDI_ICON2               ICON                    "res\\Question.ico"
+IDI_REMINDER            ICON                    "res\\Alarm clock.ico"
+IDI_SETTINGS            ICON                    "res\\Application.ico"
+IDI_WORLD               ICON                    "res\\Earth.ico"
+IDI_GENERAL             ICON                    "res\\Home.ico"
+IDI_SPAWN               ICON                    "res\\People.ico"
+IDI_CHARTWEAK           ICON                    "res\\EditPeople.ico"
+IDI_ITEMTWEAK           ICON                    "res\\EditDoor.ico"
+IDI_ITEMS               ICON                    "res\\Door.ico"
+IDI_LOGS                ICON                    "res\\Notes.ico"
+IDI_ACCOUNT             ICON                    "res\\Boss.ico"
+IDI_MISC                ICON                    "res\\Diagram.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,0
+ PRODUCTVERSION 1,0,0,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x21L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "FileDescription", "Axis X"
+            VALUE "FileVersion", "1.0"
+            VALUE "InternalName", "AxisX"
+            VALUE "LegalCopyright", "Copyright (C) 2006"
+            VALUE "OriginalFilename", "AxisX.EXE"
+            VALUE "ProductName", "Axis X"
+            VALUE "ProductVersion", "1.0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_TRAVEL_TAB, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 468
+        VERTGUIDE, 134
+        VERTGUIDE, 139
+        VERTGUIDE, 305
+        VERTGUIDE, 308
+        VERTGUIDE, 312
+        VERTGUIDE, 325
+        VERTGUIDE, 351
+        VERTGUIDE, 455
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 119
+        HORZGUIDE, 106
+    END
+
+    IDD_SPAWN_TAB, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 468
+        VERTGUIDE, 240
+        VERTGUIDE, 463
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 119
+        HORZGUIDE, 17
+        HORZGUIDE, 106
+    END
+
+    IDD_SEARCHCRITDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 237
+        VERTGUIDE, 11
+        VERTGUIDE, 62
+        TOPMARGIN, 6
+        BOTTOMMARGIN, 50
+        HORZGUIDE, 20
+        HORZGUIDE, 30
+        HORZGUIDE, 40
+    END
+
+    IDD_REMOTECONSOLEDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 347
+        VERTGUIDE, 55
+        VERTGUIDE, 58
+        VERTGUIDE, 294
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 250
+    END
+
+    IDD_REMOTE_CONSOLE_LOGIN_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 249
+        VERTGUIDE, 38
+        VERTGUIDE, 42
+        VERTGUIDE, 195
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 63
+        HORZGUIDE, 27
+        HORZGUIDE, 40
+        HORZGUIDE, 53
+    END
+
+    IDD_PROGRESS, DIALOG
+    BEGIN
+        LEFTMARGIN, 3
+        RIGHTMARGIN, 285
+        TOPMARGIN, 3
+        BOTTOMMARGIN, 22
+    END
+
+    IDD_PROFILE_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 469
+        VERTGUIDE, 160
+        VERTGUIDE, 165
+        VERTGUIDE, 225
+        VERTGUIDE, 230
+        VERTGUIDE, 266
+        VERTGUIDE, 318
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 119
+        HORZGUIDE, 16
+        HORZGUIDE, 19
+        HORZGUIDE, 87
+        HORZGUIDE, 89
+        HORZGUIDE, 103
+        HORZGUIDE, 105
+    END
+
+    IDD_PROFILE_LOGIN_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 249
+        VERTGUIDE, 38
+        VERTGUIDE, 42
+        VERTGUIDE, 195
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 38
+        HORZGUIDE, 30
+        HORZGUIDE, 40
+    END
+
+    IDD_PLAYERTWEAK_TAB, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 468
+        VERTGUIDE, 256
+        VERTGUIDE, 281
+        VERTGUIDE, 285
+        VERTGUIDE, 391
+        VERTGUIDE, 393
+        VERTGUIDE, 441
+        VERTGUIDE, 445
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 119
+        HORZGUIDE, 16
+        HORZGUIDE, 32
+        HORZGUIDE, 48
+        HORZGUIDE, 65
+        HORZGUIDE, 81
+        HORZGUIDE, 96
+        HORZGUIDE, 112
+    END
+
+    IDD_LOG_TAB, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 468
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 119
+    END
+
+    IDD_LAUNCHER_TAB, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 468
+        VERTGUIDE, 159
+        VERTGUIDE, 211
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 119
+        HORZGUIDE, 10
+    END
+
+    IDD_ITEMTWEAK_TAB, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 468
+        VERTGUIDE, 7
+        VERTGUIDE, 14
+        VERTGUIDE, 105
+        VERTGUIDE, 168
+        VERTGUIDE, 188
+        VERTGUIDE, 190
+        VERTGUIDE, 293
+        VERTGUIDE, 298
+        VERTGUIDE, 334
+        VERTGUIDE, 361
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 119
+        HORZGUIDE, 39
+        HORZGUIDE, 61
+        HORZGUIDE, 76
+    END
+
+    IDD_ITEMS_TAB, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 468
+        VERTGUIDE, 129
+        VERTGUIDE, 285
+        VERTGUIDE, 295
+        VERTGUIDE, 305
+        VERTGUIDE, 315
+        VERTGUIDE, 464
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 119
+        HORZGUIDE, 16
+        HORZGUIDE, 26
+        HORZGUIDE, 36
+        HORZGUIDE, 46
+        HORZGUIDE, 106
+    END
+
+    IDD_GENERAL_TAB, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 468
+        VERTGUIDE, 164
+        VERTGUIDE, 205
+        VERTGUIDE, 211
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 119
+        HORZGUIDE, 17
+        HORZGUIDE, 33
+        HORZGUIDE, 49
+        HORZGUIDE, 65
+        HORZGUIDE, 81
+        HORZGUIDE, 105
+    END
+
+    IDD_COMMANDS_TAB, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 468
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 119
+        HORZGUIDE, 115
+    END
+
+    IDD_COLOR_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 423
+        VERTGUIDE, 315
+        VERTGUIDE, 341
+        VERTGUIDE, 418
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 263
+        HORZGUIDE, 86
+        HORZGUIDE, 91
+    END
+
+    IDD_ACCOUNT_TAB, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 468
+        VERTGUIDE, 13
+        VERTGUIDE, 66
+        VERTGUIDE, 70
+        VERTGUIDE, 76
+        VERTGUIDE, 83
+        VERTGUIDE, 163
+        VERTGUIDE, 183
+        VERTGUIDE, 188
+        VERTGUIDE, 242
+        VERTGUIDE, 260
+        VERTGUIDE, 265
+        VERTGUIDE, 296
+        VERTGUIDE, 303
+        VERTGUIDE, 344
+        VERTGUIDE, 348
+        VERTGUIDE, 420
+        VERTGUIDE, 426
+        VERTGUIDE, 462
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 119
+        HORZGUIDE, 38
+        HORZGUIDE, 77
+    END
+
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 254
+        VERTGUIDE, 40
+        VERTGUIDE, 224
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 187
+    END
+
+    IDD_ADD_DESTINATION, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 230
+        VERTGUIDE, 47
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 90
+    END
+
+    IDD_WORLDMAP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 92
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 45
+    END
+
+    IDD_DOORWIZARD, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 190
+        VERTGUIDE, 11
+        VERTGUIDE, 44
+        VERTGUIDE, 48
+        VERTGUIDE, 81
+        VERTGUIDE, 85
+        VERTGUIDE, 90
+        VERTGUIDE, 140
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 187
+        HORZGUIDE, 25
+        HORZGUIDE, 29
+        HORZGUIDE, 97
+    END
+
+    IDD_LIGHTWIZARD, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 448
+        VERTGUIDE, 11
+        VERTGUIDE, 85
+        VERTGUIDE, 88
+        VERTGUIDE, 208
+        VERTGUIDE, 328
+        VERTGUIDE, 448
+        TOPMARGIN, 6
+        BOTTOMMARGIN, 138
+        HORZGUIDE, 123
+    END
+
+    IDD_SETTING_GENERAL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 227
+        VERTGUIDE, 12
+        VERTGUIDE, 137
+        VERTGUIDE, 181
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 87
+        HORZGUIDE, 11
+        HORZGUIDE, 79
+    END
+
+    IDD_SETTING_TRAVEL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 227
+        VERTGUIDE, 11
+        VERTGUIDE, 181
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 87
+        HORZGUIDE, 11
+        HORZGUIDE, 31
+    END
+
+    IDD_SETTING_ITEM, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 227
+        VERTGUIDE, 12
+        VERTGUIDE, 140
+        VERTGUIDE, 181
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 87
+        HORZGUIDE, 11
+        HORZGUIDE, 49
+        HORZGUIDE, 70
+    END
+
+    IDD_SETTING_SPAWN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 227
+        VERTGUIDE, 12
+        VERTGUIDE, 140
+        VERTGUIDE, 181
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 87
+        HORZGUIDE, 11
+        HORZGUIDE, 31
+    END
+
+    IDD_SETTING_PATHS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 227
+        VERTGUIDE, 12
+        VERTGUIDE, 142
+        VERTGUIDE, 204
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 87
+        HORZGUIDE, 11
+        HORZGUIDE, 23
+        HORZGUIDE, 37
+        HORZGUIDE, 72
+        HORZGUIDE, 81
+    END
+
+    IDD_REMINDER_TAB, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 468
+        VERTGUIDE, 120
+        VERTGUIDE, 125
+        VERTGUIDE, 177
+        VERTGUIDE, 246
+        VERTGUIDE, 251
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 119
+        HORZGUIDE, 11
+        HORZGUIDE, 19
+        HORZGUIDE, 73
+    END
+
+    IDD_REMINDER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 223
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 130
+    END
+
+    IDD_SETTING_PATH_OVERRIDE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 227
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 87
+        HORZGUIDE, 71
+        HORZGUIDE, 74
+    END
+
+    IDD_MISC_TAB, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 468
+        VERTGUIDE, 11
+        VERTGUIDE, 47
+        VERTGUIDE, 154
+        VERTGUIDE, 158
+        VERTGUIDE, 165
+        VERTGUIDE, 169
+        VERTGUIDE, 303
+        VERTGUIDE, 307
+        VERTGUIDE, 314
+        VERTGUIDE, 318
+        VERTGUIDE, 464
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 119
+        HORZGUIDE, 15
+        HORZGUIDE, 108
+    END
+
+    IDD_SCRIPT_EDITOR, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 296
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 234
+    END
+
+    IDD_SCRIPT_INFO, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 240
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 179
+    END
+
+    IDD_MULTIVIEW, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 473
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 224
+    END
+
+    IDD_TOOLBAR, DIALOG
+    BEGIN
+        VERTGUIDE, 18
+        VERTGUIDE, 36
+        VERTGUIDE, 54
+        VERTGUIDE, 72
+        VERTGUIDE, 144
+        VERTGUIDE, 216
+        HORZGUIDE, 8
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_TRAVEL_TAB DIALOGEX 0, 0, 860, 380
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Reisen"
+FONT 9, "Segoe UI", 0, 0, 0x0
+BEGIN
+    LTEXT           "Suchen: Name, Kategorie oder Koordinaten - mehrere Wörter müssen alle passen",IDC_STATIC,7,4,430,9
+    EDITTEXT        IDC_TRAVELSEARCH,7,15,380,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Leeren",IDC_FINDAREA,391,15,46,14
+
+    LTEXT           "Kategorien",IDC_STATIC,7,35,140,9
+    CONTROL         "",IDC_CATEGORYTREE,"SysTreeView32",TVS_HASBUTTONS | TVS_HASLINES | TVS_LINESATROOT | TVS_SHOWSELALWAYS | WS_BORDER | WS_TABSTOP,7,45,140,286
+    LTEXT           "",IDC_TRAVEL_RESULTINFO,152,35,285,9
+    CONTROL         "",IDC_LOCATIONS,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | WS_BORDER | WS_TABSTOP,152,45,285,286
+
+    PUSHBUTTON      "Neu",IDC_ADDLOC,7,337,50,18
+    PUSHBUTTON      "Bearbeiten",IDC_EDITLOC,61,337,56,18
+    PUSHBUTTON      "Löschen",IDC_REMLOC,121,337,50,18
+    LTEXT           "Eigene Orte werden in Axis gespeichert - Bearbeiten/Löschen nur für eigene Orte.",IDC_STATIC,176,337,261,18
+
+    CONTROL         "",IDC_TRAVELMAP,"Static",SS_BITMAP | SS_CENTERIMAGE | SS_REALSIZEIMAGE,445,16,392,300
+    SCROLLBAR       IDC_YSCROLL,838,16,15,300,SBS_VERT
+    SCROLLBAR       IDC_XSCROLL,445,317,392,12
+
+    LTEXT           "Karte",IDC_STATIC,445,339,22,9
+    EDITTEXT        IDC_MAPPLANE,468,337,22,14,ES_CENTER | ES_AUTOHSCROLL | ES_NUMBER
+    PUSHBUTTON      "+",IDC_ZOOMIN,494,336,24,16
+    PUSHBUTTON      "-",IDC_ZOOMOUT,520,336,24,16
+    PUSHBUTTON      "Weltkarte ...",IDC_WORLD,548,336,62,16
+    CTEXT           "",IDC_COORDS,614,336,110,16,SS_NOTIFY | SS_CENTERIMAGE | SS_SUNKEN
+    LTEXT           "Klick in die Karte wählt die Stelle",IDC_STATIC,728,339,125,16
+
+    PUSHBUTTON      "Hinreisen",IDC_GO,445,356,100,18
+    PUSHBUTTON      "Ziel hinschicken",IDC_SEND,549,356,100,18
+    PUSHBUTTON      "Wo bin ich?",IDC_WHERE,653,356,80,18
+
+    PUSHBUTTON      "",IDC_LOCATE,0,0,10,10,NOT WS_VISIBLE
+    CONTROL         "",IDC_TRACK,"Button",BS_AUTOCHECKBOX | NOT WS_VISIBLE,0,0,10,10
+END
+
+IDD_SPAWN_TAB DIALOGEX 0, 0, 860, 380
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Spawns"
+FONT 9, "Segoe UI", 0, 0, 0x0
+BEGIN
+    GROUPBOX        "Ausgewählter NPC",IDC_STATIC,570,4,283,190
+    GROUPBOX        "Am Ziel - danach den NPC im Spiel anklicken",IDC_STATIC,570,199,283,70
+    GROUPBOX        "Spawnpunkt für diesen NPC",IDC_STATIC,570,274,283,70
+
+    LTEXT           "Suchen: Name, Defname, Körper-ID oder Kategorie - mehrere Wörter müssen alle passen",IDC_STATIC,7,4,555,9
+    EDITTEXT        IDC_NPCSEARCH,7,15,510,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Leeren",IDC_FINDNPC,521,15,41,14
+
+    LTEXT           "Kategorien",IDC_STATIC,7,35,150,9
+    CONTROL         "",IDC_NPCTREE,"SysTreeView32",TVS_HASBUTTONS | TVS_HASLINES | TVS_LINESATROOT | TVS_SHOWSELALWAYS | WS_BORDER | WS_TABSTOP,7,45,150,330
+    LTEXT           "",IDC_NPC_RESULTINFO,162,35,400,9
+    CONTROL         "",IDC_CREATURELIST,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | WS_BORDER | WS_TABSTOP,162,45,400,330
+
+    CONTROL         "",IDC_NPCDISPLAY,"Static",SS_BITMAP | SS_CENTERIMAGE | SS_REALSIZEIMAGE,578,16,130,150
+    CONTROL         "",IDC_FRAME_SELECT,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,578,170,130,14
+    LTEXT           "",IDC_NPC_DETAILS,714,16,132,84,SS_NOPREFIX
+    CTEXT           "",IDC_NPC_ID,714,16,10,10,NOT WS_VISIBLE
+    CTEXT           "",IDC_NPC_IDDEC,714,16,10,10,NOT WS_VISIBLE
+    PUSHBUTTON      "Beschwören",IDC_SUMMON,714,104,132,20
+    LTEXT           "Doppelklick oder Enter in der Liste = Beschwören. Regler: Blickrichtung.",IDC_STATIC,714,130,132,27
+
+    PUSHBUTTON      "Entfernen",IDC_SPREMOVE,578,212,64,18
+    PUSHBUTTON      "Schrumpfen",IDC_SHRINK,646,212,64,18
+    PUSHBUTTON      "Versteinern",IDC_SPFREEZE,714,212,64,18
+    PUSHBUTTON      "Zuhause hier",IDC_SETHOME,578,238,64,18
+    PUSHBUTTON      "Heimradius",IDC_SETHOMEDIST,646,238,64,18
+    EDITTEXT        IDC_HOMEDIST,714,240,30,14,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "Felder",IDC_STATIC,748,242,40,9
+
+    LTEXT           "Anzahl",IDC_STATIC,578,286,40,9
+    EDITTEXT        IDC_AMOUNT,578,296,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "ab (Min.)",IDC_STATIC,624,286,40,9
+    EDITTEXT        IDC_MIN_TIME,624,296,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "bis (Min.)",IDC_STATIC,670,286,40,9
+    EDITTEXT        IDC_MAX_TIME,670,296,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "Radius",IDC_STATIC,716,286,40,9
+    EDITTEXT        IDC_MAX_DIST,716,296,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    PUSHBUTTON      "1. Spawnstein platzieren",IDC_PLACE_SPAWNPOINT,578,318,130,18
+    PUSHBUTTON      "2. Einstellungen übernehmen",IDC_INIT_SPAWNPOINT,714,318,132,18
+END
+
+IDD_SEARCHCRITDLG DIALOGEX 0, 0, 244, 57
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Search Criteria"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    EDITTEXT        IDC_SEARCH_VALUE,69,24,115,12,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,187,6,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,187,23,50,14
+    LTEXT           "Value",IDC_STATIC,70,13,62,9
+    GROUPBOX        "Search by",IDC_STATIC,7,6,59,44,WS_TABSTOP
+    CTEXT           "Use F3 for Find Next, and Shift+F3 for Find Previous",IDC_STATIC,69,40,168,8
+    CONTROL         "ID",IDC_ID_SEARCH,"Button",BS_AUTORADIOBUTTON | WS_GROUP,11,15,51,10
+    CONTROL         "Defname",IDC_DEF_SEARCH,"Button",BS_AUTORADIOBUTTON,11,25,51,10
+    CONTROL         "Description",IDC_DESC_SEARCH,"Button",BS_AUTORADIOBUTTON,11,35,51,10
+END
+
+IDD_REMOTECONSOLEDLG DIALOGEX 0, 0, 354, 257
+STYLE DS_SETFONT | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "Remote Console"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "Broadcast",IDC_SENDTEXT,7,224,48,13
+    PUSHBUTTON      "ReConnect",IDC_RECONNECT,299,224,47,13
+    DEFPUSHBUTTON   "Close",IDOK,297,7,50,14,NOT WS_VISIBLE
+    PUSHBUTTON      "Cancel",IDCANCEL,182,7,50,14,NOT WS_VISIBLE
+    CONTROL         "",IDC_RE_CONSOLE,"RICHEDIT",TCS_HOTTRACK | TCS_VERTICAL | TCS_RAGGEDRIGHT | TCS_OWNERDRAWFIXED | TCS_MULTISELECT | WS_BORDER | WS_VSCROLL | WS_HSCROLL | WS_TABSTOP,7,7,340,212
+    DEFPUSHBUTTON   "Command",IDC_SENDCOMMAND,7,237,48,13
+    CONTROL         "Local Log",IDC_ENABLE_LOGGING,"Button",BS_AUTOCHECKBOX | BS_LEFT | BS_VCENTER | WS_TABSTOP,300,237,47,13
+    COMBOBOX        IDC_CONSOLE_SEND,58,224,236,60,CBS_DROPDOWN | CBS_AUTOHSCROLL | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMMAND_SEND,58,237,236,51,CBS_DROPDOWN | CBS_AUTOHSCROLL | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_REMOTE_CONSOLE_LOGIN_DLG DIALOGEX 0, 0, 256, 71
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Remote Console Login"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    EDITTEXT        IDC_ACCT,42,34,153,12,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,199,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,199,24,50,14
+    RTEXT           "Account",IDC_STATIC,7,36,31,8
+    RTEXT           "Password",IDC_STATIC,7,49,31,8
+    COMBOBOX        IDC_ACCTNAME,42,7,153,60,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    RTEXT           "Name",IDC_STATIC,7,10,31,8
+    EDITTEXT        IDC_ADDRESS,42,21,99,12,ES_AUTOHSCROLL
+    RTEXT           "IP",IDC_STATIC,7,23,31,8
+    EDITTEXT        IDC_PORT,160,21,35,12,ES_AUTOHSCROLL
+    LTEXT           "Port",IDC_STATIC,144,23,14,8
+    EDITTEXT        IDC_PWD,42,47,153,12,ES_PASSWORD | ES_AUTOHSCROLL
+END
+
+IDD_PROGRESS DIALOGEX 0, 0, 320, 44
+STYLE DS_SETFONT | DS_NOFAILCREATE | WS_POPUP | WS_VISIBLE | WS_CAPTION
+CAPTION "Axis X lädt ..."
+FONT 9, "Segoe UI", 0, 0, 0x0
+BEGIN
+    LTEXT           "",IDC_STATUS_MESSAGE,8,7,304,10,SS_NOPREFIX | SS_PATHELLIPSIS
+    CONTROL         "",IDC_PROGBAR,"Static",SS_OWNERDRAW,8,21,304,14
+END
+
+IDD_PROFILE_DLG DIALOGEX 0, 0, 560, 214
+STYLE DS_SETFONT | DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Profile"
+FONT 9, "Segoe UI", 0, 0, 0x0
+BEGIN
+    LTEXT           "Profile",IDC_STATIC,7,7,120,9
+    LISTBOX         IDC_PROFILES,7,18,120,168,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Neu",IDC_ADD,7,191,36,16
+    PUSHBUTTON      "Bearbeiten",IDC_EDIT,46,191,44,16
+    PUSHBUTTON      "Löschen",IDC_DELETE,93,191,34,16,WS_DISABLED
+
+    EDITTEXT        IDC_CURPROFILE,135,7,235,12,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER
+    GROUPBOX        "Profil",IDC_STATIC,135,20,235,122
+    RTEXT           "Name",IDC_STATICNAME,141,35,40,9,WS_DISABLED
+    EDITTEXT        IDC_NAME,185,33,177,14,ES_AUTOHSCROLL | WS_DISABLED
+    RTEXT           "Skriptordner",IDC_STATICDIR,141,52,40,9,WS_DISABLED
+    EDITTEXT        IDC_BASEDIR,185,50,125,14,ES_AUTOHSCROLL | ES_READONLY | WS_DISABLED
+    PUSHBUTTON      "Durchsuchen",IDC_DIRBROWSE,313,50,49,14,WS_DISABLED
+    RTEXT           "URL",IDC_STATICURL,141,69,40,9,WS_DISABLED
+    EDITTEXT        IDC_URL,185,67,177,14,ES_AUTOHSCROLL | WS_DISABLED
+    CONTROL         "Web-Profil (Skripte von der URL)",IDC_WEBPROFILE,"Button",BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,185,88,177,10
+    CONTROL         "Standardprofil",IDC_DEFAULTCHECK,"Button",BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,185,102,177,10
+    CONTROL         "Skripte in die Sphere-Tabellen laden",IDC_LOADRESOURCE,"Button",BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,185,116,177,10
+    PUSHBUTTON      "Speichern",IDC_SAVE,135,147,60,16,WS_DISABLED
+    PUSHBUTTON      "Abbrechen",IDC_CANCEL,198,147,60,16,WS_DISABLED
+    PUSHBUTTON      "Skripte laden",IDC_LOAD,135,169,80,16
+    PUSHBUTTON      "Skriptauswahl speichern",IDC_SAVESCRIPTS,218,169,95,16,WS_DISABLED
+    PUSHBUTTON      "Profil exportieren",IDC_EXPORT,135,191,80,16
+    PUSHBUTTON      "Server-Profil erzeugen",IDC_MAKESERVERPROFILE,218,191,95,16
+
+    LTEXT           "Skripte im Profil (Haken = wird geladen)",IDC_STATIC,378,7,175,9
+    CONTROL         "",IDC_AVAILABLESCRIPTS,"SysTreeView32",TVS_HASBUTTONS | TVS_HASLINES | TVS_LINESATROOT | TVS_CHECKBOXES | WS_DISABLED | WS_BORDER | WS_TABSTOP,378,18,175,189
+END
+
+IDD_PROFILE_LOGIN_DLG DIALOGEX 0, 0, 256, 46
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Remote Profile Login"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,199,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,199,23,50,14
+    RTEXT           "Password",-1,7,26,31,8
+    COMBOBOX        IDC_ACCTNAME,42,7,153,60,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    RTEXT           "Account",-1,7,10,31,8
+    EDITTEXT        IDC_PWD,42,24,153,12,ES_PASSWORD | ES_AUTOHSCROLL
+END
+
+IDD_PLAYERTWEAK_TAB DIALOGEX 0, 0, 860, 380
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Charakter bearbeiten"
+FONT 9, "Segoe UI", 0, 0, 0x0
+BEGIN
+    LTEXT           "Alle Knöpfe dieser Seite wirken auf den Charakter, den du danach im Spiel anklickst.",IDC_STATIC,7,4,550,9
+
+    GROUPBOX        "Zustand",IDC_STATIC,7,16,210,146
+    CONTROL         "Unverwundbar",IDC_INVULNERABLE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,17,30,190,12
+    CONTROL         "Tot",IDC_DEAD,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,17,45,190,12
+    CONTROL         "Gelähmt",IDC_FREEZE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,17,60,190,12
+    CONTROL         "Schläft",IDC_SLEEP,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,17,75,190,12
+    CONTROL         "Vergiftet",IDC_POISONED,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,17,90,190,12
+    CONTROL         "Halluziniert",IDC_HALLUCINATING,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,17,105,190,12
+    CONTROL         "Versteinert",IDC_STONE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,17,120,190,12
+    CONTROL         "Kriminell",IDC_CRIMINAL,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,17,135,190,12
+
+    GROUPBOX        "Sichtbarkeit und Magie",IDC_STATIC,222,16,215,146
+    CONTROL         "Unsichtbar",IDC_INVISIBLE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,232,30,95,12
+    CONTROL         "Versteckt",IDC_HIDDEN,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,232,45,95,12
+    CONTROL         "Körperlos",IDC_INSUBSTANTIAL,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,232,60,95,12
+    CONTROL         "Inkognito",IDC_INCOGNITO,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,232,75,95,12
+    CONTROL         "Verwandelt",IDC_POLYMORPHED,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,232,90,95,12
+    CONTROL         "Nachtsicht",IDC_NIGHTSIGHT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,332,30,100,12
+    CONTROL         "Reaktive Rüstung",IDC_REACTIVE_ARMOR,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,332,45,100,12
+    CONTROL         "Magiereflexion",IDC_MAGIC_REFLECT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,332,60,100,12
+    CONTROL         "Geistersprache",IDC_SPIRITSPEAK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,332,75,100,12
+
+    GROUPBOX        "Sonstiges",IDC_STATIC,7,167,430,74
+    CONTROL         "Kriegsmodus",IDC_WARMODE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,17,180,135,12
+    CONTROL         "Trägt Schild",IDC_HAS_SHIELD,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,17,194,135,12
+    CONTROL         "Schießt in Bewegung",IDC_ARCHCANMOVE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,17,208,135,12
+    CONTROL         "Fliegt",IDC_FLYING,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,17,222,135,12
+    CONTROL         "Drinnen",IDC_INDOORS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,160,180,135,12
+    CONTROL         "Beschworen",IDC_CONJURED,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,160,194,135,12
+    CONTROL         "Haustier",IDC_PET,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,160,208,135,12
+    CONTROL         "Gespawnt",IDC_SPAWNED,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,160,222,135,12
+    CONTROL         "Wird geritten",IDC_RIDDEN,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,303,180,130,12
+    CONTROL         "Reitet",IDC_MOUNTED,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,303,194,130,12
+    CONTROL         "Kommunikationskristall",IDC_COMMCRYSTAL,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,303,208,130,12
+    CONTROL         "Emote",IDC_EMOTE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,303,222,130,12
+    CONTROL         "",IDC_BLANK1,"Button",BS_AUTOCHECKBOX | NOT WS_VISIBLE,0,0,10,10
+    CONTROL         "",IDC_BLANK2,"Button",BS_AUTOCHECKBOX | NOT WS_VISIBLE,0,0,10,10
+    CONTROL         "",IDC_SAVEPARITY,"Button",BS_AUTOCHECKBOX | NOT WS_VISIBLE,0,0,10,10
+
+    LTEXT           "Wert:",IDC_STATIC,17,251,42,9
+    CTEXT           "000000000",IDC_FLAG_VALUE,62,249,62,13,SS_CENTERIMAGE | SS_SUNKEN
+    PUSHBUTTON      "Zurücksetzen",IDC_RESETFLAGS,130,247,80,17
+    PUSHBUTTON      "Auf Charakter setzen",IDC_SETFLAGS,214,247,110,17
+    LTEXT           "Setzt alle Flags auf einmal (set flags) - nicht angehakte Flags werden dabei entfernt.",IDC_STATIC,17,270,420,9
+
+    GROUPBOX        "Werte ändern",IDC_STATIC,445,16,408,110
+    LTEXT           "Art",IDC_STATIC,455,30,120,9
+    COMBOBOX        IDC_VALUEKIND,455,40,120,200,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Eigenschaft",IDC_STATIC,580,30,150,9
+    COMBOBOX        IDC_BRAIN,580,40,150,200,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_EVENTS,580,40,150,200,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_SKILL,580,40,150,200,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_STATS,580,40,150,200,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_RESISTENCE,580,40,150,200,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_MISC,580,40,150,200,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_TAG,580,40,150,200,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Wert",IDC_VALUELABEL,735,30,110,9
+    EDITTEXT        IDC_SKILLVALUE,735,40,110,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_STATVALUE,735,40,110,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_RESISTENCEVALUE,735,40,110,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_MISCVALUE,735,40,110,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_TAGVALUE,735,40,110,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Setzen",IDC_SETBRAIN,735,60,110,18
+    PUSHBUTTON      "Setzen",IDC_SETSKILL,735,60,110,18
+    PUSHBUTTON      "Setzen",IDC_SETSTAT,735,60,110,18
+    PUSHBUTTON      "Setzen",IDC_SETRESISTENCE,735,60,110,18
+    PUSHBUTTON      "Setzen",IDC_SETMISC,735,60,110,18
+    PUSHBUTTON      "Setzen",IDC_SETTAG,735,60,110,18
+    PUSHBUTTON      "Hinzufügen",IDC_ADDEVENT,735,40,110,18
+    PUSHBUTTON      "Entfernen",IDC_REMOVEEVENT,735,60,110,18
+    LTEXT           "",IDC_VALUEHINT,455,86,390,30
+END
+
+IDD_LOG_TAB DIALOGEX 0, 0, 860, 380
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Protokoll"
+FONT 9, "Segoe UI", 0, 0, 0x0
+BEGIN
+    LTEXT           "Anzeigen",IDC_STATIC,7,7,38,9
+    COMBOBOX        IDC_LOGLEVEL,48,4,106,100,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_LOGFILTER,158,4,300,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Kopieren",IDC_LOGCOPY,464,3,70,16
+    PUSHBUTTON      "Leeren",IDC_LOGCLEAR,538,3,60,16
+    CONTROL         "",IDC_FRAMELOG,"RichEdit20A",ES_MULTILINE | ES_AUTOHSCROLL | ES_READONLY | WS_BORDER | WS_VSCROLL | WS_TABSTOP,7,24,846,350
+END
+
+IDD_LAUNCHER_TAB DIALOGEX 0, 0, 860, 380
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Launcher"
+FONT 9, "Segoe UI", 0, 0, 0x0
+BEGIN
+    LTEXT           "Speichert Zugänge (Server und Konto) und startet den Client direkt damit.",IDC_STATIC,7,4,650,9
+
+    GROUPBOX        "Zugänge",IDC_STATIC,7,16,230,300
+    LISTBOX         IDC_ACCOUNT_LIST,15,29,214,250,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Neu",IDC_NEW,15,286,66,18
+    PUSHBUTTON      "Bearbeiten",IDC_EDITACCT,85,286,70,18,WS_DISABLED
+    PUSHBUTTON      "Löschen",IDC_DELETE,159,286,70,18,WS_DISABLED
+
+    GROUPBOX        "Zugangsdaten",IDC_STATIC,242,16,420,150
+    RTEXT           "Name",IDC_STATICLNAME,250,32,60,9,WS_DISABLED
+    EDITTEXT        IDC_NAME,314,30,340,14,ES_AUTOHSCROLL | WS_DISABLED
+    RTEXT           "Konto",IDC_STATICLACCT,250,52,60,9,WS_DISABLED
+    EDITTEXT        IDC_ACCOUNT,314,50,340,14,ES_AUTOHSCROLL | WS_DISABLED
+    RTEXT           "Passwort",IDC_STATICLPASS,250,72,60,9,WS_DISABLED
+    EDITTEXT        IDC_PASSWORD,314,70,340,14,ES_PASSWORD | ES_AUTOHSCROLL | WS_DISABLED
+    RTEXT           "Server (IP)",IDC_STATICLIP,250,92,60,9,WS_DISABLED
+    EDITTEXT        IDC_IPADDRESS,314,90,220,14,ES_AUTOHSCROLL | WS_DISABLED
+    LTEXT           "Port",IDC_STATICLPORT,540,92,20,9,WS_DISABLED
+    EDITTEXT        IDC_PORT,564,90,90,14,ES_AUTOHSCROLL | ES_NUMBER | WS_DISABLED
+    PUSHBUTTON      "Speichern",IDC_DONE,314,114,80,18,WS_DISABLED
+    PUSHBUTTON      "Abbrechen",IDC_CANCEL,398,114,80,18,WS_DISABLED
+
+    GROUPBOX        "Anderer Client (z.B. ClassicUO)",IDC_STATIC,242,172,420,56
+    EDITTEXT        IDC_ALTCLIENT,250,188,336,14,ES_AUTOHSCROLL | WS_DISABLED
+    PUSHBUTTON      "Durchsuchen",IDC_CLIENTBROWSE,590,187,64,16,WS_DISABLED
+    LTEXT           "Wird mit ""Anderen Client starten"" benutzt.",IDC_STATIC,250,207,400,9
+
+    GROUPBOX        "Starten",IDC_STATIC,242,234,420,82
+    PUSHBUTTON      "Client starten",IDC_LAUNCH2D,250,250,120,24,WS_DISABLED
+    PUSHBUTTON      "Anderen Client starten",IDC_LAUNCHALT,374,250,140,24,WS_DISABLED
+    LTEXT           "ClassicUO bekommt Server und Konto per Kommandozeile, der alte Client über login.cfg / uo.cfg.",IDC_STATIC,250,282,400,20
+
+    PUSHBUTTON      "",IDC_LAUNCH3D,0,0,10,10,NOT WS_VISIBLE | WS_DISABLED
+    PUSHBUTTON      "",IDC_LAUNCHAUTO,0,0,10,10,NOT WS_VISIBLE
+END
+
+IDD_ITEMTWEAK_TAB DIALOGEX 0, 0, 860, 380
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Item bearbeiten"
+FONT 9, "Segoe UI", 0, 0, 0x0
+BEGIN
+    LTEXT           "Alle Knöpfe dieser Seite wirken auf das Item, das du danach im Spiel anklickst.",IDC_STATIC,7,4,550,9
+
+    GROUPBOX        "Attribute",IDC_STATICS,7,16,290,212
+    CONTROL         "Identifiziert",IDC_IDENTIFIED,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,17,30,130,12
+    CONTROL         "Verfällt",IDC_DECAY,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,17,45,130,12
+    CONTROL         "Newbie (bleibt beim Tod)",IDC_NEWBIE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,17,60,130,12
+    CONTROL         "Immer beweglich",IDC_ALWAYSMOVEABLE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,17,75,130,12
+    CONTROL         "Nie beweglich",IDC_NEVERMOVEABLE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,17,90,130,12
+    CONTROL         "Magisch",IDC_MAGIC,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,17,105,130,12
+    CONTROL         "Gehört der Stadt",IDC_OWNEDBYTOWN,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,17,120,130,12
+    CONTROL         "Unsichtbar",IDC_INVISIBLE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,17,135,130,12
+    CONTROL         "Verflucht",IDC_CURSED,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,157,30,130,12
+    CONTROL         "Verdammt",IDC_DAMNED,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,157,45,130,12
+    CONTROL         "Gesegnet",IDC_BLESSED,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,157,60,130,12
+    CONTROL         "Heilig",IDC_SACRED,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,157,75,130,12
+    CONTROL         "Zu verkaufen",IDC_FORSALE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,157,90,130,12
+    CONTROL         "Gestohlen",IDC_STOLEN,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,157,105,130,12
+    CONTROL         "Kann verfallen",IDC_CANDECAY,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,157,120,130,12
+    CONTROL         "Static (eingefroren)",IDC_STATICFREEZE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,157,135,130,12
+    LTEXT           "Wert:",IDC_STATIC,17,158,40,9
+    CTEXT           "00000",IDC_ATTRVALUE,60,156,50,12,SS_SUNKEN
+    PUSHBUTTON      "Zurücksetzen",IDC_RESET_ATTR,17,176,90,18
+    PUSHBUTTON      "Auf Item setzen",IDC_SETATTR,112,176,110,18
+    LTEXT           "Setzt alle Haken auf einmal (set attr) - bestehende Attribute des Items werden ersetzt.",IDC_STATIC,17,200,270,20
+
+    GROUPBOX        "Assistenten",IDC_STATICS,7,233,290,40
+    PUSHBUTTON      "Tür-Assistent",IDC_OPENDOORWIZ,17,248,100,18
+    PUSHBUTTON      "Licht-Assistent",IDC_OPENLIGHTWIZ,122,248,100,18
+
+    GROUPBOX        "Typ",IDC_STATICS,305,16,260,50
+    COMBOBOX        IDC_TYPES,313,30,160,200,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Typ setzen",IDC_SETTYPES,478,29,80,16
+    LTEXT           "set type <typ> - z.B. t_container, t_door, t_light_lit",IDC_STATIC,313,50,245,9
+
+    GROUPBOX        "Events",IDC_STATICS,305,71,260,50
+    COMBOBOX        IDC_ITEMEVENTS,313,85,140,200,CBS_DROPDOWN | CBS_AUTOHSCROLL | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Hinzufügen",IDC_SETEVENTS,456,84,53,16
+    PUSHBUTTON      "Entfernen",IDC_DELEVENTS,510,84,48,16
+    LTEXT           "set events +name / -name - Name wählen oder eintippen",IDC_STATIC,313,105,245,9
+
+    GROUPBOX        "Wert setzen",IDC_STATICS,305,126,260,58
+    LTEXT           "Eigenschaft",IDC_STATIC,313,142,47,9
+    COMBOBOX        IDC_ITEMMISC,361,140,109,174,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_ITEMMISCVALUE,474,140,46,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Setzen",IDC_ITEMSETMISC,524,140,34,14
+    LTEXT           "Tag",IDC_STATIC,313,162,44,9
+    COMBOBOX        IDC_ITEMTAG,361,160,109,174,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_ITEMTAGVALUE,474,160,46,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Setzen",IDC_ITEMSETTAG,524,160,34,14
+
+    GROUPBOX        "Farbe",IDC_STATICS,570,16,283,257
+    CONTROL         "",IDC_QUICKPICK,"Static",SS_BITMAP,578,30,267,140
+    LTEXT           "Schnellpalette: Linksklick wählt, Rechtsklick belegt das Feld neu",IDC_STATIC,578,174,267,9
+    CONTROL         "",IDC_ITSPECTRUM,"Static",SS_BITMAP | SS_NOTIFY,578,188,267,26
+    LTEXT           "",IDC_ITEM_HUEINFO,578,218,267,9
+    PUSHBUTTON      "Farbe setzen",IDC_ITEMCOLOR,578,232,140,20
+    PUSHBUTTON      "Alle Farben ...",IDC_ITPALETTE,722,232,123,20
+END
+
+IDD_ITEMS_TAB DIALOGEX 0, 0, 860, 380
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Items"
+FONT 9, "Segoe UI", 0, 0, 0x0
+BEGIN
+    GROUPBOX        "Ausgewähltes Item",IDC_STATIC,570,4,283,150
+    GROUPBOX        "Platzieren - danach das Ziel im Spiel anklicken",IDC_STATIC,570,159,283,100
+    GROUPBOX        "Spawnpunkt für dieses Item",IDC_STATIC,570,264,283,62
+    GROUPBOX        "Entfernen",IDC_STATIC,570,331,283,44
+
+    LTEXT           "Suchen: Name, Defname, Grafik-ID oder Kategorie - mehrere Wörter müssen alle passen",IDC_STATIC,7,4,555,9
+    EDITTEXT        IDC_ITEMSEARCH,7,15,510,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Leeren",IDC_FINDITEM,521,15,41,14
+
+    LTEXT           "Kategorien",IDC_STATIC,7,35,150,9
+    CONTROL         "Tree1",IDC_CATEGORY_TREE,"SysTreeView32",TVS_HASBUTTONS | TVS_HASLINES | TVS_LINESATROOT | TVS_SHOWSELALWAYS | WS_BORDER | WS_TABSTOP,7,45,150,330
+    LTEXT           "",IDC_ITEM_RESULTINFO,162,35,400,9
+    CONTROL         "List1",IDC_ITEMS,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | WS_BORDER | WS_TABSTOP,162,45,400,330
+
+    CONTROL         "",IDC_DISPLAY,"Static",SS_BITMAP | SS_CENTERIMAGE | SS_REALSIZEIMAGE,578,16,110,110
+    LTEXT           "",IDC_ITEM_DETAILS,696,16,150,84,SS_NOPREFIX
+    CTEXT           "",IDC_ITEMID,696,16,10,10,NOT WS_VISIBLE
+    CTEXT           "",IDC_ITEMIDDEC,696,16,10,10,NOT WS_VISIBLE
+    CONTROL         "",IDC_LOCKITEM,"Button",BS_AUTOCHECKBOX | NOT WS_VISIBLE,696,16,10,10
+    PUSHBUTTON      "Erstellen",IDC_CREATE,696,104,150,20
+    PUSHBUTTON      "Als Static setzen (fest in der Welt)",IDC_CREATESTATIC,696,128,150,17
+    LTEXT           "Doppelklick in der Liste = Erstellen",IDC_STATIC,578,131,112,17
+
+    LTEXT           "Bewegen (Felder)",IDC_STATIC,578,172,95,9
+    PUSHBUTTON      "NW",IDC_MOVE8,578,183,26,18
+    PUSHBUTTON      "N",IDC_MOVE1,606,183,26,18
+    PUSHBUTTON      "NO",IDC_MOVE2,634,183,26,18
+    PUSHBUTTON      "W",IDC_MOVE7,578,203,26,18
+    EDITTEXT        IDC_NUDGEAMOUNT,608,205,22,14,ES_CENTER | ES_AUTOHSCROLL | ES_NUMBER
+    PUSHBUTTON      "O",IDC_MOVE3,634,203,26,18
+    PUSHBUTTON      "SW",IDC_MOVE6,578,223,26,18
+    PUSHBUTTON      "S",IDC_MOVE5,606,223,26,18
+    PUSHBUTTON      "SO",IDC_MOVE4,634,223,26,18
+
+    LTEXT           "Höhe und Richtung",IDC_STATIC,680,172,80,9
+    PUSHBUTTON      "Höher",IDC_NUDGEUP,680,183,70,18
+    PUSHBUTTON      "Tiefer",IDC_NUDGEDOWN,680,203,70,18
+    PUSHBUTTON      "Drehen",IDC_FLIP,680,223,70,18
+
+    LTEXT           "Kacheln auf Z-Höhe",IDC_STATIC,762,172,84,9
+    EDITTEXT        IDC_ZTILE,762,184,40,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Kacheln",IDC_TILE,762,203,84,18
+    LTEXT           "Fläche im Spiel aufziehen",IDC_STATIC,762,225,84,16
+
+    LTEXT           "Anzahl",IDC_STATIC,578,275,40,9
+    EDITTEXT        IDC_AMOUNT,578,285,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "Rate",IDC_STATIC,624,275,40,9
+    EDITTEXT        IDC_SPAWNRATE,624,285,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "Radius",IDC_STATIC,670,275,40,9
+    EDITTEXT        IDC_MAXDIST,670,285,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "ab (Min.)",IDC_STATIC,716,275,40,9
+    EDITTEXT        IDC_MINTIME,716,285,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "bis (Min.)",IDC_STATIC,762,275,40,9
+    EDITTEXT        IDC_MAXTIME,762,285,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    PUSHBUTTON      "1. Spawnstein platzieren",IDC_PLACESPAWN,578,304,130,17
+    PUSHBUTTON      "2. Einstellungen übernehmen",IDC_INITSPAWN,714,304,132,17
+
+    PUSHBUTTON      "Entfernen (Ziel)",IDC_REMOVE,578,343,80,18
+    PUSHBUTTON      "Nuke (Fläche)",IDC_NUKE,664,343,64,18
+    EDITTEXT        IDC_NUKEARG,734,345,112,14,ES_AUTOHSCROLL
+    LTEXT           "Nuke: 2 Ecken aufziehen - leer = Items löschen, sonst Befehl je Item",IDC_STATIC,578,363,268,16
+END
+
+IDD_GENERAL_TAB DIALOGEX 0, 0, 860, 380
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "GM-Befehle"
+FONT 9, "Segoe UI", 0, 0, 0x0
+BEGIN
+    GROUPBOX        "Ich selbst",IDC_SELF,7,4,170,196
+    PUSHBUTTON      "Unverwundbar",IDC_INVULNERABLE,15,18,76,30
+    PUSHBUTTON      "Unsichtbar",IDC_INVISIBLE,95,18,76,30
+    PUSHBUTTON      "Alles bewegen",IDC_SETALLMOVE,15,52,76,30
+    PUSHBUTTON      "Alles hören",IDC_SETHEARALL,95,52,76,30
+    PUSHBUTTON      "GM-Modus",IDC_GMTOGGLE,15,86,76,30
+    PUSHBUTTON      "Nachtsicht",IDC_NIGHTSIGHT,95,86,76,30
+    PUSHBUTTON      "Details",IDC_SETDETAIL,15,120,76,30
+    PUSHBUTTON      "Debug",IDC_SETDEBUG,95,120,76,30
+    PUSHBUTTON      "Fix (Höhe)",IDC_FIX,15,154,76,30
+    PUSHBUTTON      "Teleport",IDC_TELE,95,154,76,30
+
+    GROUPBOX        "Ziel - danach anklicken",IDC_GP_MISC,182,4,170,196
+    PUSHBUTTON      "Info",IDC_ITEMINFO,190,18,76,30
+    PUSHBUTTON      "Bearbeiten",IDC_SETEDIT,270,18,76,30
+    PUSHBUTTON      "Verknüpfen",IDC_LINK,190,52,76,30
+    PUSHBUTTON      "Drehen",IDC_FLIP,270,52,76,30
+    PUSHBUTTON      "Schrumpfen",IDC_SHRINK,190,86,76,30
+    PUSHBUTTON      "Duplizieren",IDC_DUPE,270,86,76,30
+
+    GROUPBOX        "Information",IDC_GP_INFO,357,4,90,196
+    PUSHBUTTON      "Admin",IDC_ADMIN,365,18,74,30
+    PUSHBUTTON      "Clients",IDC_CLIENTS,365,52,74,30
+    PUSHBUTTON      "Server-Info",IDC_SERVERINFO,365,86,74,30
+    PUSHBUTTON      "Version",IDC_VERSION,365,120,74,30
+
+    GROUPBOX        "Disziplin - danach anklicken",IDC_GP_DISCIPLINE,452,4,170,196
+    PUSHBUTTON      "Einsperren",IDC_JAIL,460,18,76,30
+    PUSHBUTTON      "Vergeben",IDC_FORGIVE,540,18,76,30
+    PUSHBUTTON      "Trennen",IDC_DISCONNECT,460,52,76,30
+    PUSHBUTTON      "Wiederbeleben",IDC_RESURECT,540,52,76,30
+
+    GROUPBOX        "GM-Rufe (Pages)",IDC_GP_GMPAGE,627,4,226,196
+    PUSHBUTTON      "An",IDC_PAGEON,635,18,103,30
+    PUSHBUTTON      "Aus",IDC_PAGEOFF,742,18,103,30
+    PUSHBUTTON      "Liste",IDC_PAGELIST,635,52,103,30
+    PUSHBUTTON      "Warteschlange",IDC_PAGEQUEUE,742,52,103,30
+    PUSHBUTTON      "Zum Spieler",IDC_PAGEPLAYER,635,86,103,30
+    PUSHBUTTON      "Zum Rufort",IDC_PAGEORIGIN,742,86,103,30
+    PUSHBUTTON      "Trennen",IDC_PAGEDISCONNECT,635,120,103,30
+    PUSHBUTTON      "Einsperren",IDC_PAGEJAIL,742,120,103,30
+    PUSHBUTTON      "Bannen",IDC_PAGEKICK,635,154,103,30
+    PUSHBUTTON      "Löschen",IDC_PAGEDELETE,742,154,103,30
+
+    GROUPBOX        "Händler - danach anklicken",IDC_GP_VENDORS,7,206,280,94
+    PUSHBUTTON      "Kaufen",IDC_BUY,15,220,86,30
+    PUSHBUTTON      "Verkaufen",IDC_SELL,105,220,86,30
+    PUSHBUTTON      "Inventar",IDC_STOCK,195,220,86,30
+    PUSHBUTTON      "Einkäufe",IDC_PURCHASES,15,256,86,30
+    PUSHBUTTON      "Muster",IDC_SAMPLES,105,256,86,30
+    PUSHBUTTON      "Auffüllen",IDC_XRESTOCK,195,256,86,30
+
+    GROUPBOX        "Wetter und Licht (Sektor)",IDC_GP_WEATHER,292,206,270,94
+    PUSHBUTTON      "Schnee",IDC_SNOW,300,220,82,30
+    PUSHBUTTON      "Regen",IDC_RAIN,386,220,82,30
+    PUSHBUTTON      "Trocken",IDC_DRY,472,220,82,30
+    PUSHBUTTON      "Licht setzen",IDC_SETLIGHT,300,256,82,30
+    CONTROL         "",IDC_SLIDER1,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,386,262,130,16
+    CTEXT           "00",IDC_SLIDERVALUE,520,263,34,13,SS_CENTERIMAGE | SS_SUNKEN
+
+    GROUPBOX        "Server",IDC_STATIC,567,206,286,94
+    PUSHBUTTON      "Welt speichern",IDC_WORLDSAVE,575,220,88,30
+    PUSHBUTTON      "Statics speichern",IDC_SAVESTATICS,667,220,88,30
+    PUSHBUTTON      "Resync",IDC_RESYNC,759,220,86,30
+    PUSHBUTTON      "Alle Händler auffüllen",IDC_RESTOCKALL,575,256,134,30
+    PUSHBUTTON      "Remote-Konsole",IDC_REMCONSOLE,713,256,132,30
+
+    GROUPBOX        "Vorsicht - fragt vorher nach",IDC_STATIC,7,306,420,66
+    PUSHBUTTON      "Töten",IDC_KILL,15,320,86,30
+    PUSHBUTTON      "Entfernen",IDC_REMOVE,105,320,86,30
+    PUSHBUTTON      "Nuke (Fläche)",IDC_NUKE,195,320,86,30
+    LTEXT           "Töten/Entfernen: Ziel anklicken. Nuke: zwei Ecken aufziehen - alle Items darin werden gelöscht.",IDC_STATIC,288,318,132,40
+END
+
+IDD_COMMANDS_TAB DIALOGEX 0, 0, 860, 380
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Eigene Befehle"
+FONT 9, "Segoe UI", 0, 0, 0x0
+BEGIN
+    LTEXT           "Eigene Knöpfe für Befehle, die Axis nicht kennt. Den Befehl mit Punkt eintragen (z.B. .xcolor 021) - ein Klick auf den Knopf schickt ihn an den Client.",IDC_STATIC,7,4,846,18
+
+    GROUPBOX        "Knopf",IDC_STATIC,7,28,210,150
+    LTEXT           "Beschriftung",IDC_STATIC,17,42,190,9
+    EDITTEXT        IDC_CAPTION,17,52,190,14,ES_AUTOHSCROLL
+    LTEXT           "Befehl",IDC_STATIC,17,72,190,9
+    EDITTEXT        IDC_COMMAND,17,82,190,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Anlegen",IDC_ADDBTN,17,104,60,18
+    PUSHBUTTON      "Ändern",IDC_EDITBTN,81,104,60,18
+    PUSHBUTTON      "Entfernen",IDC_REMOVEBTN,145,104,62,18
+    LTEXT           "Ein Klick auf einen Knopf rechts füllt die Felder. Ändern/Entfernen: erst hier drücken, dann rechts den Knopf anklicken.",IDC_STATIC,17,128,190,44
+
+    GROUPBOX        "Reiter",IDC_STATIC,7,184,210,76
+    LTEXT           "Name",IDC_STATIC,17,198,190,9
+    EDITTEXT        IDC_TABTEXT,17,208,190,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Neuer Reiter",IDC_ADDTAB,17,230,60,18
+    PUSHBUTTON      "Löschen",IDC_DELTAB,81,230,60,18
+    PUSHBUTTON      "Leeren",IDC_CLEARTAB,145,230,62,18
+
+    CONTROL         "",IDC_TAB,"SysTabControl32",0x0,225,28,628,346
+END
+
+IDD_COLOR_DLG DIALOGEX 0, 0, 480, 300
+STYLE DS_SETFONT | DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Farbe wählen"
+FONT 9, "Segoe UI", 0, 0, 0x0
+BEGIN
+    LTEXT           "Helligkeit der Übersicht",IDC_DARK,7,9,85,9
+    CONTROL         "",IDC_SHADESLIDER,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,92,6,250,14
+    LTEXT           "",IDC_BRIGHT,0,0,0,0,NOT WS_VISIBLE
+    CONTROL         "",IDC_PALETTE,"Static",SS_BITMAP,7,24,335,269
+    LTEXT           "Maus über Farbe:",IDC_STATIC,350,7,62,9
+    LTEXT           "",IDC_MOVINGCOLOR,414,7,59,9
+
+    GROUPBOX        "Gewählte Farbe",IDC_STATIC,350,20,123,92
+    CONTROL         "",IDC_SPECTRUM,"Static",SS_BITMAP,358,33,107,16
+    LTEXT           "Nummer:",IDC_COLINDEX,358,54,34,9
+    LTEXT           "",IDC_COLORINDEX,394,54,71,9
+    LTEXT           "Name:",IDC_INTERNALNAME,358,66,34,9
+    LTEXT           "",IDC_HUENAME,394,66,71,9
+    LTEXT           "Nach Name suchen:",IDC_STATIC,358,80,107,9
+    COMBOBOX        IDC_HUELIST,358,91,107,160,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+
+    GROUPBOX        "Vorschau",IDC_STATIC,350,117,123,152
+    LTEXT           "Art",IDC_TYPE,358,131,22,9
+    COMBOBOX        IDC_TYPELIST,384,129,81,60,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Grafik",IDC_INDEX,358,148,24,9
+    EDITTEXT        IDC_ARTINDEX,384,146,81,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_COLORPREVIEW,"Static",SS_BITMAP | SS_CENTERIMAGE | SS_REALSIZEIMAGE,358,164,107,98
+
+    DEFPUSHBUTTON   "Übernehmen",IDOK,350,275,60,18
+    PUSHBUTTON      "Abbrechen",IDCANCEL,413,275,60,18
+END
+
+IDD_ACCOUNT_TAB DIALOGEX 0, 0, 860, 380
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Konto"
+FONT 9, "Segoe UI", 0, 0, 0x0
+BEGIN
+    LTEXT           "Alle Knöpfe dieser Seite ändern das Konto des Charakters, den du danach im Spiel anklickst.",IDC_STATIC,7,4,620,9
+
+    GROUPBOX        "Berechtigungsstufe (PLEVEL)",IDC_GPLVL,7,16,200,190
+    CONTROL         "0 - Gast",IDC_GUESTPRIVS,"Button",BS_AUTORADIOBUTTON | WS_GROUP,17,30,180,12
+    CONTROL         "1 - Spieler",IDC_PLAYERPRIVS,"Button",BS_AUTORADIOBUTTON,17,45,180,12
+    CONTROL         "2 - Berater (Counselor)",IDC_COUNSELORPRIVS,"Button",BS_AUTORADIOBUTTON,17,60,180,12
+    CONTROL         "3 - Seher (Seer)",IDC_SEERPRIVS,"Button",BS_AUTORADIOBUTTON,17,75,180,12
+    CONTROL         "4 - GM",IDC_GMPRIVS,"Button",BS_AUTORADIOBUTTON,17,90,180,12
+    CONTROL         "5 - Entwickler",IDC_DEVELOPERPRIVS,"Button",BS_AUTORADIOBUTTON,17,105,180,12
+    CONTROL         "6 - Administrator",IDC_ADMINISTRATORPRIVS,"Button",BS_AUTORADIOBUTTON,17,120,180,12
+    CONTROL         "7 - Besitzer (Owner)",IDC_OWNERPRIVS,"Button",BS_AUTORADIOBUTTON,17,135,180,12
+    PUSHBUTTON      "Stufe setzen",IDC_SETPRIV,17,156,100,18
+    LTEXT           "xprivset <stufe> - wirkt auf das Konto des angeklickten Charakters",IDC_STATIC,17,180,180,20
+
+    GROUPBOX        "Kontorechte (PRIV)",IDC_GPRIV,212,16,420,190
+    CONTROL         "Als GM auftreten",IDC_PRIV02,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,222,30,195,12
+    CONTROL         "GM-Rufe hören",IDC_PRIV08,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,222,45,195,12
+    CONTROL         "Alles hören",IDC_PRIV010,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,222,60,195,12
+    CONTROL         "Alles bewegen",IDC_PRIV020,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,222,75,195,12
+    CONTROL         "Kampfdetails anzeigen",IDC_PRIV040,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,222,90,195,12
+    CONTROL         "Debug-Modus",IDC_PRIV080,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,222,105,195,12
+    CONTROL         "GM-Rechte anzeigen",IDC_PRIV0200,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,425,30,195,12
+    CONTROL         "Telnet-Kurzbefehle",IDC_PRIV0400,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,425,45,195,12
+    CONTROL         "Eingesperrt",IDC_PRIV0800,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,425,60,195,12
+    CONTROL         "Gesperrt / gebannt",IDC_PRIV02000,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,425,75,195,12
+    CONTROL         "Alles sehen",IDC_PRIV04000,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,425,90,195,12
+    LTEXT           "Wert:",IDC_STATIC,222,131,42,9
+    CTEXT           "00000",IDC_PRIVVALUE,266,129,50,13,SS_CENTERIMAGE | SS_SUNKEN
+    PUSHBUTTON      "Zurücksetzen",IDC_RESET_PRIVS,322,127,80,17
+    PUSHBUTTON      "Rechte setzen",IDC_SETPRIVS,406,127,95,17
+    LTEXT           "set account.priv <wert> - nicht angehakte Rechte werden dabei entfernt",IDC_STATIC,222,152,400,9
+
+    GROUPBOX        "Client-Stufe (RESDISP) - welche Erweiterung das Konto sieht",IDC_GRESDISP,7,211,625,82
+    CONTROL         "0 - vor T2A",IDC_RESDISP0,"Button",BS_AUTORADIOBUTTON | WS_GROUP,17,225,150,12
+    CONTROL         "1 - The Second Age",IDC_RESDISP1,"Button",BS_AUTORADIOBUTTON,17,240,150,12
+    CONTROL         "2 - Lord Blackthorn's Revenge",IDC_RESDISP2,"Button",BS_AUTORADIOBUTTON,172,225,150,12
+    CONTROL         "3 - Age of Shadows",IDC_RESDISP3,"Button",BS_AUTORADIOBUTTON,172,240,150,12
+    CONTROL         "4 - Samurai Empire",IDC_RESDISP4,"Button",BS_AUTORADIOBUTTON,327,225,150,12
+    CONTROL         "5 - Mondain's Legacy",IDC_RESDISP5,"Button",BS_AUTORADIOBUTTON,327,240,150,12
+    CONTROL         "6 - Kingdom Reborn",IDC_RESDISP6,"Button",BS_AUTORADIOBUTTON,482,225,140,12
+    CONTROL         "7 - Stygian Abyss",IDC_RESDISP7,"Button",BS_AUTORADIOBUTTON,482,240,140,12
+    PUSHBUTTON      "Client-Stufe setzen",IDC_SETRESDISP,17,264,100,18
+    LTEXT           "set account.resdisp <stufe>",IDC_STATIC,125,268,300,9
+END
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 300, 250
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Über Axis X"
+FONT 9, "Segoe UI", 0, 0, 0x0
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,11,20,20
+    DEFPUSHBUTTON   "OK",IDOK,248,7,45,16,WS_GROUP
+    PUSHBUTTON      "Axis X unterstützen (Ko-fi)",IDC_ABOUT_DONATE,173,228,120,16
+    EDITTEXT        IDC_COPYRIGHT,40,9,200,82,ES_MULTILINE | ES_READONLY | NOT WS_BORDER | NOT WS_TABSTOP
+    EDITTEXT        IDC_LICENSE,11,98,282,125,ES_MULTILINE | ES_READONLY | NOT WS_BORDER | NOT WS_TABSTOP
+END
+
+IDD_ADD_DESTINATION DIALOGEX 0, 0, 300, 130
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Eigenen Ort bearbeiten"
+FONT 9, "Segoe UI", 0, 0, 0x0
+BEGIN
+    RTEXT           "Kategorie",IDC_CAT,7,10,50,9
+    COMBOBOX        IDC_CATEGORY,62,8,170,80,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    RTEXT           "Unterbereich",IDC_SUB,7,30,50,9
+    COMBOBOX        IDC_SUBSECTION,62,28,170,80,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    RTEXT           "Name",IDC_DESC,7,50,50,9
+    EDITTEXT        IDC_DESCRIPTION,62,48,170,14,ES_AUTOHSCROLL
+    RTEXT           "X",IDC_X,7,74,50,9
+    EDITTEXT        IDC_XCOORD,62,72,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "Y",IDC_Y,108,74,8,9
+    EDITTEXT        IDC_YCOORD,118,72,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "Z",IDC_Z,164,74,8,9
+    EDITTEXT        IDC_ZCOORD,174,72,40,14,ES_AUTOHSCROLL
+    LTEXT           "Karte",IDC_MAP,220,74,22,9
+    EDITTEXT        IDC_PLANE,244,72,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "Neue Kategorie oder Unterbereich einfach eintippen.",IDC_STATIC,62,94,222,9
+    DEFPUSHBUTTON   "OK",IDOK,238,8,55,16
+    PUSHBUTTON      "Abbrechen",IDCANCEL,238,28,55,16
+END
+
+IDD_WORLDMAP DIALOGEX 0, 0, 99, 52
+STYLE DS_SETFONT | DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "World Map"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    CONTROL         "",IDC_WORLDMAP,"Static",SS_BITMAP | SS_CENTERIMAGE | SS_REALSIZEIMAGE,7,7,85,38
+END
+
+IDD_DOORWIZARD DIALOGEX 0, 0, 262, 232
+STYLE DS_SETFONT | DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Tür-Assistent"
+FONT 9, "Segoe UI", 0, 0, 0x0
+BEGIN
+    LTEXT           "Türart",IDC_STATIC,7,7,95,9
+    LISTBOX         IDC_DOORLIST,7,18,95,178,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Ausrichtung",IDC_STATIC,7,199,95,26
+    CONTROL         "Nord",IDC_NORTH,"Button",BS_AUTORADIOBUTTON,14,210,38,10
+    CONTROL         "West",IDC_WEST,"Button",BS_AUTORADIOBUTTON,56,210,38,10
+    LTEXT           "Tür anklicken, dann die Stelle im Spiel wählen",IDC_STATIC,110,7,145,9
+    CONTROL         "",IDC_DOORNW,"Static",SS_BITMAP | SS_NOTIFY | SS_CENTERIMAGE | SS_REALSIZEIMAGE,110,18,72,102
+    CONTROL         "",IDC_DOORNE,"Static",SS_BITMAP | SS_NOTIFY | SS_CENTERIMAGE | SS_REALSIZEIMAGE,183,18,72,102
+    CONTROL         "",IDC_DOORSW,"Static",SS_BITMAP | SS_NOTIFY | SS_CENTERIMAGE | SS_REALSIZEIMAGE,110,122,72,103
+    CONTROL         "",IDC_DOORSE,"Static",SS_BITMAP | SS_NOTIFY | SS_CENTERIMAGE | SS_REALSIZEIMAGE,183,122,72,103
+END
+
+IDD_LIGHTWIZARD DIALOGEX 0, 0, 470, 178
+STYLE DS_SETFONT | DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Licht-Assistent"
+FONT 9, "Segoe UI", 0, 0, 0x0
+BEGIN
+    LTEXT           "Lichtart",IDC_STATIC,7,7,90,9
+    LISTBOX         IDC_LIGHTLIST,7,18,90,124,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Lichtform anklicken, dann die Lichtquelle im Spiel wählen (set morez)",IDC_STATIC,102,7,360,9
+    CONTROL         "",IDC_LIGHT1,"Static",SS_BITMAP | SS_NOTIFY | SS_CENTERIMAGE | SS_REALSIZEIMAGE,102,18,120,121
+    CONTROL         "",IDC_LIGHT2,"Static",SS_BITMAP | SS_NOTIFY | SS_CENTERIMAGE | SS_REALSIZEIMAGE,222,18,120,121
+    CONTROL         "",IDC_LIGHT3,"Static",SS_BITMAP | SS_NOTIFY | SS_CENTERIMAGE | SS_REALSIZEIMAGE,342,18,120,121
+    SCROLLBAR       IDC_SCROLLLIGHT,102,142,360,11
+    LTEXT           "Helligkeit der Vorschau",IDC_STATIC,7,148,90,9
+    CONTROL         "",IDC_LIGHTLEVEL,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,7,158,65,14
+    CTEXT           "00",IDC_LIGHTVALUE,75,159,22,11,SS_CENTERIMAGE | SS_SUNKEN
+END
+
+IDD_SETTING_GENERAL DIALOGEX 0, 0, 330, 254
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Allgemein"
+FONT 9, "Segoe UI", 0, 0, 0x0
+BEGIN
+    GROUPBOX        "Programm",-1,7,7,316,98
+    CONTROL         "Mehrere Axis-Fenster erlauben",IDC_ALLOWMULTIPLE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,15,20,150,10
+    CONTROL         "Immer im Vordergrund",IDC_ALWAYS_ONTOP,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,15,33,150,10
+    CONTROL         "Schließen über das Systemmenü erlauben",IDC_SYSCLOSE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,15,46,150,10
+    CONTROL         "Standardprofil beim Start laden",IDC_LOADDEFAULT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,15,59,150,10
+    CONTROL         "Beim Minimieren keine Mini-Leiste",IDC_DISABLE_TOOLBAR,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,170,20,145,10
+    LTEXT           "Startseite",-1,170,35,145,9,NOT WS_GROUP
+    COMBOBOX        IDC_STARTTAB,170,45,145,160,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Sprache (Neustart nötig)",-1,170,62,145,9,NOT WS_GROUP
+    COMBOBOX        IDC_LANGUAGE,170,72,145,60,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Design (Neustart nötig)",-1,15,75,145,9,NOT WS_GROUP
+    COMBOBOX        IDC_THEME,15,85,145,60,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+
+    GROUPBOX        "Spiel",-1,7,110,316,40
+    LTEXT           "Befehlszeichen",-1,15,125,55,9,NOT WS_GROUP
+    EDITTEXT        IDC_PREFIX,72,123,24,14,ES_CENTER | ES_AUTOHSCROLL
+    LTEXT           "(meist .)",-1,100,125,40,9,NOT WS_GROUP
+    LTEXT           "Client-Fenstertitel",-1,170,125,62,9,NOT WS_GROUP
+    EDITTEXT        IDC_UOTITLE,234,123,81,14,ES_AUTOHSCROLL
+
+    GROUPBOX        "Aussehen",-1,7,155,316,70
+    LTEXT           "Logo (Datei oder URL)",-1,15,167,200,9,NOT WS_GROUP
+    EDITTEXT        IDC_CUSTOMLOGO,15,177,270,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_CUSTOMLOGO_BROWSE,289,177,26,14
+    LTEXT           "Symbol (.ico, Datei oder URL)",-1,15,194,200,9,NOT WS_GROUP
+    EDITTEXT        IDC_CUSTOMICON,15,204,270,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_CUSTOMICON_BROWSE,289,204,26,14
+
+    PUSHBUTTON      "Allgemeines zurücksetzen",IDC_RESET_GENERAL,7,231,155,16
+    PUSHBUTTON      "Alle Einstellungen zurücksetzen",IDC_RESETSTING,168,231,155,16
+END
+
+IDD_SETTING_TRAVEL DIALOGEX 0, 0, 330, 228
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Reisen"
+FONT 9, "Segoe UI", 0, 0, 0x0
+BEGIN
+    CONTROL         "Karte anzeigen",IDC_MAPVIEW,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,15,12,250,10
+    CONTROL         "Statics auf der Karte zeichnen",IDC_DRAWSTATICS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,15,26,250,10
+    CONTROL         "Map-/Static-Dif-Dateien verwenden",IDC_DRAWDIFS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,15,40,250,10
+    CONTROL         "Spawnpunkte anzeigen",IDC_SHOWSPWANPOINT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,15,54,250,10
+    CONTROL         "",IDC_NPC_COLOR,"Static",SS_BLACKFRAME | SS_NOTIFY | SS_SUNKEN,27,69,14,11
+    LTEXT           "Farbe NPC-Spawns (Feld anklicken)",IDC_STATICNPCCOL,46,70,200,9,NOT WS_GROUP
+    CONTROL         "",IDC_ITEM_COLOR,"Static",SS_BLACKFRAME | SS_NOTIFY | SS_SUNKEN,27,84,14,11
+    LTEXT           "Farbe Item-Spawns (Feld anklicken)",IDC_STATICITEMCOL,46,85,200,9,NOT WS_GROUP
+    PUSHBUTTON      "Reise-Einstellungen zurücksetzen",IDC_RESET_TRAVEL,7,104,140,16
+END
+
+IDD_SETTING_ITEM DIALOGEX 0, 0, 330, 228
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Items"
+FONT 9, "Segoe UI", 0, 0, 0x0
+BEGIN
+    CONTROL         "Vorschau auf der Items-Seite anzeigen",IDC_ITEMVIEW,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,15,12,250,10
+    CONTROL         "Raumansicht in der Vorschau (Boden und Wände)",IDC_ROOMVIEW,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,15,26,250,10
+    CONTROL         "",IDC_ITEMBG_COLOR,"Static",SS_BLACKFRAME | SS_NOTIFY | SS_SUNKEN,15,42,18,16
+    LTEXT           "Hintergrundfarbe der Vorschau (Feld anklicken)",IDC_ITEMBGCOL,38,46,250,9,NOT WS_GROUP
+    PUSHBUTTON      "Item-Einstellungen zurücksetzen",IDC_RESET_ITEMS,7,68,140,16
+END
+
+IDD_SETTING_SPAWN DIALOGEX 0, 0, 330, 228
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Spawns"
+FONT 9, "Segoe UI", 0, 0, 0x0
+BEGIN
+    CONTROL         "Vorschau auf der Spawns-Seite anzeigen",IDC_NPCVIEW,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,15,12,250,10
+    CONTROL         "",IDC_SPAWNBG_COLOR,"Static",SS_BLACKFRAME | SS_NOTIFY | SS_SUNKEN,15,28,18,16
+    LTEXT           "Hintergrundfarbe der Vorschau (Feld anklicken)",IDC_SPAWNBGCOL,38,32,250,9,NOT WS_GROUP
+    PUSHBUTTON      "Spawn-Einstellungen zurücksetzen",IDC_RESET_SPAWN,7,54,140,16
+END
+
+IDD_SETTING_PATHS DIALOGEX 0, 0, 330, 228
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dateipfade"
+FONT 9, "Segoe UI", 0, 0, 0x0
+BEGIN
+    GROUPBOX        "Standard-Client (client.exe oder ClassicUO.exe)",-1,7,7,316,34
+    EDITTEXT        IDC_DEFAULTCLIENT,15,20,246,14,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "Durchsuchen",IDC_CLIENTBROWSE,265,20,50,14
+    GROUPBOX        "MUL-Dateien (Grafiken, Karten, Farben)",-1,7,46,316,52
+    EDITTEXT        IDC_DEFUALTMULPATH,15,59,246,14,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "Durchsuchen",IDC_AS_MULBROWSE,265,59,50,14
+    CONTROL         "Gleicher Ordner wie der Client",IDC_AS_USESAMEPATHASCLIENT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,15,79,200,10
+    PUSHBUTTON      "Pfade zurücksetzen",IDC_RESET_PATHS,7,104,120,16
+END
+
+IDD_REMINDER_TAB DIALOGEX 0, 0, 760, 353
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Reminder"
+FONT 9, "Segoe UI", 0, 0, 0x0
+BEGIN
+    CONTROL         "",IDC_FRAMETEXT,"RichEdit20A",ES_MULTILINE | ES_AUTOVSCROLL | ES_READONLY | ES_WANTRETURN | WS_BORDER | WS_VSCROLL | WS_TABSTOP,402,64,347,269
+    EDITTEXT        IDC_TITLE,435,20,314,39,ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "",IDC_LIST,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | WS_BORDER | WS_TABSTOP,11,20,181,314
+    CONTROL         "Monthly",IDC_MONTHLY,"Button",BS_AUTORADIOBUTTON | WS_DISABLED,208,92,64,22
+    CONTROL         "Weekly",IDC_WEEKLY,"Button",BS_AUTORADIOBUTTON | WS_DISABLED,208,126,64,22
+    CONTROL         "Daily",IDC_DAILY,"Button",BS_AUTORADIOBUTTON | WS_DISABLED,208,160,64,22
+    CONTROL         "",IDC_TIMEPICKER,"SysDateTimePick32",DTS_RIGHTALIGN | DTS_UPDOWN | WS_DISABLED | WS_TABSTOP | 0x8,290,120,93,42
+    CONTROL         "",IDC_DATEPICKER,"SysDateTimePick32",DTS_RIGHTALIGN | DTS_LONGDATEFORMAT | WS_DISABLED | WS_TABSTOP,200,291,194,42
+    CONTROL         "Once",IDC_ONCE,"Button",BS_AUTORADIOBUTTON | WS_DISABLED,208,193,64,22
+    CONTROL         "On Startup",IDC_STARTUP,"Button",BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,290,81,91,36
+    CONTROL         "Never",IDC_NEVER,"Button",BS_AUTORADIOBUTTON | WS_DISABLED,208,227,64,22
+    PUSHBUTTON      "Save",IDC_SAVE,283,188,53,34,WS_DISABLED
+    LTEXT           "Title",IDC_STATIC,402,31,27,22
+    COMBOBOX        IDC_WEEKDAY,283,235,110,45,CBS_DROPDOWNLIST | WS_DISABLED | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Add",IDC_ADD,208,20,53,34
+    PUSHBUTTON      "Edit",IDC_EDIT,275,20,53,34,WS_DISABLED
+    PUSHBUTTON      "Delete",IDC_DELETE,341,20,53,34,WS_DISABLED
+    GROUPBOX        "Remind me",IDC_STATIC,200,53,77,230
+    GROUPBOX        "Time",IDC_STATIC,283,53,110,120
+    PUSHBUTTON      "Cancel",IDC_CANCEL,341,188,53,34,WS_DISABLED
+END
+
+IDD_REMINDER DIALOGEX 0, 0, 230, 137
+STYLE DS_SETFONT | DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Reminder"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    CONTROL         "",IDC_TEXT,"RichEdit20A",ES_MULTILINE | ES_AUTOHSCROLL | ES_READONLY | ES_WANTRETURN | WS_BORDER | WS_TABSTOP,7,7,216,106
+    PUSHBUTTON      "Delete Reminder",IDC_DELETE,105,116,72,14
+    PUSHBUTTON      "Don't Reminde Me Again",IDC_NEVER,7,116,94,14
+    PUSHBUTTON      "Close",IDC_CLOSE,182,116,41,14
+END
+
+IDD_SETTING_PATH_OVERRIDE DIALOGEX 0, 0, 330, 228
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "MUL-Pfade"
+FONT 9, "Segoe UI", 0, 0, 0x0
+BEGIN
+    LTEXT           "Einzelne MUL-Dateien aus einem anderen Ordner laden: Datei wählen, dann ""Durchsuchen"".",-1,7,7,316,9
+    CONTROL         "",IDC_PATHLIST,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_ALIGNLEFT | LVS_NOSORTHEADER | WS_BORDER | WS_TABSTOP,7,19,316,180
+    PUSHBUTTON      "Durchsuchen",IDC_PATHBROWSE,7,205,70,16,WS_DISABLED
+    PUSHBUTTON      "Standardpfad",IDC_RESETPATH,81,205,80,16,WS_DISABLED
+    PUSHBUTTON      "Alle Pfade zurücksetzen",IDC_RESET_OVERPATHS,165,205,110,16
+END
+
+IDD_DASHBOARD_TAB DIALOGEX 0, 0, 860, 380
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Übersicht"
+FONT 9, "Segoe UI", 0, 0, 0x0
+BEGIN
+    LTEXT           "",IDC_DASH_GREETING,7,4,400,26,SS_CENTERIMAGE
+    LTEXT           "",IDC_DASH_SUBTITLE,7,32,400,14
+    CTEXT           "",IDC_DASH_CONNSTATUS,520,7,130,24,SS_CENTERIMAGE | SS_NOTIFY
+    PUSHBUTTON      "Verbinden",IDC_DASH_CONNECT,654,7,90,24
+    DEFPUSHBUTTON   "Client starten",IDC_DASH_STARTCLIENT,748,7,105,24
+
+    GROUPBOX        "CLIENT",IDC_STATIC,7,50,160,60
+    LTEXT           "",IDC_DASH_CLIENT,19,76,140,28,SS_CENTERIMAGE
+    GROUPBOX        "PROFIL",IDC_STATIC,172,50,160,60
+    LTEXT           "",IDC_DASH_PROFILE,184,76,140,28,SS_CENTERIMAGE | SS_ENDELLIPSIS
+    GROUPBOX        "GELADENE ITEMS",IDC_STATIC,337,50,160,60
+    LTEXT           "",IDC_DASH_ITEMCOUNT,349,76,140,28,SS_CENTERIMAGE
+    GROUPBOX        "GELADENE NPCS",IDC_STATIC,502,50,160,60
+    LTEXT           "",IDC_DASH_NPCCOUNT,514,76,140,28,SS_CENTERIMAGE
+    GROUPBOX        "REMOTE-KONSOLE",IDC_STATIC,667,50,186,60
+    LTEXT           "",IDC_DASH_CONNPORT,679,76,166,28,SS_CENTERIMAGE
+
+    GROUPBOX        "Letzte Ereignisse",IDC_STATIC,7,118,420,256
+    CONTROL         "",IDC_DASH_LOG,"RichEdit20A",ES_MULTILINE | ES_READONLY | ES_AUTOVSCROLL | ES_WANTRETURN | WS_VSCROLL | NOT WS_BORDER,15,138,404,228
+
+    GROUPBOX        "Zuletzt erstellt",IDC_STATIC,432,118,200,256
+    CONTROL         "",IDC_DASH_RECENT,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_NOCOLUMNHEADER | WS_TABSTOP,440,138,184,208
+    LTEXT           "Doppelklick erstellt es erneut.",IDC_STATIC,440,352,184,9
+
+    GROUPBOX        "Schnellaktionen",IDC_STATIC,637,118,216,256
+    CONTROL         "List1",IDC_DASH_QUICKLIST,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_NOCOLUMNHEADER | WS_TABSTOP,645,138,200,142
+    EDITTEXT        IDC_DASH_QALABEL,645,286,200,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_DASH_QACMD,645,304,200,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Hinzufügen",IDC_DASH_QAADD,645,322,98,16
+    PUSHBUTTON      "Entfernen",IDC_DASH_QADEL,747,322,98,16
+    LTEXT           "Doppelklick führt aus. Eigene Aktion: Beschriftung und Befehl mit Punkt.",IDC_STATIC,645,342,200,24
+END
+
+IDD_MISC_TAB DIALOGEX 0, 0, 860, 380
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Zauber & Klänge"
+FONT 9, "Segoe UI", 0, 0, 0x0
+BEGIN
+    LTEXT           "Anhören spielt nur bei dir am PC ab - ""Im Spiel"" schickt .sound bzw. .midilist an den Client. Zaubern: .cast, danach das Ziel anklicken.",IDC_STATIC,7,4,846,9
+
+    GROUPBOX        "Zauber",IDC_STATIC,7,16,280,358
+    EDITTEXT        IDC_SPELLFILTER,15,29,264,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SPELL_LIST,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | WS_BORDER | WS_TABSTOP,15,47,264,282
+    LTEXT           "Nr.",IDC_STATIC,15,340,14,9
+    CTEXT           "000",IDC_SPELL_ID,32,338,40,13,SS_CENTERIMAGE | SS_SUNKEN
+    PUSHBUTTON      "Zaubern",IDC_CAST_SPELL,180,335,99,18
+
+    GROUPBOX        "Musik",IDC_STATIC,292,16,280,358
+    EDITTEXT        IDC_MUSICFILTER,300,29,264,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_MUSIC_LIST,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | WS_BORDER | WS_TABSTOP,300,47,264,282
+    PUSHBUTTON      "Anhören",IDC_PLAYMIDI,300,335,58,18
+    PUSHBUTTON      "Stopp",IDC_STOPMIDI,362,335,44,18
+    CTEXT           "00",IDC_MUSIC_ID,410,338,32,13,SS_CENTERIMAGE | SS_SUNKEN
+    PUSHBUTTON      "Im Spiel abspielen",IDC_SENDMIDI,446,335,118,18
+
+    GROUPBOX        "Klänge",IDC_STATIC,577,16,276,358
+    EDITTEXT        IDC_SOUNDFILTER,585,29,260,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SOUND_LIST,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | WS_BORDER | WS_TABSTOP,585,47,260,282
+    PUSHBUTTON      "Anhören",IDC_PLAY_SFX,585,335,58,18
+    PUSHBUTTON      "Stopp",IDC_STOP_SFX,647,335,44,18
+    CTEXT           "0000",IDC_SFX_ID,695,338,36,13,SS_CENTERIMAGE | SS_SUNKEN
+    PUSHBUTTON      "Im Spiel abspielen",IDC_SEND_SFX,735,335,110,18
+END
+
+IDD_SCRIPT_EDITOR DIALOGEX 0, 0, 520, 340
+STYLE DS_SETFONT | DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Skript bearbeiten"
+FONT 9, "Segoe UI", 0, 0, 0x0
+BEGIN
+    PUSHBUTTON      "Speichern",IDC_SAVE,7,7,70,16
+    LTEXT           "Speichert die ganze Datei - danach im Spiel resync, damit Sphere die Änderung lädt.",IDC_STATIC,84,10,429,9
+    CONTROL         "",IDC_SCRIPT_PAGE,"RichEdit20A",ES_MULTILINE | ES_AUTOVSCROLL | ES_AUTOHSCROLL | ES_WANTRETURN | WS_BORDER | WS_VSCROLL | WS_HSCROLL | WS_TABSTOP,7,28,506,305
+END
+
+IDD_SCRIPT_INFO DIALOGEX 0, 0, 340, 230
+STYLE DS_SETFONT | DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Skript-Info"
+FONT 9, "Segoe UI", 0, 0, 0x0
+BEGIN
+    CONTROL         "",IDC_INFO_SCREEN,"RichEdit20A",ES_MULTILINE | ES_AUTOVSCROLL | ES_AUTOHSCROLL | ES_READONLY | WS_BORDER | WS_VSCROLL | WS_HSCROLL | WS_TABSTOP,7,7,326,216
+END
+
+IDD_MULTIVIEW DIALOGEX 0, 0, 480, 231
+STYLE DS_SETFONT | DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Multi-Ansicht"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    CONTROL         "",IDC_MULTIVIEW,"Static",SS_BITMAP | SS_CENTERIMAGE | SS_REALSIZEIMAGE,7,7,466,217
+END
+
+IDD_TOOLBAR DIALOGEX 0, 0, 234, 24
+STYLE DS_SETFONT | WS_POPUP
+EXSTYLE WS_EX_TOOLWINDOW | WS_EX_TOPMOST
+FONT 9, "Segoe UI", 0, 0, 0x0
+BEGIN
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_COLOR_DLG DLGINIT
+BEGIN
+    IDC_TYPELIST, 0x403, 6, 0
+0x7449, 0x6d65, 0x0073, 
+    IDC_TYPELIST, 0x403, 5, 0
+0x504e, 0x7343, "\000" 
+    0
+END
+
+IDD_SETTING_GENERAL DLGINIT
+BEGIN
+    IDC_STARTTAB, 0x403, 8, 0
+0x6547, 0x656e, 0x6172, 0x006c, 
+    IDC_STARTTAB, 0x403, 7, 0
+0x7254, 0x7661, 0x6c65, "\000" 
+    IDC_STARTTAB, 0x403, 7, 0
+0x7053, 0x7761, 0x736e, "\000" 
+    IDC_STARTTAB, 0x403, 16, 0
+0x6843, 0x7261, 0x6361, 0x6574, 0x2072, 0x7754, 0x6165, 0x006b, 
+    IDC_STARTTAB, 0x403, 6, 0
+0x7449, 0x6d65, 0x0073, 
+    IDC_STARTTAB, 0x403, 11, 0
+0x7449, 0x6d65, 0x5420, 0x6577, 0x6b61, "\000" 
+    IDC_STARTTAB, 0x403, 8, 0
+0x6341, 0x6f63, 0x6e75, 0x0074, 
+    IDC_STARTTAB, 0x403, 5, 0
+0x694d, 0x6373, "\000" 
+    IDC_STARTTAB, 0x403, 9, 0
+0x614c, 0x6e75, 0x6863, 0x7265, "\000" 
+    IDC_STARTTAB, 0x403, 9, 0
+0x6f43, 0x6d6d, 0x6e61, 0x7364, "\000" 
+    IDC_STARTTAB, 0x403, 9, 0
+0x6552, 0x696d, 0x646e, 0x7265, "\000" 
+    IDC_STARTTAB, 0x403, 5, 0
+0x6f4c, 0x7367, "\000"
+    IDC_STARTTAB, 0x403, 10, 0
+0x6144, 0x6873, 0x6f62, 0x7261, 0x0064,
+    0
+END
+
+IDD_REMINDER_TAB DLGINIT
+BEGIN
+    IDC_WEEKDAY, 0x403, 7, 0
+0x7553, 0x646e, 0x7961, "\000" 
+    IDC_WEEKDAY, 0x403, 7, 0
+0x6f4d, 0x646e, 0x7961, "\000" 
+    IDC_WEEKDAY, 0x403, 8, 0
+0x7554, 0x7365, 0x6164, 0x0079, 
+    IDC_WEEKDAY, 0x403, 10, 0
+0x6557, 0x6e64, 0x7365, 0x6164, 0x0079, 
+    IDC_WEEKDAY, 0x403, 9, 0
+0x6854, 0x7275, 0x6473, 0x7961, "\000" 
+    IDC_WEEKDAY, 0x403, 7, 0
+0x7246, 0x6469, 0x7961, "\000" 
+    IDC_WEEKDAY, 0x403, 9, 0
+0x6153, 0x7574, 0x6472, 0x7961, "\000" 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU1 MENUEX 
+BEGIN
+    POPUP "Settings",                       65535,MFT_STRING,MFS_ENABLED
+    BEGIN
+        MENUITEM "General",                     ID_SETTINGS_GENERAL,MFT_STRING,MFS_ENABLED
+        MENUITEM "File Paths",                  ID_SETTINGS_FILEPATHS,MFT_STRING,MFS_ENABLED
+        MENUITEM "Item Tab",                    ID_SETTINGS_ITEMTAB,MFT_STRING,MFS_ENABLED
+        MENUITEM "Travel Tab",                  ID_SETTINGS_TRAVELTAB,MFT_STRING,MFS_ENABLED
+        MENUITEM "Spawn Tab",                   ID_SETTINGS_SPAWNTAB,MFT_STRING,MFS_ENABLED
+        MENUITEM "Override MulPaths",           ID_SETTINGS_OVERRIDEPATHS,MFT_STRING,MFS_ENABLED
+    END
+    POPUP "Profiles",                       65535,MFT_STRING,MFS_ENABLED
+    BEGIN
+        MENUITEM "Options",                     ID_PROFILES_OPTION,MFT_STRING,MFS_ENABLED
+        MENUITEM MFT_SEPARATOR
+        MENUITEM "Unload Profile",              ID_PROFILES_UNLOAD,MFT_STRING,MFS_ENABLED
+        MENUITEM "Load Default Profile",        ID_PROFILES_LOADDEFAULT,MFT_STRING,MFS_ENABLED
+        MENUITEM "Load Last Profile",           ID_PROFILES_LOADLASTPROFILE,MFT_STRING,MFS_ENABLED
+    END
+    POPUP "Help",                           65535,MFT_STRING,MFS_ENABLED
+    BEGIN
+        MENUITEM "About Axis X",   ID_HELP_ABOUTAXISX,MFT_STRING,MFS_ENABLED
+        MENUITEM "Documentation",               ID_HELP_DOCUMENTATION,MFT_STRING,MFS_ENABLED
+    END
+    POPUP "Exit",                           65535,MFT_STRING | MFT_RIGHTJUSTIFY,MFS_ENABLED
+    BEGIN
+        MENUITEM "Close Axis X",   ID_EXIT_CLOSEAXISX,MFT_STRING,MFS_ENABLED
+    END
+END
+
+IDR_MENU2 MENU 
+BEGIN
+    POPUP "Tool Bar Menu"
+    BEGIN
+        MENUITEM "Settings",                    ID_TOOLBARMENU_SETTINGS
+        MENUITEM "Profile",                     ID_TOOLBARMENU_PROFILE
+        MENUITEM "Help",                        ID_TOOLBARMENU_HELP
+        MENUITEM "Exit",                        ID_TOOLBARMENU_EXIT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_LICENCE1            "This program is free software; you can redistribute it and/or modify it under the terms of version 2 of the GNU General Public License as published by the Free Software Foundation. "
+    IDP_SOCKETS_INIT_FAILED "Windows sockets initialization failed."
+    IDS_LICENCE2            "This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details."
+    IDS_LICENCE3            "You should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA"
+    IDS_COPY1               "© %1 Daniel Kowarek"
+    IDS_COPY2               "Erstellt am %1"
+    IDS_COPY3               "Für Schattenwelt / SphereX angepasst (ursprünglich Sphereserver %1+)"
+    IDS_COPY4               "Beruht auf Axis2 und dem ursprünglichen Axis:"
+    IDS_COPY5               "© 1998-2003 Philip A. Esterle + parts © 2002 Adron"
+    IDS_COPY6               "© 2004-2005 Benoit Croussette (Axis2, 55rx / 56x mods)"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#include "res\AxisX.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"     // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

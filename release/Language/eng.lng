@@ -1,12 +1,12 @@
 [LANGUAGE]
 
-IDS_ABOUTBOX=About Axis2
+IDS_ABOUTBOX=About Axis X
 IDS_ACCOUNT=Account
 IDS_ADDDESTINATION=Custom Destination Editor
 IDS_ADMIN=Admin
 IDS_ALLMOVE=Allmove
 IDS_AXIS_PROFILE=<Axis Profile>
-IDS_AXIS_VERSION=Axis2 version %1
+IDS_AXIS_VERSION=Axis X version %1
 IDS_AXISTITLE=%1 - Press F1 for Help
 
 IDS_BAN=Ban
@@ -25,7 +25,8 @@ IDS_CLIENTPATH=Client path is %1
 IDS_CLIENTVER=Client version is %1
 IDS_COLORINDEX=Color Index
 IDS_COLORSELECTION=Color Selection
-IDS_COMMANDS=Commands
+IDS_COMMANDS=Custom Commands
+IDS_DASHBOARD=Overview
 IDS_CREATE_TABS=Creating Tabs
 
 IDS_DARK=Dark
@@ -58,7 +59,7 @@ IDS_FIX=Fix
 IDS_FLIP=Flip
 IDS_FORGIVE=Forgive
 
-IDS_GENERAL=General
+IDS_GENERAL=GM Commands
 IDS_GM=GM Toggle
 IDS_GMPAGE=GM Page
 IDS_GO_ORIGIN=Go Origin
@@ -121,7 +122,7 @@ IDS_INVENTORY=Inventory
 IDS_INVIS=Invisible
 IDS_INVUL=Invul
 IDS_ITEMS=Items
-IDS_ITEM_TWEAK=Item Tweak
+IDS_ITEM_TWEAK=Edit Item
 
 IDS_JAIL=Jail
 
@@ -142,7 +143,7 @@ IDS_LOGS=Log
 
 IDS_MAP=Map
 IDS_MAP_REGION=Map %1!d! Regions
-IDS_MISC=Misc
+IDS_MISC=Spells & Sounds
 IDS_MULPATH=Mul path is %1
 IDS_MULTIPLE_INSTANCES=Checking multiple instances
 
@@ -160,7 +161,7 @@ IDS_OK=OK
 IDS_ON=On
 
 IDS_PALETTE=Color Picker
-IDS_PLAYER_TWEAK=Character Tweak
+IDS_PLAYER_TWEAK=Edit Character
 IDS_PLVL0=Guest
 IDS_PLVL1=Player/NPC
 IDS_PLVL2=Counselor

@@ -1,0 +1,539 @@
+# Axis X - Uebersetzung der deutschen Oberflaechentexte nach Englisch (#95)
+# Format: Deutsch<TAB>English  -  \n steht fuer einen Zeilenumbruch. Datei in Windows-1252.
+# Fehlt ein Eintrag, zeigt Axis den deutschen Text. Pflege: tools\Extract-Translatable.ps1 -Table <diese Datei>
+Reisen	Travel
+Suchen: Name, Kategorie oder Koordinaten - mehrere Wörter müssen alle passen	Search: name, category or coordinates - all words must match
+Leeren	Clear
+Kategorien	Categories
+Neu	New
+Bearbeiten	Edit
+Löschen	Delete
+Eigene Orte werden in Axis gespeichert - Bearbeiten/Löschen nur für eigene Orte.	Custom locations are stored in Axis - edit/delete only works for custom locations.
+Karte	Map
+Weltkarte ...	World map ...
+Klick in die Karte wählt die Stelle	Click the map to pick a spot
+Hinreisen	Go there
+Ziel hinschicken	Send target there
+Wo bin ich?	Where am I?
+Ausgewählter NPC	Selected NPC
+Am Ziel - danach den NPC im Spiel anklicken	On target - then click the NPC in game
+Spawnpunkt für diesen NPC	Spawn point for this NPC
+Suchen: Name, Defname, Körper-ID oder Kategorie - mehrere Wörter müssen alle passen	Search: name, defname, body ID or category - all words must match
+Beschwören	Summon
+Doppelklick oder Enter in der Liste = Beschwören. Regler: Blickrichtung.	Double-click or Enter in the list = summon. Slider: facing.
+Entfernen	Remove
+Schrumpfen	Shrink
+Einfrieren	Freeze
+Zuhause hier	Home here
+Heimradius	Home range
+Felder	tiles
+Anzahl	Amount
+Min. (Min.)	Min. (min)
+Max. (Min.)	Max. (min)
+1. Spawnstein platzieren	1. Place spawn stone
+2. Einstellungen übernehmen	2. Apply settings
+Axis X lädt ...	Axis X is loading ...
+Profil	Profile
+Skriptordner	Script folder
+Durchsuchen	Browse
+Web-Profil (Skripte von der URL)	Web profile (scripts from the URL)
+Standardprofil	Default profile
+Skripte in die Sphere-Tabellen laden	Load scripts into the Sphere tables
+Speichern	Save
+Abbrechen	Cancel
+Skripte laden	Load scripts
+Skriptauswahl speichern	Save script selection
+Profil exportieren	Export profile
+Skripte im Profil (Haken = wird geladen)	Scripts in the profile (checked = loaded)
+Charakter bearbeiten	Edit Character
+Alle Knöpfe dieser Seite wirken auf den Charakter, den du danach im Spiel anklickst.	Every button on this page affects the character you click in game afterwards.
+Zustand	State
+Unverwundbar	Invulnerable
+Tot	Dead
+Gelähmt	Paralyzed
+Schläft	Sleeping
+Vergiftet	Poisoned
+Halluziniert	Hallucinating
+Versteinert	Stoned
+Kriminell	Criminal
+Sichtbarkeit und Magie	Visibility and magic
+Unsichtbar	Invisible
+Versteckt	Hidden
+Körperlos	Insubstantial
+Inkognito	Incognito
+Verwandelt	Polymorphed
+Nachtsicht	Night sight
+Reaktive Rüstung	Reactive armor
+Magiereflexion	Magic reflect
+Geistersprache	Spirit speak
+Sonstiges	Other
+Kriegsmodus	War mode
+Trägt Schild	Has shield
+Schießt in Bewegung	Archer can move
+Fliegt	Flying
+Drinnen	Indoors
+Beschworen	Conjured
+Haustier	Pet
+Gespawnt	Spawned
+Wird geritten	Ridden
+Reitet	Mounted
+Kommunikationskristall	Communication crystal
+Wert (hex):	Value (hex):
+Zurücksetzen	Reset
+Auf Charakter setzen	Apply to character
+Setzt alle Flags auf einmal (set flags) - nicht angehakte Flags werden dabei entfernt.	Sets all flags at once (set flags) - unchecked flags are removed.
+Werte ändern	Change values
+Art	Kind
+Eigenschaft	Property
+Wert	Value
+Setzen	Set
+Hinzufügen	Add
+Protokoll	Log
+Anzeigen	Show
+Kopieren	Copy
+Speichert Zugänge (Server und Konto) und startet den Client direkt damit.	Stores logins (server and account) and starts the client with them.
+Zugänge	Logins
+Zugangsdaten	Login details
+Konto	Account
+Passwort	Password
+Server (IP)	Server (IP)
+Anderer Client (z.B. ClassicUO)	Other client (e.g. ClassicUO)
+Wird mit "Anderen Client starten" benutzt.	Used by "Start other client".
+Starten	Start
+Client starten	Start client
+Anderen Client starten	Start other client
+ClassicUO bekommt Server und Konto per Kommandozeile, der alte Client über login.cfg / uo.cfg.	ClassicUO gets server and account on the command line, the classic client via login.cfg / uo.cfg.
+Item bearbeiten	Edit Item
+Alle Knöpfe dieser Seite wirken auf das Item, das du danach im Spiel anklickst.	Every button on this page affects the item you click in game afterwards.
+Attribute	Attributes
+Identifiziert	Identified
+Verfällt	Decays
+Newbie (bleibt beim Tod)	Newbie (kept on death)
+Immer beweglich	Always movable
+Nie beweglich	Never movable
+Magisch	Magic
+Gehört der Stadt	Owned by town
+Verflucht	Cursed
+Verdammt	Damned
+Gesegnet	Blessed
+Heilig	Sacred
+Zu verkaufen	For sale
+Gestohlen	Stolen
+Kann verfallen	Can decay
+Static (eingefroren)	Static (frozen)
+Auf Item setzen	Apply to item
+Setzt alle Haken auf einmal (set attr) - bestehende Attribute des Items werden ersetzt.	Sets all checkboxes at once (set attr) - the item's existing attributes are replaced.
+Assistenten	Wizards
+Tür-Assistent	Door wizard
+Licht-Assistent	Light wizard
+Typ	Type
+Typ setzen	Set type
+set type <typ> - z.B. t_container, t_door, t_light_lit	set type <type> - e.g. t_container, t_door, t_light_lit
+set events +name / -name - Name wählen oder eintippen	set events +name / -name - pick or type a name
+Wert setzen	Set value
+Farbe	Color
+Schnellpalette: Linksklick wählt die Farbe, Rechtsklick belegt das Feld neu	Quick palette: left click picks the color, right click reassigns the slot
+Farbe setzen	Set color
+Alle Farben ...	All colors ...
+Ausgewähltes Item	Selected item
+Platzieren - danach das Ziel im Spiel anklicken	Place - then click the target in game
+Spawnpunkt für dieses Item	Spawn point for this item
+Suchen: Name, Defname, Grafik-ID oder Kategorie - mehrere Wörter müssen alle passen	Search: name, defname, graphic ID or category - all words must match
+Erstellen	Create
+Als Static setzen (fest in der Welt)	Place as static (fixed in the world)
+Doppelklick in der Liste = Erstellen	Double-click in the list = create
+Bewegen (Mitte: Felder)	Move (center: tiles)
+NO	NE
+O	E
+SO	SE
+Höhe und Richtung	Height and direction
+Höher	Up
+Tiefer	Down
+Drehen	Rotate
+Kacheln auf Z-Höhe	Tile at Z height
+Kacheln	Tile
+Fläche im Spiel aufziehen	Drag an area in game
+Entfernen (Ziel)	Remove (target)
+Nuke (Fläche)	Nuke (area)
+Nuke: 2 Ecken aufziehen - leer = alle Items löschen, sonst Befehl auf jedes Item	Nuke: drag 2 corners - empty = delete all items, otherwise run the command on every item
+GM-Befehle	GM Commands
+Ich selbst	Myself
+Alles bewegen	Move all
+Alles hören	Hear all
+GM-Modus	GM mode
+Fix (Höhe)	Fix (height)
+Ziel - danach anklicken	Target - click afterwards
+Verknüpfen	Link
+Duplizieren	Duplicate
+Disziplin - danach anklicken	Discipline - click afterwards
+Einsperren	Jail
+Vergeben	Forgive
+Trennen	Disconnect
+Wiederbeleben	Resurrect
+GM-Rufe (Pages)	GM pages
+An	On
+Aus	Off
+Liste	List
+Warteschlange	Queue
+Zum Spieler	Go to player
+Zum Rufort	Go to page origin
+Bannen	Ban
+Händler - danach anklicken	Vendors - click afterwards
+Kaufen	Buy
+Verkaufen	Sell
+Inventar	Inventory
+Einkäufe	Purchases
+Muster	Samples
+Auffüllen	Restock
+Wetter und Licht (Sektor)	Weather and light (sector)
+Schnee	Snow
+Regen	Rain
+Trocken	Dry
+Licht setzen	Set light
+Welt speichern	Save world
+Statics speichern	Save statics
+Alle Händler auffüllen	Restock all vendors
+Remote-Konsole	Remote console
+Vorsicht - fragt vorher nach	Careful - asks first
+Töten	Kill
+Töten/Entfernen: Ziel anklicken. Nuke: zwei Ecken aufziehen - alle Items darin werden gelöscht.	Kill/Remove: click the target. Nuke: drag two corners - all items inside are deleted.
+Eigene Befehle	Custom Commands
+Eigene Knöpfe für Befehle, die Axis nicht kennt. Den Befehl mit Punkt eintragen (z.B. .xcolor 021) - ein Klick auf den Knopf schickt ihn an den Client.	Your own buttons for commands Axis doesn't know. Enter the command with a dot (e.g. .xcolor 021) - clicking the button sends it to the client.
+Knopf	Button
+Beschriftung	Caption
+Befehl	Command
+Anlegen	Create
+Ändern	Change
+Ein Klick auf einen Knopf rechts füllt die Felder. Ändern/Entfernen: erst hier drücken, dann rechts den Knopf anklicken.	Clicking a button on the right fills the fields. Change/Remove: press here first, then click the button on the right.
+Reiter	Tab
+Neuer Reiter	New tab
+Farbe wählen	Choose color
+Helligkeit der Übersicht	Overview brightness
+Maus über Farbe:	Mouse over color:
+Gewählte Farbe	Selected color
+Nummer:	Number:
+Name:	Name:
+Nach Name suchen:	Search by name:
+Vorschau	Preview
+Grafik	Graphic
+Übernehmen	Apply
+Alle Knöpfe dieser Seite ändern das Konto des Charakters, den du danach im Spiel anklickst.	Every button on this page changes the account of the character you click in game afterwards.
+Berechtigungsstufe (PLEVEL)	Privilege level (PLEVEL)
+0 - Gast	0 - Guest
+1 - Spieler	1 - Player
+2 - Berater (Counselor)	2 - Counselor
+3 - Seher (Seer)	3 - Seer
+5 - Entwickler	5 - Developer
+7 - Besitzer (Owner)	7 - Owner
+Stufe setzen	Set level
+xprivset <stufe> - wirkt auf das Konto des angeklickten Charakters	xprivset <level> - applies to the account of the clicked character
+Kontorechte (PRIV)	Account privileges (PRIV)
+Als GM auftreten	Act as GM
+GM-Rufe hören	Hear GM pages
+Kampfdetails anzeigen	Show combat details
+Debug-Modus	Debug mode
+GM-Rechte anzeigen	Show GM privileges
+Telnet-Kurzbefehle	Telnet shortcuts
+Eingesperrt	Jailed
+Gesperrt / gebannt	Blocked / banned
+Alles sehen	See all
+Rechte setzen	Set privileges
+set account.priv <wert> - nicht angehakte Rechte werden dabei entfernt	set account.priv <value> - unchecked privileges are removed
+Client-Stufe (RESDISP) - welche Erweiterung das Konto sieht	Client level (RESDISP) - which expansion the account sees
+0 - vor T2A	0 - pre-T2A
+Client-Stufe setzen	Set client level
+set account.resdisp <stufe>	set account.resdisp <level>
+Über Axis X	About Axis X
+Axis X unterstützen (Ko-fi)	Support Axis X (Ko-fi)
+Eigenen Ort bearbeiten	Edit custom location
+Kategorie	Category
+Unterbereich	Subsection
+Neue Kategorie oder Unterbereich einfach eintippen.	Just type a new category or subsection.
+Türart	Door type
+Ausrichtung	Orientation
+Nord	North
+Tür anklicken, dann die Stelle im Spiel wählen	Click a door, then pick the spot in game
+Lichtart	Light type
+Lichtform anklicken, dann die Lichtquelle im Spiel wählen (set morez)	Click a light shape, then pick the light source in game (set morez)
+Helligkeit der Vorschau	Preview brightness
+Allgemein	General
+Programm	Program
+Mehrere Axis-Fenster erlauben	Allow multiple Axis windows
+Immer im Vordergrund	Always on top
+Schließen über das Systemmenü erlauben	Allow closing from the system menu
+Standardprofil beim Start laden	Load default profile on startup
+Symbolleisten-Modus aus	Disable toolbar mode
+Startseite	Start page
+Spiel	Game
+Befehlszeichen	Command prefix
+(meist .)	(usually .)
+Client-Fenstertitel	Client window title
+Aussehen	Appearance
+Logo (Datei oder URL)	Logo (file or URL)
+Symbol (.ico, Datei oder URL)	Icon (.ico, file or URL)
+Allgemeines zurücksetzen	Reset general settings
+Alle Einstellungen zurücksetzen	Reset all settings
+Karte anzeigen	Show map
+Statics auf der Karte zeichnen	Draw statics on the map
+Map-/Static-Dif-Dateien verwenden	Use map/static diff files
+Spawnpunkte anzeigen	Show spawn points
+Farbe NPC-Spawns (Feld anklicken)	NPC spawn color (click the box)
+Farbe Item-Spawns (Feld anklicken)	Item spawn color (click the box)
+Reise-Einstellungen zurücksetzen	Reset travel settings
+Vorschau auf der Items-Seite anzeigen	Show preview on the Items page
+Raumansicht in der Vorschau (Boden und Wände)	Room view in the preview (floor and walls)
+Hintergrundfarbe der Vorschau (Feld anklicken)	Preview background color (click the box)
+Item-Einstellungen zurücksetzen	Reset item settings
+Vorschau auf der Spawns-Seite anzeigen	Show preview on the Spawns page
+Spawn-Einstellungen zurücksetzen	Reset spawn settings
+Dateipfade	File paths
+Standard-Client (client.exe oder ClassicUO.exe)	Default client (client.exe or ClassicUO.exe)
+MUL-Dateien (Grafiken, Karten, Farben)	MUL files (art, maps, hues)
+Gleicher Ordner wie der Client	Same folder as the client
+Pfade zurücksetzen	Reset paths
+MUL-Pfade	MUL paths
+Einzelne MUL-Dateien aus einem anderen Ordner laden: Datei wählen, dann "Durchsuchen".	Load single MUL files from another folder: pick a file, then "Browse".
+Standardpfad	Default path
+Alle Pfade zurücksetzen	Reset all paths
+Übersicht	Overview
+Verbinden	Connect
+PROFIL	PROFILE
+GELADENE ITEMS	LOADED ITEMS
+GELADENE NPCS	LOADED NPCS
+REMOTE-KONSOLE	REMOTE CONSOLE
+Letzte Ereignisse	Recent events
+Zuletzt erstellt	Recently created
+Doppelklick erstellt es erneut.	Double-click creates it again.
+Schnellaktionen	Quick actions
+Doppelklick führt aus. Eigene Aktion: Beschriftung und Befehl mit Punkt.	Double-click runs it. Custom action: caption and command with a dot.
+Zauber & Klänge	Spells & Sounds
+Anhören spielt nur bei dir am PC ab - "Im Spiel" schickt .sound bzw. .midilist an den Client. Zaubern: .cast, danach das Ziel anklicken.	Listen plays only on your PC - "Play in game" sends .sound or .midilist to the client. Cast: .cast, then click the target.
+Zauber	Spells
+Nr.	No.
+Zaubern	Cast
+Musik	Music
+Anhören	Listen
+Stopp	Stop
+Im Spiel abspielen	Play in game
+Klänge	Sounds
+Skript bearbeiten	Edit script
+Speichert die ganze Datei - danach im Spiel resync, damit Sphere die Änderung lädt.	Saves the whole file - then resync in game so Sphere loads the change.
+Skript-Info	Script info
+Multi-Ansicht	Multi viewer
+© %1 Daniel Kowarek	© %1 Daniel Kowarek
+Erstellt am %1	Built on %1
+Für Schattenwelt / SphereX angepasst (ursprünglich Sphereserver %1+)	Adapted for Schattenwelt / SphereX (originally Sphereserver %1+)
+Beruht auf Axis2 und dem ursprünglichen Axis:	Based on Axis2 and the original Axis:
+Erst eine Stufe wählen.	Pick a level first.
+Erst eine Client-Stufe wählen.	Pick a client level first.
+Server-Profil aus dem Installationsordner: %s	Server profile from the installation folder: %s
+NPC (Körper)	NPC (body)
+Erst einen Namen für den Reiter eintragen.	Enter a name for the tab first.
+Den Reiter "%s" gibt es schon.	The tab "%s" already exists.
+Der letzte Reiter kann nicht gelöscht werden.	The last tab can't be deleted.
+Erst einen Reiter wählen.	Pick a tab first.
+Reiter "%s" samt Knöpfen löschen?	Delete tab "%s" including its buttons?
+Alle Knöpfe auf dem Reiter "%s" entfernen?	Remove all buttons on tab "%s"?
+Der Reiter ist voll (36 Knöpfe) - neuen Reiter anlegen.	The tab is full (36 buttons) - create a new tab.
+Erst eine Beschriftung eintragen.	Enter a caption first.
+Erst einen Befehl eintragen.	Enter a command first.
+Einen Knopf mit dieser Beschriftung gibt es auf dem Reiter schon.	A button with this caption already exists on the tab.
+Auf diesem Reiter gibt es noch keinen Knopf.	This tab has no buttons yet.
+Ändern: jetzt rechts den Knopf anklicken - er bekommt Beschriftung und Befehl aus den Feldern.	Change: now click the button on the right - it takes caption and command from the fields.
+Entfernen: jetzt rechts den Knopf anklicken, der entfernt werden soll.	Remove: now click the button on the right that should be removed.
+Knopf "%s" entfernen?	Remove button "%s"?
+Beispiele	Examples
+Verbunden	Connected
+Nicht verbunden	Not connected
+Guten Morgen	Good morning
+Guten Tag	Good afternoon
+Guten Abend	Good evening
+Axis X - dein Werkzeug für die Spielwelt	Axis X - your tool for the game world
+bereit	ready
+nicht gefunden	not found
+nicht verbunden	not connected
+Kein UO-Client gefunden - '%s' wurde nicht gesendet	No UO client found - '%s' was not sent
+Für eine Schnellaktion Beschriftung und Befehl eintragen.	Enter caption and command for a quick action.
+Schnellaktion angelegt: 	Quick action created:
+Erst eine eigene Schnellaktion in der Liste wählen (die vier festen bleiben).	Pick one of your own quick actions in the list first (the four built-in ones stay).
+(noch nichts erstellt)	(nothing created yet)
+Entfernen: das angeklickte Objekt wird endgültig gelöscht. Fortfahren?	Remove: the clicked object is deleted permanently. Continue?
+Nuke: alle Items in der aufgezogenen Fläche werden gelöscht. Fortfahren?	Nuke: all items in the dragged area are deleted. Continue?
+Töten: der angeklickte Charakter stirbt. Fortfahren?	Kill: the clicked character dies. Continue?
+Gewicht	Weight
+Eigenschaften	Properties
+Kategorie links wählen oder oben suchen	Pick a category on the left or search above
+add <defname> - Item erstellen, dann Ort im Spiel anklicken	add <defname> - create the item, then click the spot in game
+static <defname> - als festes Welt-Static setzen	static <defname> - place as a fixed world static
+xmove 0 -n (Norden)	xmove 0 -n (north)
+xmove n -n (Nordosten)	xmove n -n (north-east)
+xmove n 0 (Osten)	xmove n 0 (east)
+xmove n n (Suedosten)	xmove n n (south-east)
+xmove 0 n (Sueden)	xmove 0 n (south)
+xmove -n n (Suedwesten)	xmove -n n (south-west)
+xmove -n 0 (Westen)	xmove -n 0 (west)
+xmove -n -n (Nordwesten)	xmove -n -n (north-west)
+tile <z> <defname> - Flaeche mit dem Item auslegen	tile <z> <defname> - cover an area with the item
+add 01ea7 - Spawnstein setzen	add 01ea7 - place a spawn stone
+act.type/amount/more/more2/morep/attr/timer auf den zuletzt gesetzten Spawnstein	act.type/amount/more/more2/morep/attr/timer on the last placed spawn stone
+remove - Ziel anklicken	remove - click the target
+nuke [befehl] - zwei Ecken im Spiel anklicken	nuke [command] - click two corners in game
+Erst ein Item in der Liste wählen.	Pick an item in the list first.
+fest	fixed
+%s / %s: %d Items	%s / %s: %d items
+Unterbereich wählen, um die Items zu sehen	Pick a subsection to see its items
+Kein Item gewählt.\n\nEin Item in der Liste anklicken - dann hier erstellen, als Static setzen oder als Spawnpunkt einrichten.	No item selected.\n\nClick an item in the list - then create it here, place it as a static or set it up as a spawn point.
+\nGrafik:  0x%04X   Farbe:  0x%X	\nGraphic:  0x%04X   Color:  0x%X
+\nKategorie:  	\nCategory:
+\nGewicht:  fest   Höhe:  %u	\nWeight:  fixed   Height:  %u
+\nGewicht:  %u   Höhe:  %u	\nWeight:  %u   Height:  %u
+\nMulti (Haus/Schiff) - Rechtsklick auf die Vorschau zeigt es ganz	\nMulti (house/ship) - right-click the preview to see all of it
+Keine Treffer für "%s"	No results for "%s"
+%d Treffer für "%s" - die ersten %d angezeigt, Suche genauer fassen	%d results for "%s" - showing the first %d, narrow the search
+%d Treffer für "%s" - Enter/Pfeil runter springt in die Liste	%d results for "%s" - Enter/arrow down jumps into the list
+Symbolansicht	Icon view
+Schnellliste anzeigen	Show quick list
+Item-Infos anzeigen	Show item info
+Zur Schnellliste hinzufügen	Add to quick list
+Aus der Schnellliste entfernen	Remove from quick list
+%s ist schon in der Schnellliste	%s is already in the quick list
+Schnellliste: %d Items (Rechtsklick > Zur Schnellliste hinzufügen)	Quick list: %d items (right-click > Add to quick list)
+Keine Farbe gewählt	No color selected
+Gewählt: 0x%04X (%u)%s%s	Selected: 0x%04X (%u)%s%s
+Erst einen Typ in der Liste wählen.	Pick a type in the list first.
+Erst ein Event wählen oder eintippen.	Pick or type an event first.
+Bitte einen Namen eintragen.	Please enter a name.
+Bitte die Server-Adresse eintragen.	Please enter the server address.
+Bitte den Port eintragen.	Please enter the port.
+Den Zugang "%s" gibt es schon.	The login "%s" already exists.
+Zugang "%s" wirklich löschen?	Really delete login "%s"?
+login.cfg des Clients lässt sich nicht schreiben.	Can't write the client's login.cfg.
+Keine uo.cfg beim Client - Server ist eingetragen, das Konto bitte im Client eingeben.	No uo.cfg next to the client - the server is set, please enter the account in the client.
+Temporäre Datei lässt sich nicht schreiben.	Can't write a temporary file.
+Client nicht gefunden: 	Client not found:
+Programm konnte nicht gestartet werden (Fehler %d):\n%s	Could not start the program (error %d):\n%s
+Client gestartet: 	Client started:
+Kein Standard-Client eingetragen - Einstellungen > Dateipfade oder "Anderen Client starten" nutzen.	No default client set - use Settings > File paths or "Start other client".
+Alles	All
+Nur Warnungen	Warnings only
+Nur Hinweise	Notices only
+Protokoll in die Zwischenablage kopiert.	Log copied to the clipboard.
+Erst einen Wert eintragen.	Enter a value first.
+Aktives Profil: %s	Active profile: %s
+Profil "%s" wirklich löschen?	Really delete profile "%s"?
+Bitte einen Namen eingeben.	Please enter a name.
+Bitte eine URL eingeben.	Please enter a URL.
+Bitte den Skriptordner wählen.	Please pick the script folder.
+Profil "%s" gibt es schon.	The profile "%s" already exists.
+Die Datei %s lässt sich nicht anlegen.	Can't create the file %s.
+Profil exportiert: 	Profile exported:
+Skript bearbeiten - %s	Edit script - %s
+Die Datei %s lässt sich nicht öffnen.	Can't open the file %s.
+Die Datei %s lässt sich nicht speichern.	Can't save the file %s.
+Skript-Info - %s	Script info - %s
+Skriptdatei:	Script file:
+Skript-ID:	Script ID:
+Ort:	Location:
+Karte:	Map:
+Grafik:	Graphic:
+Farbe:	Color:
+Kategorie:	Category:
+Unterbereich:	Subsection:
+Lese %s	Reading %s
+Lade Schnellliste %s	Loading quick list %s
+Sortiere %s	Sorting %s
+Datei	File
+Pfad	Path
+Körper	Body
+add <defname> (bzw. addnpc <nummer>) - dann Ort im Spiel anklicken	add <defname> (or addnpc <number>) - then click the spot in game
+remove - NPC anklicken	remove - click the NPC
+shrink - NPC wird zur Figur	shrink - turns the NPC into a figurine
+set stone - schaltet Versteinern an/aus: NPC steht still, ist nicht angreifbar und grau. Andere Flags bleiben.	set stone - toggles petrify: the NPC stands still, cannot be attacked and turns grey. Other flags stay.
+set home - Zuhause des NPCs auf seinen Standort	set home - sets the NPC's home to its position
+set homedist <felder>	set homedist <tiles>
+act.type/amount/more/morep/attr/timer auf den zuletzt gesetzten Spawnstein	act.type/amount/more/morep/attr/timer on the last placed spawn stone
+Blickrichtung der Vorschau	Preview facing
+Erst einen NPC in der Liste wählen.	Pick an NPC in the list first.
+Spawngruppen lassen sich nicht beschwören - über einen Spawnpunkt einrichten.	Spawn groups can't be summoned - set them up via a spawn point.
+Gruppe	Group
+%s / %s: %d NPCs	%s / %s: %d NPCs
+Unterbereich wählen, um die NPCs zu sehen	Pick a subsection to see its NPCs
+Kein NPC gewählt.\n\nEinen NPC in der Liste anklicken - dann beschwören oder als Spawnpunkt einrichten.	No NPC selected.\n\nClick an NPC in the list - then summon it or set it up as a spawn point.
+\nKörper:  0x%04X   Farbe:  0x%X	\nBody:  0x%04X   Color:  0x%X
+\nSpawngruppe - nur über einen Spawnpunkt nutzbar	\nSpawn group - only usable via a spawn point
+NPC-Infos anzeigen	Show NPC info
+Schnellliste: %d NPCs (Rechtsklick > Zur Schnellliste hinzufügen)	Quick list: %d NPCs (right-click > Add to quick list)
+Kein UO-Client gefunden - Befehl nicht gesendet: 	No UO client found - command not sent:
+Gesendet: 	Sent:
+Gesendet ohne Fokus (Client liess sich nicht nach vorne holen): 	Sent without focus (the client couldn't be brought to the front):
+Koordinaten	Coordinates
+Unterbereich wählen, um die Orte zu sehen	Pick a subsection to see its locations
+%s / %s: %d Orte	%s / %s: %d locations
+Weltkarte - Karte %s (Klick wählt die Stelle)	World map - map %s (click picks the spot)
+%d Treffer für "%s" - Enter reist hin	%d results for "%s" - Enter travels there
+Item erstellen (Items-Seite)	Create item (Items page)
+NPC beschwören (Spawns-Seite)	Summon NPC (Spawns page)
+Teleport - Ziel wählen	Teleport - pick a target
+Unverwundbar an/aus	Invulnerable on/off
+fix - eigene Höhe korrigieren	fix - correct your own height
+tele - Zielort anklicken	tele - click the destination
+sagt "buy" - Händler anklicken	says "buy" - click the vendor
+sagt "sell"	says "sell"
+sector.light <wert> - 0 hell ... 30 dunkel	sector.light <value> - 0 bright ... 30 dark
+kill - Ziel anklicken	kill - click the target
+nuke - zwei Ecken aufziehen, alle Items darin werden gelöscht	nuke - drag two corners, all items inside are deleted
+Behälter	Container
+Tür	Door
+tragbar	wearable
+Waffe	Weapon
+Lichtquelle	Light source
+animiert	animated
+stapelbar	stackable
+blockiert	blocking
+begehbar	walkable
+Wasser	Water
+Werte (Stärke, Leben ...)	Stats (strength, hits ...)
+Resistenz	Resistance
+Verhalten (Brain)	Behavior (brain)
+set <skill> <wert> - Wert in Zehnteln: 1000 = 100,0	set <skill> <value> - value in tenths: 1000 = 100.0
+set <wert> <zahl> - z.B. Str, Hits, Mana	set <stat> <number> - e.g. Str, Hits, Mana
+set <resistenz> <zahl>	set <resistance> <number>
+set npc <brain> - nur für NPCs: legt das Verhalten fest	set npc <brain> - NPCs only: sets the behavior
+xevents +name / -name - Event am Charakter hinzufügen oder entfernen	xevents +name / -name - add or remove an event on the character
+set tag.<name> <wert>	set tag.<name> <value>
+set <eigenschaft> <wert> - auch SKILLLOCK.<skill> (0 hoch, 1 runter, 2 gesperrt)	set <property> <value> - also SKILLLOCK.<skill> (0 up, 1 down, 2 locked)
+Wo bin ich	Where am I
+Ziel rot färben	Color target red
+ÜBERSICHT	OVERVIEW
+WELT	WORLD
+SPIELER	PLAYERS
+WERKZEUGE	TOOLS
+Einstellungen	Settings
+Beenden	Exit
+Dokumentation	Documentation
+Sprache	Language
+Sprache (Neustart nötig)	Language (restart required)
+Sprache geändert - wird beim nächsten Start von Axis übernommen.	Language changed - takes effect the next time Axis starts.
+Versteinern	Petrify
+Server-Profil erzeugen	Create server profile
+Zuerst ein Profil mit den echten Server-Skripten laden (Skriptordner oder Web-Profil) - daraus entsteht die Datei.	Load a profile with the real server scripts first (script folder or web profile) - the file is built from it.
+Server-Profil aus "%s" erzeugen?\n\nZiel: %s\n\n%d Items, %d NPCs, %d Orte. Eine vorhandene Datei wird ersetzt.	Create the server profile from "%s"?\n\nTarget: %s\n\n%d items, %d NPCs, %d locations. An existing file will be replaced.
+Die Datei lässt sich nicht schreiben. Liegt Axis unter "Programme", Axis einmal als Administrator starten oder die Datei per "Profil exportieren" woanders speichern.	The file cannot be written. If Axis is installed under "Program Files", start Axis once as administrator or save the file elsewhere with "Export profile".
+Server-Profil erzeugt: 	Server profile created: 
+Server-Profil erzeugt:\n%s\n\nDiese Datei mit Axis ausliefern (Ordner "Profile" im Installationsordner). Wer keinen Skriptordner hat, bekommt Items, NPCs und Orte daraus.	Server profile created:\n%s\n\nShip this file with Axis (folder "Profile" in the installation folder). Anyone without a script folder gets items, NPCs and locations from it.
+Axis X wieder groß machen (oder Doppelklick auf die Leiste)	Restore Axis X (or double-click the bar)
+Ziehen zum Verschieben	Drag to move
+Beim Minimieren keine Mini-Leiste	No mini bar when minimized
+Design (Neustart nötig)	Theme (restart required)
+Dunkel	Dark
+Hell	Light
+Design geändert - wird beim nächsten Start von Axis übernommen.	Theme changed - takes effect the next time Axis starts.
+ab (Min.)	from (min)
+bis (Min.)	to (min)
+Wert:	Value:
+Bewegen (Felder)	Move (tiles)
+Nuke: 2 Ecken aufziehen - leer = Items löschen, sonst Befehl je Item	Nuke: drag 2 corners - empty = delete items, otherwise command per item
+Schnellpalette: Linksklick wählt, Rechtsklick belegt das Feld neu	Quick palette: left-click selects, right-click reassigns the slot
+Server-Profil geladen aus: %s	Server profile loaded from: %s
+Die Datei lässt sich nicht schreiben:\n%s\n\nPer "Profil exportieren" lässt sie sich woanders speichern.	The file cannot be written:\n%s\n\nUse "Export profile" to save it elsewhere.
+Server-Profil erzeugt:\n%s\n\nAxis lädt es automatisch, wenn kein Skriptordner eingestellt ist. Zum Weitergeben die Datei mitliefern: den Installer mit makensis /DWITH_PROFILE bauen oder die Datei in den Ordner "Profile" neben AxisX.exe legen.	Server profile created:\n%s\n\nAxis loads it automatically when no script folder is set. To pass it on, ship the file: build the installer with makensis /DWITH_PROFILE or put the file into the "Profile" folder next to AxisX.exe.
