@@ -403,3 +403,5 @@
 -Added: Update check - Axis X looks for a new release on GitHub at startup (at most once a day, Settings > General > "Check for updates at startup") and shows "Update now" on the overview; downloads the installer, verifies its SHA-256 checksum and starts it. Settings and server profiles are kept.
 -Added: "Check for updates now" in Settings > General.
 -Changed: The installer reuses the folder and install mode of the previous installation.
+-Fixed: A default profile is now loaded at startup by default (AxisX.ini LoadDefault 1).
+-Fixed: An AxisProfile.scp next to AxisX.exe is picked up automatically (copied to the user profile folder when new or updated) and loaded at startup.

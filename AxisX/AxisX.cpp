@@ -34,6 +34,7 @@ CAxisXApp::CAxisXApp()
 	m_pcppDashboardTab = NULL; // checked by AxisLog.cpp before the tab exists
 	m_pRConsole = NULL;
 	m_iReceiveTimeout = 60000;
+	m_dwLoadDefault = 1;
 }
 
 // The one and only CAxisXApp object
@@ -178,6 +179,18 @@ BOOL CAxisXApp::InitInstance()
 	// (*.scp): %LOCALAPPDATA%\AxisX\Profile, then "Profile" next to AxisX.exe.
 	bool bProfilePathValid = ( csProfilePath != "" ) && ( GetFileAttributes(csProfilePath) != INVALID_FILE_ATTRIBUTES )
 		&& ( GetFileAttributes(csProfilePath) & FILE_ATTRIBUTE_DIRECTORY );
+	// An AxisProfile.scp next to AxisX.exe is copied into the user profile folder
+	// when it is missing there or newer than the copy already present.
+	CString csRootProfile = m_csRootDirectory + AXIS_SERVER_PROFILE_FILE;
+	WIN32_FILE_ATTRIBUTE_DATA adRoot;
+	if ( GetFileAttributesEx(csRootProfile, GetFileExInfoStandard, &adRoot) )
+	{
+		CString csUserProfile = AxisUserProfileDir() + "\\" AXIS_SERVER_PROFILE_FILE;
+		WIN32_FILE_ATTRIBUTE_DATA adUser;
+		if ( !GetFileAttributesEx(csUserProfile, GetFileExInfoStandard, &adUser)
+			|| CompareFileTime(&adRoot.ftLastWriteTime, &adUser.ftLastWriteTime) > 0 )
+			CopyFile(csRootProfile, csUserProfile, FALSE);
+	}
 	CString csShippedProfile;
 	CString aProfileDirs[2] = { AxisUserProfileDir(false), m_csRootDirectory + "Profile" };
 	for ( int iDir = 0; iDir < 2 && csShippedProfile.IsEmpty(); iDir++ )
@@ -197,6 +210,8 @@ BOOL CAxisXApp::InitInstance()
 		PutRegistryString("Default ProfilePath", csProfilePath);
 		PutRegistryString("Last Profile Loaded", "<Axis Profile>");
 		PutRegistryString("Default Profile", "<Axis Profile>");
+		m_dwLoadDefault = 1;
+		PutRegistryDword("LoadDefault", 1);
 		m_log.Add(0, AXT("Server-Profil geladen aus: %s"), (LPCTSTR) csProfilePath);
 	}
 	if ( csProfilePath == "" )
