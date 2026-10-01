@@ -411,3 +411,10 @@
 +October 2026+
 -Fixed: A default profile is now loaded at startup by default (new installs and users who never changed the setting).
 -Fixed: An AxisProfile.scp placed next to AxisX.exe is picked up automatically (copied to %LOCALAPPDATA%\AxisX\Profile when new or updated) and loaded at startup.
+
+
+
+***Axis X 1.3***
+
++October 2026+
+-Added: The installer asks for the Ultima Online folder (prefilled from an earlier setting or a classic UO installation) and explains that it is needed for the item, map and gump previews. It can be left empty and set later in Settings > Paths.

@@ -12,6 +12,9 @@ SetCompressor /SOLID /FINAL lzma
   !define XVersionX "${AXV_1}.${AXV_2}.${AXV_3}.${AXV_4}"
   !include "MUI2.nsh"
   !include "x64.nsh"
+  !include "nsDialogs.nsh"
+  !include "FileFunc.nsh"
+  !insertmacro GetParent
 
   !define MULTIUSER_EXECUTIONLEVEL Highest
   ;64-bit program: all-users installs go to Program Files (not x86)
@@ -85,6 +88,9 @@ SetCompressor /SOLID /FINAL lzma
 
   Var StartMenuFolder
   Var TempInstalldir
+  Var UOFolder
+  Var UOFolderText
+  Var UOFolderDlg
 
 ;--------------------------------
 ;Pages
@@ -92,6 +98,7 @@ SetCompressor /SOLID /FINAL lzma
   !insertmacro MUI_PAGE_LICENSE "${AXIS_PATH}\LICENSE"
   !insertmacro MULTIUSER_PAGE_INSTALLMODE
   !insertmacro MUI_PAGE_DIRECTORY
+  Page custom UOFolderPageCreate UOFolderPageLeave
   !insertmacro MUI_PAGE_STARTMENU Application $StartMenuFolder
   !insertmacro MUI_PAGE_INSTFILES
   
@@ -104,6 +111,24 @@ SetCompressor /SOLID /FINAL lzma
  !insertmacro MUI_LANGUAGE "English"
  !insertmacro MUI_LANGUAGE "German"
  !insertmacro MUI_RESERVEFILE_LANGDLL
+
+;--------------------------------
+;UO folder page texts
+
+  LangString UOPAGE_TITLE ${LANG_ENGLISH} "Ultima Online folder"
+  LangString UOPAGE_TITLE ${LANG_GERMAN} "Ultima-Online-Ordner"
+  LangString UOPAGE_SUB ${LANG_ENGLISH} "Needed for the item, map and gump previews."
+  LangString UOPAGE_SUB ${LANG_GERMAN} "Wird für die Item-, Karten- und Gump-Vorschau gebraucht."
+  LangString UOPAGE_TEXT ${LANG_ENGLISH} "Axis X draws item, NPC, map and gump previews from the Ultima Online data files (art, tiledata, map, gumps ... *.mul). Without a UO folder these previews stay empty.$\r$\n$\r$\nSelect the folder that contains these files, usually the folder of your UO client (with client.exe and tiledata.mul). You can leave the field empty and set it later in Settings > Paths."
+  LangString UOPAGE_TEXT ${LANG_GERMAN} "Axis X zeichnet die Vorschau von Items, NPCs, Karten und Gumps aus den Ultima-Online-Datendateien (art, tiledata, map, gumps ... *.mul). Ohne UO-Ordner bleibt die Vorschau leer.$\r$\n$\r$\nWähle den Ordner, in dem diese Dateien liegen, meist der Ordner deines UO-Clients (mit client.exe und tiledata.mul). Das Feld darf leer bleiben, der Ordner lässt sich später unter Einstellungen > Pfade eintragen."
+  LangString UOPAGE_BROWSE ${LANG_ENGLISH} "Browse..."
+  LangString UOPAGE_BROWSE ${LANG_GERMAN} "Durchsuchen..."
+  LangString UOPAGE_BROWSETITLE ${LANG_ENGLISH} "Select your Ultima Online folder"
+  LangString UOPAGE_BROWSETITLE ${LANG_GERMAN} "Ultima-Online-Ordner auswählen"
+  LangString UOPAGE_NODIR ${LANG_ENGLISH} "This folder does not exist."
+  LangString UOPAGE_NODIR ${LANG_GERMAN} "Dieser Ordner existiert nicht."
+  LangString UOPAGE_NOMUL ${LANG_ENGLISH} "tiledata.mul was not found in this folder, so the previews will probably stay empty.$\r$\n$\r$\nUse this folder anyway?"
+  LangString UOPAGE_NOMUL ${LANG_GERMAN} "In diesem Ordner wurde keine tiledata.mul gefunden, die Vorschau bleibt wahrscheinlich leer.$\r$\n$\r$\nTrotzdem diesen Ordner verwenden?"
 
 ;--------------------------------
 ;StartUp
@@ -127,6 +152,111 @@ Function un.onInit
   !insertmacro MUI_UNGETLANGUAGE
 FunctionEnd
 
+;--------------------------------
+;UO folder page
+
+Function UOFolderDetect
+  ;Existing Axis X setting first, then the registry entry of a classic UO installation
+  ReadRegStr $0 HKCU "Software\Sphere\GM Tools" "Default MulPath"
+  ${If} $0 == ""
+    ReadRegStr $0 HKLM "Software\Sphere\GM Tools" "Default MulPath"
+  ${EndIf}
+  ${If} $0 == ""
+    ReadRegStr $0 HKCU "Software\Sphere\GM Tools" "Default Client"
+    ${If} $0 == ""
+      ReadRegStr $0 HKLM "Software\Sphere\GM Tools" "Default Client"
+    ${EndIf}
+    ${If} $0 == ""
+      ReadRegStr $0 HKLM "SOFTWARE\Origin Worlds Online\Ultima Online\1.0" "ExePath"
+    ${EndIf}
+    ${If} $0 != ""
+      ${GetParent} $0 $0
+    ${EndIf}
+  ${EndIf}
+  StrCpy $UOFolder $0
+  Call UOFolderTrim
+FunctionEnd
+
+Function UOFolderTrim
+  StrCpy $0 $UOFolder 1 -1
+  ${If} $0 == "\"
+    StrLen $0 $UOFolder
+    IntOp $0 $0 - 1
+    StrCpy $UOFolder $UOFolder $0
+  ${EndIf}
+FunctionEnd
+
+Function UOFolderPageCreate
+  !insertmacro MUI_HEADER_TEXT "$(UOPAGE_TITLE)" "$(UOPAGE_SUB)"
+  ${If} $UOFolder == ""
+    Call UOFolderDetect
+  ${EndIf}
+  nsDialogs::Create 1018
+  Pop $UOFolderDlg
+  ${If} $UOFolderDlg == error
+    Abort
+  ${EndIf}
+  ${NSD_CreateLabel} 0 0 100% 70u "$(UOPAGE_TEXT)"
+  Pop $0
+  ${NSD_CreateText} 0 78u 78% 12u "$UOFolder"
+  Pop $UOFolderText
+  ${NSD_CreateButton} 80% 77u 20% 14u "$(UOPAGE_BROWSE)"
+  Pop $0
+  ${NSD_OnClick} $0 UOFolderBrowse
+  nsDialogs::Show
+FunctionEnd
+
+Function UOFolderBrowse
+  ${NSD_GetText} $UOFolderText $0
+  nsDialogs::SelectFolderDialog "$(UOPAGE_BROWSETITLE)" "$0"
+  Pop $0
+  ${If} $0 != error
+    ${NSD_SetText} $UOFolderText $0
+  ${EndIf}
+FunctionEnd
+
+Function UOFolderPageLeave
+  ${NSD_GetText} $UOFolderText $UOFolder
+  Call UOFolderTrim
+  ${If} $UOFolder == ""
+    Return
+  ${EndIf}
+  ${IfNot} ${FileExists} "$UOFolder\*.*"
+    MessageBox MB_OK|MB_ICONEXCLAMATION "$(UOPAGE_NODIR)"
+    Abort
+  ${EndIf}
+  ${IfNot} ${FileExists} "$UOFolder\tiledata.mul"
+    MessageBox MB_YESNO|MB_ICONQUESTION "$(UOPAGE_NOMUL)" IDYES +2
+    Abort
+  ${EndIf}
+FunctionEnd
+
+;Stores the chosen UO folder where Axis X reads it (Settings > Paths)
+Function UOFolderSave
+  ${If} $UOFolder == ""
+    Return
+  ${EndIf}
+  ${If} ${FileExists} "$UOFolder\client.exe"
+    StrCpy $1 1
+  ${Else}
+    StrCpy $1 0
+  ${EndIf}
+  ${If} $MultiUser.InstallMode == "AllUsers"
+    WriteRegStr HKLM "Software\Sphere\GM Tools" "Default MulPath" "$UOFolder\"
+    ${If} $1 == 1
+      WriteRegStr HKLM "Software\Sphere\GM Tools" "Default Client" "$UOFolder\client.exe"
+    ${Else}
+      WriteRegDWORD HKLM "Software\Sphere\GM Tools" "SameAsClient" 0
+    ${EndIf}
+  ${Else}
+    WriteRegStr HKCU "Software\Sphere\GM Tools" "Default MulPath" "$UOFolder\"
+    ${If} $1 == 1
+      WriteRegStr HKCU "Software\Sphere\GM Tools" "Default Client" "$UOFolder\client.exe"
+    ${Else}
+      WriteRegDWORD HKCU "Software\Sphere\GM Tools" "SameAsClient" 0
+    ${EndIf}
+  ${EndIf}
+FunctionEnd
 ;--------------------------------
 ;Installer Sections
 
@@ -185,6 +315,8 @@ Section "Default Section" SecDefault
     WriteRegStr HKCU "Software\Microsoft\Windows\CurrentVersion\Uninstall\AxisX" "UninstallString" '"$INSTDIR\AxisX_uninst.exe"'
   ${endif}
   
+  Call UOFolderSave
+
   !insertmacro MUI_STARTMENU_WRITE_BEGIN Application
     
     ;Create shortcuts
