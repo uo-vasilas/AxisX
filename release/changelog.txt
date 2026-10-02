@@ -418,3 +418,9 @@
 
 +October 2026+
 -Added: The installer asks for the Ultima Online folder (prefilled from an earlier setting or a classic UO installation) and explains that it is needed for the item, map and gump previews. It can be left empty and set later in Settings > Paths.
+
+
+***Axis X 1.4***
+
++October 2026+
+-Changed: The update check now runs on every start instead of at most once a day. It can still be switched off in Settings > General.
