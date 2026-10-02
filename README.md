@@ -57,7 +57,7 @@ the tool stays free and GPL.
   offline.
 - **Custom branding**: your own logo and window icon, from a file or a URL.
 - **Remote console** (Sphere remote admin), reachable from the dashboard and the GM Commands page.
-- **Update check.** At startup (at most once a day) Axis X asks GitHub for the latest release. If there
+- **Update check.** At every startup Axis X asks GitHub for the latest release. If there
   is a newer one, the dashboard shows **Update now**: Axis downloads the installer, checks its SHA-256
   checksum against the one GitHub publishes, starts it and closes. The installer keeps the folder,
   settings and server profiles. Switch it off or check by hand under *Settings -> General*.
@@ -330,7 +330,7 @@ und GPL.
   offline arbeitet Axis X mit dem Cache weiter.
 - **Eigenes Logo und Icon**, aus einer Datei oder von einer URL.
 - **Remote-Konsole** (Sphere Remote Admin), erreichbar von der Übersicht und den GM-Befehlen aus.
-- **Update-Prüfung.** Beim Start (höchstens einmal am Tag) fragt Axis X bei GitHub nach dem neuesten
+- **Update-Prüfung.** Bei jedem Start fragt Axis X bei GitHub nach dem neuesten
   Release. Gibt es ein neueres, zeigt die Übersicht **Jetzt aktualisieren**: Axis lädt den Installer,
   vergleicht seine SHA-256-Prüfsumme mit der von GitHub veröffentlichten, startet ihn und beendet sich.
   Der Installer behält Ordner, Einstellungen und Server-Profile. Abschalten oder von Hand prüfen unter

@@ -89,13 +89,10 @@ CString AxisCurrentVersion()
 	return csVersion;
 }
 
-// True if the check is enabled and the last one is at least a day old.
+// True if the check is enabled; it runs on every start.
 bool AxisUpdateCheckDue()
 {
-	if (Main->GetRegistryDword(_T("CheckUpdates"), 1) == 0)
-		return false;
-	CString csToday = CTime::GetCurrentTime().Format(_T("%Y%m%d"));
-	return Main->GetRegistryString(_T("LastUpdateCheck")) != csToday;
+	return Main->GetRegistryDword(_T("CheckUpdates"), 1) != 0;
 }
 
 // Reads the string value of "key" between iFrom and iTo (-1 = end).

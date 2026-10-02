@@ -468,7 +468,7 @@ BOOL CAxisXDlg::OnInitDialog()
 	if (m_bFirstRunSettings)
 		PostMessage(WM_COMMAND, ID_SETTINGS_GENERAL);
 
-	// At most once a day; the result arrives as WM_AXIS_UPDATE_CHECKED.
+	// On every start; the result arrives as WM_AXIS_UPDATE_CHECKED.
 	if (AxisUpdateCheckDue())
 		AxisStartUpdateCheck(m_hWnd, false);
 
