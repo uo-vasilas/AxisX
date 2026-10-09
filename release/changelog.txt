@@ -424,3 +424,9 @@
 
 +October 2026+
 -Changed: The update check now runs on every start instead of at most once a day. It can still be switched off in Settings > General.
+
+
+***Axis X 1.5***
+
++October 2026+
+-Fixed: Crash when searching for NPCs in the Spawn tab (e.g. "Dragon"). Damaged or unexpected animation data is now skipped instead of crashing.
