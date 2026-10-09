@@ -829,17 +829,33 @@ void CUOArt::DrawArt(short sArtType, CRect bounds, DWORD dwArtIndex, short dx, s
 					DWORD dwOffset = 0;
 					fData.Seek(indexRec.dwLookup, CFile::begin);
 					bData = new BYTE [indexRec.dwSize];
-					fData.Read(&bData[0], indexRec.dwSize);
+					DWORD dwRead = fData.Read(&bData[0], indexRec.dwSize);
 					WORD wPalette[256];
+					if ( dwRead < sizeof(WORD) * 256 + 8 )
+					{
+						delete [] bData;
+						break;
+					}
 					memcpy(&wPalette[0], &bData[dwOffset], sizeof(WORD) * 256);
 					dwOffset += sizeof(WORD) * 256;
 					DWORD dwFrameCount;
 					memcpy(&dwFrameCount, &bData[dwOffset], 4);
 					dwOffset += 4;
+					if ( dwFrameCount == 0 || dwFrameCount > (dwRead - dwOffset) / 4 )
+					{
+						delete [] bData;
+						break;
+					}
 					DWORD * frameOffsets = new DWORD [dwFrameCount];
 					memcpy(&frameOffsets[0], &bData[dwOffset], sizeof(DWORD) * dwFrameCount);
 					// Read the frame we want
 					dwOffset = 256 * sizeof(WORD) + frameOffsets[0];
+					if ( (ULONGLONG) dwOffset + 8 > dwRead )
+					{
+						delete [] frameOffsets;
+						delete [] bData;
+						break;
+					}
 					short imageCenterX, imageCenterY, width, height;
 					memcpy(&imageCenterX, &bData[dwOffset], 2);
 					dwOffset += 2;
@@ -854,6 +870,8 @@ void CUOArt::DrawArt(short sArtType, CRect bounds, DWORD dwArtIndex, short dx, s
 					while ( true )
 					{
 						short header, offset;
+						if ( (ULONGLONG) dwOffset + 4 > dwRead )
+							break;
 						memcpy(&header, &bData[dwOffset], 2);
 						dwOffset += 2;
 						memcpy(&offset, &bData[dwOffset], 2);
@@ -871,8 +889,9 @@ void CUOArt::DrawArt(short sArtType, CRect bounds, DWORD dwArtIndex, short dx, s
 						previousLine = wLineNum;
 						for ( int j = 0; j < wRunLength; j++ )
 						{
-							BYTE bIndex = 0;
-							memcpy(&bIndex, &bData[dwOffset], 1);
+							if ( dwOffset >= dwRead )
+								break;
+							BYTE bIndex = bData[dwOffset];
 							dwOffset++;
 							DWORD dwColor = BlendColors(wPalette[bIndex], m_wAppliedColour, false);
 							{
@@ -2026,7 +2045,8 @@ CBitmap * CUOArt::OnCreateIcon(int iBitWidth, int iBitHeight, int iID, WORD wApp
 	}
 	fIndex.Seek(dwIndex * sizeof(ArtIdx), CFile::begin);
 	ArtIdx indexRec;
-	fIndex.Read(&indexRec, sizeof(ArtIdx));
+	if ( fIndex.Read(&indexRec, sizeof(ArtIdx)) != sizeof(ArtIdx) )
+		indexRec.dwLookup = 0xFFFFFFFF;
 
 	if (( indexRec.dwLookup != 0xFFFFFFFF )&&( indexRec.dwSize > 0 ))
 	{
@@ -2165,17 +2185,33 @@ CBitmap * CUOArt::OnCreateIcon(int iBitWidth, int iBitHeight, int iID, WORD wApp
 					DWORD dwOffset = 0;
 					fData.Seek(indexRec.dwLookup, CFile::begin);
 					bData = new BYTE [indexRec.dwSize];
-					fData.Read(&bData[0], indexRec.dwSize);
+					DWORD dwRead = fData.Read(&bData[0], indexRec.dwSize);
 					WORD wPalette[256];
+					if ( dwRead < sizeof(WORD) * 256 + 8 )
+					{
+						delete [] bData;
+						break;
+					}
 					memcpy(&wPalette[0], &bData[dwOffset], sizeof(WORD) * 256);
 					dwOffset += sizeof(WORD) * 256;
 					DWORD dwFrameCount;
 					memcpy(&dwFrameCount, &bData[dwOffset], 4);
 					dwOffset += 4;
+					if ( dwFrameCount == 0 || dwFrameCount > (dwRead - dwOffset) / 4 )
+					{
+						delete [] bData;
+						break;
+					}
 					DWORD * frameOffsets = new DWORD [dwFrameCount];
 					memcpy(&frameOffsets[0], &bData[dwOffset], sizeof(DWORD) * dwFrameCount);
 					// Read the frame we want
 					dwOffset = 256 * sizeof(WORD) + frameOffsets[0];
+					if ( (ULONGLONG) dwOffset + 8 > dwRead )
+					{
+						delete [] frameOffsets;
+						delete [] bData;
+						break;
+					}
 					short imageCenterX, imageCenterY, width, height;
 					memcpy(&imageCenterX, &bData[dwOffset], 2);
 					dwOffset += 2;
@@ -2190,6 +2226,8 @@ CBitmap * CUOArt::OnCreateIcon(int iBitWidth, int iBitHeight, int iID, WORD wApp
 					while ( true )
 					{
 						short header, offset;
+						if ( (ULONGLONG) dwOffset + 4 > dwRead )
+							break;
 						memcpy(&header, &bData[dwOffset], 2);
 						dwOffset += 2;
 						memcpy(&offset, &bData[dwOffset], 2);
@@ -2207,8 +2245,9 @@ CBitmap * CUOArt::OnCreateIcon(int iBitWidth, int iBitHeight, int iID, WORD wApp
 						previousLine = wLineNum;
 						for ( int j = 0; j < wRunLength; j++ )
 						{
-							BYTE bIndex = 0;
-							memcpy(&bIndex, &bData[dwOffset], 1);
+							if ( dwOffset >= dwRead )
+								break;
+							BYTE bIndex = bData[dwOffset];
 							dwOffset++;
 							X = (iBitWidth / 2 ) + offset + j;
 							if ( X >= 0 && X < iBitWidth && Y >=0 && Y < iBitHeight )
