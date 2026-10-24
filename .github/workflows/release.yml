@@ -41,7 +41,7 @@ jobs:
           if ('${{ inputs.publish }}' -eq 'true') { $releaseArgs.Publish = $true }
           ./tools/Release-Axis.ps1 @releaseArgs
 
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v7
         with:
           name: AxisX_Setup_${{ inputs.version }}
           path: Setup/AxisX_Setup_${{ inputs.version }}.exe
