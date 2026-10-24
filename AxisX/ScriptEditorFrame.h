@@ -12,7 +12,7 @@ public:
 	virtual ~CScriptEditorFrame();
 
 	void ParseLine(int nLineIndex = -1);
-	bool ColourLine(CString& strStart, CString& strEnd, CString& strLine,
+	bool ColourLine(const CString& strStart, const CString& strEnd, CString& strLine,
 		long lCharStart, int nOffset, CHARFORMAT& cf);
 
 	CHARFORMAT	m_cfHeader;

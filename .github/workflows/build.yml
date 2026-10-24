@@ -1,0 +1,30 @@
+name: Build
+
+on:
+  push:
+    branches: [master]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Visual Studio
+        shell: pwsh
+        run: |
+          & "${env:ProgramFiles(x86)}\Microsoft Visual Studio\Installer\vswhere.exe" -latest -prerelease -products * -property displayName
+          & "${env:ProgramFiles(x86)}\Microsoft Visual Studio\Installer\vswhere.exe" -latest -prerelease -products * -property installationVersion
+
+      - name: Build
+        shell: pwsh
+        run: |
+          ./tools/Build-Axis.ps1
+          Copy-Item (Join-Path $env:TEMP 'axisx-build64/AxisX.exe') AxisX.exe
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: AxisX-exe
+          path: AxisX.exe

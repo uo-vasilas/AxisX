@@ -1,0 +1,47 @@
+name: Release
+
+on:
+  workflow_dispatch:
+    inputs:
+      version:
+        description: "Version, e.g. 1.6 (needs a section in release/changelog.txt)"
+        required: true
+        type: string
+      publish:
+        description: "Commit, tag and publish the GitHub release (otherwise only build the installer for testing)"
+        required: true
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: NSIS
+        shell: pwsh
+        run: choco install nsis -y --no-progress
+
+      - name: Git identity
+        shell: pwsh
+        run: |
+          git config user.name "Vasilas"
+          git config user.email "vasilas@schattenwelt.rip"
+
+      - name: Build installer
+        shell: pwsh
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          $releaseArgs = @('-Version', '${{ inputs.version }}', '-Makensis', "${env:ProgramFiles(x86)}\NSIS\makensis.exe")
+          if ('${{ inputs.publish }}' -eq 'true') { $releaseArgs += '-Publish' }
+          ./tools/Release-Axis.ps1 @releaseArgs
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: AxisX_Setup_${{ inputs.version }}
+          path: Setup/AxisX_Setup_${{ inputs.version }}.exe
