@@ -198,7 +198,7 @@ void CScriptEditorFrame::ParseLine(int nLineIndex)
 	SetSel(crCurrent);
 }
 
-bool CScriptEditorFrame::ColourLine(CString& strStart, CString& strEnd, 
+bool CScriptEditorFrame::ColourLine(const CString& strStart, const CString& strEnd, 
 									  CString& strLine, long lCharStart, 
 									  int nOffset, CHARFORMAT& cf)
 {

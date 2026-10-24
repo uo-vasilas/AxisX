@@ -33,7 +33,7 @@ public:
 	void		SeedMT(ULONG seed);
 
 
-inline ULONG CRandomMT::RandomMT(void)
+inline ULONG RandomMT(void)
 {
     ULONG y;
 
@@ -70,7 +70,7 @@ inline int RollDice(int face, int number_of_dice)
 	return roll;
 }
 
-inline int CRandomMT::HeadsOrTails()
+inline int HeadsOrTails()
 {
 	return((RandomMT()) % 2);
 }
