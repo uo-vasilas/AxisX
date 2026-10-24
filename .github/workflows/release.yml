@@ -37,8 +37,8 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          $releaseArgs = @('-Version', '${{ inputs.version }}', '-Makensis', "${env:ProgramFiles(x86)}\NSIS\makensis.exe")
-          if ('${{ inputs.publish }}' -eq 'true') { $releaseArgs += '-Publish' }
+          $releaseArgs = @{ Version = '${{ inputs.version }}'; Makensis = "${env:ProgramFiles(x86)}\NSIS\makensis.exe" }
+          if ('${{ inputs.publish }}' -eq 'true') { $releaseArgs.Publish = $true }
           ./tools/Release-Axis.ps1 @releaseArgs
 
       - uses: actions/upload-artifact@v4
